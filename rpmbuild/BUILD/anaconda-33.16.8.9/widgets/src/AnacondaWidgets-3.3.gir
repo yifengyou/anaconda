@@ -1,0 +1,1349 @@
+<?xml version="1.0"?>
+<!-- This file was automatically generated from C sources - DO NOT EDIT!
+To affect the contents of this file, edit the original C definitions,
+and/or use gtk-doc annotations.  -->
+<repository version="1.2"
+            xmlns="http://www.gtk.org/introspection/core/1.0"
+            xmlns:c="http://www.gtk.org/introspection/c/1.0"
+            xmlns:glib="http://www.gtk.org/introspection/glib/1.0">
+  <include name="Gtk" version="3.0"/>
+  <include name="Xkl" version="1.0"/>
+  <namespace name="AnacondaWidgets"
+             version="3.3"
+             shared-library="libAnacondaWidgets.so.4"
+             c:identifier-prefixes="Anaconda"
+             c:symbol-prefixes="anaconda">
+    <class name="BaseStandalone"
+           c:symbol-prefix="base_standalone"
+           c:type="AnacondaBaseStandalone"
+           parent="BaseWindow"
+           abstract="1"
+           glib:type-name="AnacondaBaseStandalone"
+           glib:get-type="anaconda_base_standalone_get_type"
+           glib:type-struct="BaseStandaloneClass">
+      <doc xml:space="preserve">The AnacondaBaseStandalone class contains only private fields and should not
+be directly accessed.</doc>
+      <implements name="Atk.ImplementorIface"/>
+      <implements name="Gtk.Buildable"/>
+      <virtual-method name="continue_clicked">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="window" transfer-ownership="none">
+            <type name="BaseStandalone" c:type="AnacondaBaseStandalone*"/>
+          </instance-parameter>
+        </parameters>
+      </virtual-method>
+      <virtual-method name="quit_clicked">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="window" transfer-ownership="none">
+            <type name="BaseStandalone" c:type="AnacondaBaseStandalone*"/>
+          </instance-parameter>
+        </parameters>
+      </virtual-method>
+      <method name="get_continue_button"
+              c:identifier="anaconda_base_standalone_get_continue_button"
+              version="3.0">
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">the continue button</doc>
+          <type name="Gtk.Button" c:type="GtkButton*"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="win" transfer-ownership="none">
+            <doc xml:space="preserve">a #AnacondaBaseStandalone</doc>
+            <type name="BaseStandalone" c:type="AnacondaBaseStandalone*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_may_continue"
+              c:identifier="anaconda_base_standalone_get_may_continue"
+              version="3.0">
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">Whether or not the continue button is sensitive (thus, whether the
+user may continue forward from this window).</doc>
+          <type name="gboolean" c:type="gboolean"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="win" transfer-ownership="none">
+            <doc xml:space="preserve">a #AnacondaBaseStandalone</doc>
+            <type name="BaseStandalone" c:type="AnacondaBaseStandalone*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_quit_button"
+              c:identifier="anaconda_base_standalone_get_quit_button"
+              version="3.0">
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">the quit button</doc>
+          <type name="Gtk.Button" c:type="GtkButton*"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="win" transfer-ownership="none">
+            <doc xml:space="preserve">a #AnacondaBaseStandalone</doc>
+            <type name="BaseStandalone" c:type="AnacondaBaseStandalone*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="set_may_continue"
+              c:identifier="anaconda_base_standalone_set_may_continue"
+              version="3.0">
+        <doc xml:space="preserve">Specifies whether the user may continue forward from this window.  If so,
+the continue button will be made sensitive.  Windows default to continuable
+so you must set it as false if you want.  The reason the user may not be
+able to continue is if there is required information the user must enter
+when no reasonable default may be given.</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="win" transfer-ownership="none">
+            <doc xml:space="preserve">a #AnacondaBaseStandalone</doc>
+            <type name="BaseStandalone" c:type="AnacondaBaseStandalone*"/>
+          </instance-parameter>
+          <parameter name="may_continue" transfer-ownership="none">
+            <doc xml:space="preserve">%TRUE if this window's continue buttons should be sensitive</doc>
+            <type name="gboolean" c:type="gboolean"/>
+          </parameter>
+        </parameters>
+      </method>
+      <property name="continue-button"
+                writable="1"
+                construct="1"
+                transfer-ownership="none">
+        <type name="Gtk.Button"/>
+      </property>
+      <property name="quit-button"
+                writable="1"
+                construct="1"
+                transfer-ownership="none">
+        <type name="Gtk.Button"/>
+      </property>
+      <field name="parent">
+        <type name="BaseWindow" c:type="AnacondaBaseWindow"/>
+      </field>
+      <field name="priv" readable="0" private="1">
+        <type name="BaseStandalonePrivate"
+              c:type="AnacondaBaseStandalonePrivate*"/>
+      </field>
+      <glib:signal name="continue-clicked"
+                   when="first"
+                   action="1"
+                   version="3.0">
+        <doc xml:space="preserve">Emitted when the #AnacondaBaseStandalone:continue-button has been
+activated (pressed and released).</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+      </glib:signal>
+      <glib:signal name="quit-clicked" when="first" action="1" version="3.0">
+        <doc xml:space="preserve">Emitted when the #AnacondaBaseStandalone:quit-button has been activated
+(pressed and released).</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+      </glib:signal>
+    </class>
+    <record name="BaseStandaloneClass"
+            c:type="AnacondaBaseStandaloneClass"
+            glib:is-gtype-struct-for="BaseStandalone">
+      <field name="parent_class">
+        <doc xml:space="preserve">The object class structure needs to be the first element in
+               the widget class structure in order for the class mechanism
+               to work correctly. This allows a AnacondaBaseStandaloneClass
+               pointer to be cast to a #AnacondaBaseWindowClass pointer.</doc>
+        <type name="BaseWindowClass" c:type="AnacondaBaseWindowClass"/>
+      </field>
+      <field name="quit_clicked">
+        <callback name="quit_clicked">
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+          <parameters>
+            <parameter name="window" transfer-ownership="none">
+              <type name="BaseStandalone" c:type="AnacondaBaseStandalone*"/>
+            </parameter>
+          </parameters>
+        </callback>
+      </field>
+      <field name="continue_clicked">
+        <callback name="continue_clicked">
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+          <parameters>
+            <parameter name="window" transfer-ownership="none">
+              <type name="BaseStandalone" c:type="AnacondaBaseStandalone*"/>
+            </parameter>
+          </parameters>
+        </callback>
+      </field>
+    </record>
+    <record name="BaseStandalonePrivate"
+            c:type="AnacondaBaseStandalonePrivate"
+            disguised="1">
+    </record>
+    <class name="BaseWindow"
+           c:symbol-prefix="base_window"
+           c:type="AnacondaBaseWindow"
+           parent="Gtk.Bin"
+           glib:type-name="AnacondaBaseWindow"
+           glib:get-type="anaconda_base_window_get_type"
+           glib:type-struct="BaseWindowClass">
+      <doc xml:space="preserve">The AnacondaBaseWindow struct contains only private fields and should not
+be directly accessed.</doc>
+      <implements name="Atk.ImplementorIface"/>
+      <implements name="Gtk.Buildable"/>
+      <constructor name="new" c:identifier="anaconda_base_window_new">
+        <doc xml:space="preserve">Creates a new #AnacondaBaseWindow, which is a toplevel, non-resizeable
+window that contains other widgets.  This is the base class for all other
+Anaconda windows and creates the window style that all windows will share.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">A new #AnacondaBaseWindow.</doc>
+          <type name="Gtk.Widget" c:type="GtkWidget*"/>
+        </return-value>
+      </constructor>
+      <virtual-method name="help_button_clicked">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="window" transfer-ownership="none">
+            <type name="BaseWindow" c:type="AnacondaBaseWindow*"/>
+          </instance-parameter>
+        </parameters>
+      </virtual-method>
+      <virtual-method name="info_bar_clicked">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="window" transfer-ownership="none">
+            <type name="BaseWindow" c:type="AnacondaBaseWindow*"/>
+          </instance-parameter>
+        </parameters>
+      </virtual-method>
+      <method name="clear_info"
+              c:identifier="anaconda_base_window_clear_info"
+              version="1.0">
+        <doc xml:space="preserve">Clear and hide any info bar being shown at the bottom of the screen.  This
+must be called before a second call to anaconda_base_window_set_info() takes
+effect.</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="win" transfer-ownership="none">
+            <doc xml:space="preserve">a #AnacondaBaseWindow</doc>
+            <type name="BaseWindow" c:type="AnacondaBaseWindow*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_action_area"
+              c:identifier="anaconda_base_window_get_action_area"
+              version="1.0">
+        <doc xml:space="preserve">Returns the action area of @win.  This is the area of the screen where most
+of the widgets the user interacts with will live.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">The action area</doc>
+          <type name="Gtk.Widget" c:type="GtkWidget*"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="win" transfer-ownership="none">
+            <doc xml:space="preserve">a #AnacondaBaseWindow</doc>
+            <type name="BaseWindow" c:type="AnacondaBaseWindow*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_alignment"
+              c:identifier="anaconda_base_window_get_alignment"
+              version="1.0">
+        <doc xml:space="preserve">Returns the internal alignment widget of @win.  Currently, this is only used
+by #AnacondaHubWindow to set different alignment values than the spokes have.
+This function should probably not be used elsewhere.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">The alignment widget</doc>
+          <type name="Gtk.Widget" c:type="GtkWidget*"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="win" transfer-ownership="none">
+            <doc xml:space="preserve">a #AnacondaBaseWindow</doc>
+            <type name="BaseWindow" c:type="AnacondaBaseWindow*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_beta"
+              c:identifier="anaconda_base_window_get_beta"
+              version="1.0">
+        <doc xml:space="preserve">Returns whether or not this window is set to display the beta label.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">Whether @win is set to display the betanag warning</doc>
+          <type name="gboolean" c:type="gboolean"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="win" transfer-ownership="none">
+            <doc xml:space="preserve">a #AnacondaBaseWindow</doc>
+            <type name="BaseWindow" c:type="AnacondaBaseWindow*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_help_button"
+              c:identifier="anaconda_base_window_get_help_button"
+              version="3.1">
+        <doc xml:space="preserve">Returns the help button.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">the help button</doc>
+          <type name="Gtk.Widget" c:type="GtkWidget*"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="win" transfer-ownership="none">
+            <doc xml:space="preserve">a #AnacondaBaseWindow</doc>
+            <type name="BaseWindow" c:type="AnacondaBaseWindow*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_main_box"
+              c:identifier="anaconda_base_window_get_main_box"
+              version="1.0">
+        <doc xml:space="preserve">Returns the main content area of @win.  This widget holds both the action_area
+and the nav_area.  Currently, this is only used by #AnacondaStandaloneWindow
+as a place to store the extra Continue button.  This function should probably
+not be used elsewhere.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">The main content area</doc>
+          <type name="Gtk.Widget" c:type="GtkWidget*"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="win" transfer-ownership="none">
+            <doc xml:space="preserve">a #AnacondaBaseWindow</doc>
+            <type name="BaseWindow" c:type="AnacondaBaseWindow*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_nav_area"
+              c:identifier="anaconda_base_window_get_nav_area"
+              version="1.0">
+        <doc xml:space="preserve">Returns the navigation area of @win.  This is the area at the top of the
+screen displaying the window's title (if it has one), distribution, and
+so forth.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">The navigation area</doc>
+          <type name="Gtk.Widget" c:type="GtkWidget*"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="win" transfer-ownership="none">
+            <doc xml:space="preserve">a #AnacondaBaseWindow</doc>
+            <type name="BaseWindow" c:type="AnacondaBaseWindow*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_nav_area_background_window"
+              c:identifier="anaconda_base_window_get_nav_area_background_window"
+              version="1.0">
+        <doc xml:space="preserve">Returns the event box that houses background window of the navigation area of @win.
+Currently, this is only used by #AnacondaSpokeWindow to have a place to store the
+gradient image.  This function should probably not be used elsewhere.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">The event box</doc>
+          <type name="Gtk.Widget" c:type="GtkWidget*"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="win" transfer-ownership="none">
+            <doc xml:space="preserve">a #AnacondaBaseWindow</doc>
+            <type name="BaseWindow" c:type="AnacondaBaseWindow*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="retranslate"
+              c:identifier="anaconda_base_window_retranslate"
+              version="1.0">
+        <doc xml:space="preserve">Reload translations for this widget as needed.  Generally, this is not
+needed.  However when changing the language during installation, we need
+to be able to make sure the screen gets retranslated.  This function is
+kind of ugly but avoids having to destroy and reload the screen.</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="win" transfer-ownership="none">
+            <doc xml:space="preserve">a #AnacondaBaseWindow</doc>
+            <type name="BaseWindow" c:type="AnacondaBaseWindow*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="set_beta"
+              c:identifier="anaconda_base_window_set_beta"
+              version="1.0">
+        <doc xml:space="preserve">Sets up the window to display the beta label in red along the top of the
+screen.</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="win" transfer-ownership="none">
+            <doc xml:space="preserve">a #AnacondaBaseWindow</doc>
+            <type name="BaseWindow" c:type="AnacondaBaseWindow*"/>
+          </instance-parameter>
+          <parameter name="is_beta" transfer-ownership="none">
+            <doc xml:space="preserve">%TRUE to display the betanag warning</doc>
+            <type name="gboolean" c:type="gboolean"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="set_error"
+              c:identifier="anaconda_base_window_set_error"
+              version="1.0">
+        <doc xml:space="preserve">Causes an info bar to be shown at the bottom of the screen with the provided
+message.  Only one message may be shown at a time.  In order to show
+a second message, anaconda_base_window_clear_info() must first be called.
+
+The message will be interpreted as Pango markup. Clickable messages are
+encouraged to include a clickable link using the #GtkLabel syntax in order
+to make the info bar accessible via the keyboard. The link URI will be
+ignored, and all link clicks will emit the
+#AnacondaBaseWindow::info-bar-clicked signal on @win.</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="win" transfer-ownership="none">
+            <doc xml:space="preserve">a #AnacondaBaseWindow</doc>
+            <type name="BaseWindow" c:type="AnacondaBaseWindow*"/>
+          </instance-parameter>
+          <parameter name="msg" transfer-ownership="none">
+            <doc xml:space="preserve">a message</doc>
+            <type name="utf8" c:type="const char*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="set_info"
+              c:identifier="anaconda_base_window_set_info"
+              version="1.0">
+        <doc xml:space="preserve">Causes an info bar to be shown at the bottom of the screen with the provided
+message.  Only one message may be shown at a time.  In order to show
+a second message, anaconda_base_window_clear_info() must first be called.
+
+The message will be interpreted as Pango markup. Clickable messages are
+encouraged to include a clickable link using the #GtkLabel syntax in order
+to make the info bar accessible via the keyboard. The link URI will be
+ignored, and all link clicks will emit the
+#AnacondaBaseWindow::info-bar-clicked signal on @win.</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="win" transfer-ownership="none">
+            <doc xml:space="preserve">a #AnacondaBaseWindow</doc>
+            <type name="BaseWindow" c:type="AnacondaBaseWindow*"/>
+          </instance-parameter>
+          <parameter name="msg" transfer-ownership="none">
+            <doc xml:space="preserve">a message</doc>
+            <type name="utf8" c:type="const char*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="set_warning"
+              c:identifier="anaconda_base_window_set_warning"
+              version="1.0">
+        <doc xml:space="preserve">Causes an info bar to be shown at the bottom of the screen with the provided
+message.  Only one message may be shown at a time.  In order to show
+a second message, anaconda_base_window_clear_info() must first be called.
+
+The message will be interpreted as Pango markup. Clickable messages are
+encouraged to include a clickable link using the #GtkLabel syntax in order
+to make the info bar accessible via the keyboard. The link URI will be
+ignored, and all link clicks will emit the
+#AnacondaBaseWindow::info-bar-clicked signal on @win.</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="win" transfer-ownership="none">
+            <doc xml:space="preserve">a #AnacondaBaseWindow</doc>
+            <type name="BaseWindow" c:type="AnacondaBaseWindow*"/>
+          </instance-parameter>
+          <parameter name="msg" transfer-ownership="none">
+            <doc xml:space="preserve">a message</doc>
+            <type name="utf8" c:type="const char*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <property name="distribution"
+                version="1.0"
+                writable="1"
+                transfer-ownership="none">
+        <doc xml:space="preserve">The #AnacondaBaseWindow:distribution string is displayed in the upper right corner of all
+windows throughout installation.</doc>
+        <type name="utf8" c:type="gchar*"/>
+      </property>
+      <property name="window-name"
+                version="1.0"
+                writable="1"
+                transfer-ownership="none">
+        <doc xml:space="preserve">The name of the currently displayed window, displayed in the upper
+left corner of all windows with a title throughout installation.
+StandaloneWindows should not have a title, so no name will be displayed
+for those.</doc>
+        <type name="utf8" c:type="gchar*"/>
+      </property>
+      <field name="parent">
+        <type name="Gtk.Bin" c:type="GtkBin"/>
+      </field>
+      <field name="priv" readable="0" private="1">
+        <type name="BaseWindowPrivate" c:type="AnacondaBaseWindowPrivate*"/>
+      </field>
+      <glib:signal name="help-button-clicked"
+                   when="first"
+                   action="1"
+                   version="3.1">
+        <doc xml:space="preserve">Emitted when the help button in the right corner has been activated
+(pressed and released). This is commonly used to open the help view with
+help content for the given spoke or hub</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+      </glib:signal>
+      <glib:signal name="info-bar-clicked"
+                   when="first"
+                   action="1"
+                   version="1.0">
+        <doc xml:space="preserve">Emitted when a visible info bar at the bottom of the window has been clicked
+(pressed and released).  This allows, for instance, popping up a dialog with
+more detailed information.
+
+Activatable info bars are encouraged to include a link in the message for the
+purpose of keyboard navigation.  Clicking the link will emit the
+info-bar-clicked signal. See anaconda_base_window_set_error() for more
+information.</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+      </glib:signal>
+    </class>
+    <record name="BaseWindowClass"
+            c:type="AnacondaBaseWindowClass"
+            glib:is-gtype-struct-for="BaseWindow">
+      <field name="parent_class">
+        <doc xml:space="preserve">The object class structure needs to be the first element in
+               the widget class structure in order for the class mechanism
+               to work correctly.  This allows a AnacondaBaseWindowClass
+               pointer to be cast to a #GtkBin pointer.</doc>
+        <type name="Gtk.BinClass" c:type="GtkBinClass"/>
+      </field>
+      <field name="info_bar_clicked">
+        <callback name="info_bar_clicked">
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+          <parameters>
+            <parameter name="window" transfer-ownership="none">
+              <type name="BaseWindow" c:type="AnacondaBaseWindow*"/>
+            </parameter>
+          </parameters>
+        </callback>
+      </field>
+      <field name="help_button_clicked">
+        <callback name="help_button_clicked">
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+          <parameters>
+            <parameter name="window" transfer-ownership="none">
+              <type name="BaseWindow" c:type="AnacondaBaseWindow*"/>
+            </parameter>
+          </parameters>
+        </callback>
+      </field>
+    </record>
+    <record name="BaseWindowPrivate"
+            c:type="AnacondaBaseWindowPrivate"
+            disguised="1">
+    </record>
+    <class name="DiskOverview"
+           c:symbol-prefix="disk_overview"
+           c:type="AnacondaDiskOverview"
+           parent="Gtk.EventBox"
+           glib:type-name="AnacondaDiskOverview"
+           glib:get-type="anaconda_disk_overview_get_type"
+           glib:type-struct="DiskOverviewClass">
+      <doc xml:space="preserve">The AnacondaDiskOverview struct contains only private fields and should not
+be directly accessed.</doc>
+      <implements name="Atk.ImplementorIface"/>
+      <implements name="Gtk.Buildable"/>
+      <constructor name="new" c:identifier="anaconda_disk_overview_new">
+        <doc xml:space="preserve">Creates a new #AnacondaDiskOverview, which is a potentially selectable
+widget that displays basic information about a single storage device, be
+that a regular disk or a more complicated network device.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">A new #AnacondaDiskOverview.</doc>
+          <type name="Gtk.Widget" c:type="GtkWidget*"/>
+        </return-value>
+      </constructor>
+      <method name="get_chosen"
+              c:identifier="anaconda_disk_overview_get_chosen"
+              version="1.0">
+        <doc xml:space="preserve">Returns whether or not this disk has been chosen by the user.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">Whether @widget has been chosen.</doc>
+          <type name="gboolean" c:type="gboolean"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="widget" transfer-ownership="none">
+            <doc xml:space="preserve">a #AnacondaDiskOverview</doc>
+            <type name="DiskOverview" c:type="AnacondaDiskOverview*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="set_chosen"
+              c:identifier="anaconda_disk_overview_set_chosen"
+              version="1.0">
+        <doc xml:space="preserve">Specifies whether the disk shown by this overview has been chosen by
+the user for inclusion in installation.  If so, a special background will
+be set as a visual indicator.</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="widget" transfer-ownership="none">
+            <doc xml:space="preserve">a #AnacondaDiskOverview</doc>
+            <type name="DiskOverview" c:type="AnacondaDiskOverview*"/>
+          </instance-parameter>
+          <parameter name="is_chosen" transfer-ownership="none">
+            <doc xml:space="preserve">%TRUE if this disk is chosen.</doc>
+            <type name="gboolean" c:type="gboolean"/>
+          </parameter>
+        </parameters>
+      </method>
+      <property name="capacity"
+                version="1.0"
+                writable="1"
+                transfer-ownership="none">
+        <doc xml:space="preserve">The #AnacondaDiskOverview:capacity string is the total size of the disk, plus units.</doc>
+        <type name="utf8" c:type="gchar*"/>
+      </property>
+      <property name="description"
+                version="1.0"
+                writable="1"
+                transfer-ownership="none">
+        <doc xml:space="preserve">The #AnacondaDiskOverview:description string is a very basic description of the device
+and is displayed in bold letters under the icon.</doc>
+        <type name="utf8" c:type="gchar*"/>
+      </property>
+      <property name="free"
+                version="1.0"
+                writable="1"
+                transfer-ownership="none">
+        <doc xml:space="preserve">The #AnacondaDiskOverview:free string is the amount of free, unpartitioned space on the disk,
+plus units.</doc>
+        <type name="utf8" c:type="gchar*"/>
+      </property>
+      <property name="kind"
+                version="1.0"
+                writable="1"
+                transfer-ownership="none">
+        <doc xml:space="preserve">The #AnacondaDiskOverview:kind string specifies what type of disk device this is, used to
+figure out what icon to be displayed.  This should be something like
+"drive-harddisk", "drive-removable-media", etc.</doc>
+        <type name="utf8" c:type="gchar*"/>
+      </property>
+      <property name="name"
+                version="1.0"
+                writable="1"
+                transfer-ownership="none">
+        <doc xml:space="preserve">The #AnacondaDiskOverview:name string provides this device's node name (like 'sda').  Note
+that these names aren't guaranteed to be consistent across reboots but
+their use is so ingrained that we need to continue displaying them.</doc>
+        <type name="utf8" c:type="gchar*"/>
+      </property>
+      <property name="popup-info"
+                version="1.0"
+                writable="1"
+                transfer-ownership="none">
+        <doc xml:space="preserve">The #AnacondaDiskOverview:popup-info string is text that should appear in a tooltip when the
+#AnacondaDiskOverview is hovered over.  For normal disk devices, this
+could be available space information.  For more complex devics, this
+could be WWID, LUN, and so forth.</doc>
+        <type name="utf8" c:type="gchar*"/>
+      </property>
+      <field name="parent">
+        <type name="Gtk.EventBox" c:type="GtkEventBox"/>
+      </field>
+      <field name="priv" readable="0" private="1">
+        <type name="DiskOverviewPrivate"
+              c:type="AnacondaDiskOverviewPrivate*"/>
+      </field>
+    </class>
+    <record name="DiskOverviewClass"
+            c:type="AnacondaDiskOverviewClass"
+            glib:is-gtype-struct-for="DiskOverview">
+      <field name="parent_class">
+        <doc xml:space="preserve">The object class structure needs to be the first element in
+               the widget class structure in order for the class mechanism
+               to work correctly.  This allows a AnacondaDiskOverviewClass
+               pointer to be cast to a #GtkEventBox pointer.</doc>
+        <type name="Gtk.EventBoxClass" c:type="GtkEventBoxClass"/>
+      </field>
+    </record>
+    <record name="DiskOverviewPrivate"
+            c:type="AnacondaDiskOverviewPrivate"
+            disguised="1">
+    </record>
+    <class name="HubWindow"
+           c:symbol-prefix="hub_window"
+           c:type="AnacondaHubWindow"
+           parent="BaseStandalone"
+           glib:type-name="AnacondaHubWindow"
+           glib:get-type="anaconda_hub_window_get_type"
+           glib:type-struct="HubWindowClass">
+      <doc xml:space="preserve">The AnacondaHubWindow struct contains only private fields and should not
+be directly accessed.</doc>
+      <implements name="Atk.ImplementorIface"/>
+      <implements name="Gtk.Buildable"/>
+      <constructor name="new" c:identifier="anaconda_hub_window_new">
+        <doc xml:space="preserve">Creates a new #AnacondaHubWindow, which is a window designed for displaying
+multiple spokes in one location.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">A new #AnacondaHubWindow.</doc>
+          <type name="Gtk.Widget" c:type="GtkWidget*"/>
+        </return-value>
+      </constructor>
+      <method name="get_spoke_area"
+              c:identifier="anaconda_hub_window_get_spoke_area"
+              version="1.0">
+        <doc xml:space="preserve">Returns the scrolled window of @win where spokes may be displayed</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">The spoke area</doc>
+          <type name="Gtk.Widget" c:type="GtkWidget*"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="win" transfer-ownership="none">
+            <doc xml:space="preserve">a #AnacondaHubWindow</doc>
+            <type name="HubWindow" c:type="AnacondaHubWindow*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <field name="parent">
+        <type name="BaseStandalone" c:type="AnacondaBaseStandalone"/>
+      </field>
+      <field name="priv" readable="0" private="1">
+        <type name="HubWindowPrivate" c:type="AnacondaHubWindowPrivate*"/>
+      </field>
+    </class>
+    <record name="HubWindowClass"
+            c:type="AnacondaHubWindowClass"
+            glib:is-gtype-struct-for="HubWindow">
+      <field name="parent_class">
+        <doc xml:space="preserve">The object class structure needs to be the first element in
+               the widget class structure in order for the class mechanism
+               to work correctly.  This allows an AnacondaHubWindowClass
+               pointer to be cast to an #AnacondaBaseWindow pointer.</doc>
+        <type name="BaseStandaloneClass" c:type="AnacondaBaseStandaloneClass"/>
+      </field>
+    </record>
+    <record name="HubWindowPrivate"
+            c:type="AnacondaHubWindowPrivate"
+            disguised="1">
+    </record>
+    <class name="LayoutIndicator"
+           c:symbol-prefix="layout_indicator"
+           c:type="AnacondaLayoutIndicator"
+           parent="Gtk.EventBox"
+           glib:type-name="AnacondaLayoutIndicator"
+           glib:get-type="anaconda_layout_indicator_get_type"
+           glib:type-struct="LayoutIndicatorClass">
+      <doc xml:space="preserve">The AnacondaLayoutIndicator struct contains only private fields and should
+not be directly accessed.</doc>
+      <implements name="Atk.ImplementorIface"/>
+      <implements name="Gtk.Buildable"/>
+      <constructor name="new" c:identifier="anaconda_layout_indicator_new">
+        <doc xml:space="preserve">Creates a new #AnacondaLayoutIndicator, which is an indicator of the
+currently activated X layout. When the indicator is clicked, it activates
+the next layout in the list of configured layouts.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">A new #AnacondaLayoutIndicator.</doc>
+          <type name="Gtk.Widget" c:type="GtkWidget*"/>
+        </return-value>
+      </constructor>
+      <method name="get_current_layout"
+              c:identifier="anaconda_layout_indicator_get_current_layout"
+              version="1.0">
+        <return-value transfer-ownership="full">
+          <doc xml:space="preserve">the currently activated X layout.</doc>
+          <type name="utf8" c:type="gchar*"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="indicator" transfer-ownership="none">
+            <doc xml:space="preserve">a #AnacondaLayoutIndicator</doc>
+            <type name="LayoutIndicator" c:type="AnacondaLayoutIndicator*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_label_width"
+              c:identifier="anaconda_layout_indicator_get_label_width"
+              version="1.0">
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">the current width of the layout label in number of chars</doc>
+          <type name="guint" c:type="guint"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="indicator" transfer-ownership="none">
+            <doc xml:space="preserve">a #AnacondaLayoutIndicator</doc>
+            <type name="LayoutIndicator" c:type="AnacondaLayoutIndicator*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="retranslate"
+              c:identifier="anaconda_layout_indicator_retranslate"
+              version="1.0">
+        <doc xml:space="preserve">Reload translations for this widget as needed.  Generally, this is not
+needed.  However when changing the language during installation, we need to
+be able to make sure the screen gets retranslated.  This function must be
+called after the LANG environment variable, locale and gettext magic are set.</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="indicator" transfer-ownership="none">
+            <doc xml:space="preserve">a #AnacondaLayoutIndicator</doc>
+            <type name="LayoutIndicator" c:type="AnacondaLayoutIndicator*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="set_label_width"
+              c:identifier="anaconda_layout_indicator_set_label_width"
+              version="1.0">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="indicator" transfer-ownership="none">
+            <doc xml:space="preserve">a #AnacondaLayoutIndicator</doc>
+            <type name="LayoutIndicator" c:type="AnacondaLayoutIndicator*"/>
+          </instance-parameter>
+          <parameter name="new_width" transfer-ownership="none">
+            <doc xml:space="preserve">a new requested width of the layout label in number of chars</doc>
+            <type name="guint" c:type="guint"/>
+          </parameter>
+        </parameters>
+      </method>
+      <property name="label-width"
+                version="1.0"
+                writable="1"
+                transfer-ownership="none">
+        <doc xml:space="preserve">Width of the label showing the current layout in number of characters.</doc>
+        <type name="guint" c:type="guint"/>
+      </property>
+      <property name="layout" version="1.0" transfer-ownership="none">
+        <doc xml:space="preserve">The #AnacondaLayoutIndicator:layout is the currently activated X layout.</doc>
+        <type name="utf8" c:type="gchar*"/>
+      </property>
+      <field name="parent" readable="0" private="1">
+        <type name="Gtk.EventBox" c:type="GtkEventBox"/>
+      </field>
+      <field name="priv" readable="0" private="1">
+        <type name="LayoutIndicatorPrivate"
+              c:type="AnacondaLayoutIndicatorPrivate*"/>
+      </field>
+    </class>
+    <record name="LayoutIndicatorClass"
+            c:type="AnacondaLayoutIndicatorClass"
+            glib:is-gtype-struct-for="LayoutIndicator">
+      <field name="parent_class">
+        <doc xml:space="preserve">The object class structure needs to be the first element in
+               the widget class structure in order for the class mechanism
+               to work correctly.  This allows an AnacondaLayoutIndicatorClass
+               pointer to be cast to a #GtkEventBox pointer.</doc>
+        <type name="Gtk.EventBoxClass" c:type="GtkEventBoxClass"/>
+      </field>
+      <field name="engine">
+        <doc xml:space="preserve">A singleton XklEngine instance that is used by all instances of
+         LayoutIndicator.</doc>
+        <type name="Xkl.Engine" c:type="XklEngine*"/>
+      </field>
+    </record>
+    <record name="LayoutIndicatorPrivate"
+            c:type="AnacondaLayoutIndicatorPrivate"
+            disguised="1">
+    </record>
+    <class name="MountpointSelector"
+           c:symbol-prefix="mountpoint_selector"
+           c:type="AnacondaMountpointSelector"
+           parent="Gtk.EventBox"
+           glib:type-name="AnacondaMountpointSelector"
+           glib:get-type="anaconda_mountpoint_selector_get_type"
+           glib:type-struct="MountpointSelectorClass">
+      <doc xml:space="preserve">The AnacondaMountpointSelector struct contains only private fields and should
+not be directly accessed.</doc>
+      <implements name="Atk.ImplementorIface"/>
+      <implements name="Gtk.Buildable"/>
+      <constructor name="new" c:identifier="anaconda_mountpoint_selector_new">
+        <doc xml:space="preserve">Creates a new #AnacondaMountpointSelector, which is a selectable display for a
+single mountpoint.  Many mountpoints may be put together into a list, displaying
+all configured filesystems at once.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">A new #AnacondaMountpointSelector.</doc>
+          <type name="Gtk.Widget" c:type="GtkWidget*"/>
+        </return-value>
+      </constructor>
+      <method name="get_chosen"
+              c:identifier="anaconda_mountpoint_selector_get_chosen"
+              version="1.0">
+        <doc xml:space="preserve">Returns whether or not this mountpoint has been chosen by the user.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">Whether @widget has been chosen.</doc>
+          <type name="gboolean" c:type="gboolean"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="widget" transfer-ownership="none">
+            <doc xml:space="preserve">a #AnacondaMountpointSelector</doc>
+            <type name="MountpointSelector"
+                  c:type="AnacondaMountpointSelector*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_page"
+              c:identifier="anaconda_mountpoint_selector_get_page"
+              version="3.4">
+        <doc xml:space="preserve">Return pointer to Page where this #AnacondaMountpointSelector is contained.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">Pointer to GtkWidget page or #NONE.</doc>
+          <type name="Gtk.Widget" c:type="GtkWidget*"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="widget" transfer-ownership="none">
+            <doc xml:space="preserve">a #AnacondaMountpointSelector</doc>
+            <type name="MountpointSelector"
+                  c:type="AnacondaMountpointSelector*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="set_chosen"
+              c:identifier="anaconda_mountpoint_selector_set_chosen"
+              version="1.0">
+        <doc xml:space="preserve">Specifies whether the mountpoint shown by this selector has been chosen by
+the user.  If so, a special background will be set as a visual indicator.</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="widget" transfer-ownership="none">
+            <doc xml:space="preserve">a #AnacondaMountpointSelector</doc>
+            <type name="MountpointSelector"
+                  c:type="AnacondaMountpointSelector*"/>
+          </instance-parameter>
+          <parameter name="is_chosen" transfer-ownership="none">
+            <doc xml:space="preserve">%TRUE if this mountpoint is chosen.</doc>
+            <type name="gboolean" c:type="gboolean"/>
+          </parameter>
+        </parameters>
+      </method>
+      <method name="set_page"
+              c:identifier="anaconda_mountpoint_selector_set_page"
+              version="3.4">
+        <doc xml:space="preserve">Set a pointer to Page where this #AnacondaMountpointSelector is contained.</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="widget" transfer-ownership="none">
+            <doc xml:space="preserve">a #AnacondaMountpointSelector</doc>
+            <type name="MountpointSelector"
+                  c:type="AnacondaMountpointSelector*"/>
+          </instance-parameter>
+          <parameter name="parent_page" transfer-ownership="none">
+            <doc xml:space="preserve">Page object which owns this #AnacondaMountpointSelector</doc>
+            <type name="Gtk.Widget" c:type="GtkWidget*"/>
+          </parameter>
+        </parameters>
+      </method>
+      <property name="mountpoint"
+                version="1.0"
+                writable="1"
+                transfer-ownership="none">
+        <doc xml:space="preserve">The #AnacondaMountpointSelector:mountpoint string is the primary text displayed for this widget.
+It shows where on the filesystem this device is mounted.</doc>
+        <type name="utf8" c:type="gchar*"/>
+      </property>
+      <property name="name"
+                version="1.0"
+                writable="1"
+                transfer-ownership="none">
+        <doc xml:space="preserve">The #AnacondaMountpointSelector:name string is the secondary text displayed for this widget.  It is
+commonly going to be the name of the device node containing this
+mountpoint.</doc>
+        <type name="utf8" c:type="gchar*"/>
+      </property>
+      <property name="show-arrow"
+                version="3.4"
+                writable="1"
+                transfer-ownership="none">
+        <doc xml:space="preserve">The #AnacondaMountpointSelector:show-arrow boolean is used when arrow on the left should
+or shouldn't be visible.</doc>
+        <type name="gboolean" c:type="gboolean"/>
+      </property>
+      <property name="size"
+                version="1.0"
+                writable="1"
+                transfer-ownership="none">
+        <doc xml:space="preserve">The #AnacondaMountpointSelector:size string is the size of the mountpoint, including whatever units
+it is measured in.</doc>
+        <type name="utf8" c:type="gchar*"/>
+      </property>
+      <field name="parent">
+        <type name="Gtk.EventBox" c:type="GtkEventBox"/>
+      </field>
+      <field name="priv" readable="0" private="1">
+        <type name="MountpointSelectorPrivate"
+              c:type="AnacondaMountpointSelectorPrivate*"/>
+      </field>
+      <glib:signal name="chosen-changed"
+                   when="last"
+                   no-recurse="1"
+                   no-hooks="1"
+                   version="3.4">
+        <doc xml:space="preserve">The #AnacondaMountpointSelector:chosen-changed signals when set_chosen is called.</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+      </glib:signal>
+    </class>
+    <record name="MountpointSelectorClass"
+            c:type="AnacondaMountpointSelectorClass"
+            glib:is-gtype-struct-for="MountpointSelector">
+      <field name="parent_class">
+        <doc xml:space="preserve">The object class structure needs to be the first element in
+               the widget class structure in order for the class mechanism
+               to work correctly.  This allows an AnacondaMountpointSelectorClass
+               pointer to be cast to a #GtkEventBox pointer.</doc>
+        <type name="Gtk.EventBoxClass" c:type="GtkEventBoxClass"/>
+      </field>
+    </record>
+    <record name="MountpointSelectorPrivate"
+            c:type="AnacondaMountpointSelectorPrivate"
+            disguised="1">
+    </record>
+    <constant name="RESOURCE_PATH"
+              value="/org/fedoraproject/anaconda/widgets/"
+              c:type="ANACONDA_RESOURCE_PATH">
+      <type name="utf8" c:type="gchar*"/>
+    </constant>
+    <class name="SpokeSelector"
+           c:symbol-prefix="spoke_selector"
+           c:type="AnacondaSpokeSelector"
+           parent="Gtk.EventBox"
+           glib:type-name="AnacondaSpokeSelector"
+           glib:get-type="anaconda_spoke_selector_get_type"
+           glib:type-struct="SpokeSelectorClass">
+      <doc xml:space="preserve">The AnacondaSpokeSelector struct contains only private fields and should
+not be directly accessed.</doc>
+      <implements name="Atk.ImplementorIface"/>
+      <implements name="Gtk.Buildable"/>
+      <constructor name="new" c:identifier="anaconda_spoke_selector_new">
+        <doc xml:space="preserve">Creates a new #AnacondaSpokeSelector, which is a selectable display for a
+single spoke of an Anaconda hub.  Many spokes may be put together into a
+grid, displaying everything that a user needs to do in one place.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">A new #AnacondaSpokeSelector.</doc>
+          <type name="Gtk.Widget" c:type="GtkWidget*"/>
+        </return-value>
+      </constructor>
+      <method name="get_incomplete"
+              c:identifier="anaconda_spoke_selector_get_incomplete"
+              version="1.0">
+        <doc xml:space="preserve">Returns whether or not this spoke has been completed.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">Whether @spoke has been completed by the user.</doc>
+          <type name="gboolean" c:type="gboolean"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="spoke" transfer-ownership="none">
+            <doc xml:space="preserve">a #AnacondaSpokeSelector</doc>
+            <type name="SpokeSelector" c:type="AnacondaSpokeSelector*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="set_incomplete"
+              c:identifier="anaconda_spoke_selector_set_incomplete"
+              version="1.0">
+        <doc xml:space="preserve">Specifies whether this spoke must still be visited by the user.  If so, this
+means anaconda doesn't have enough information to continue and the user must
+take some action.  A warning icon will be displayed alongside the spoke's
+icon, and the continue button will be disabled.</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="spoke" transfer-ownership="none">
+            <doc xml:space="preserve">a #AnacondaSpokeSelector</doc>
+            <type name="SpokeSelector" c:type="AnacondaSpokeSelector*"/>
+          </instance-parameter>
+          <parameter name="is_incomplete" transfer-ownership="none">
+            <doc xml:space="preserve">%TRUE if this spoke still needs to be visited.</doc>
+            <type name="gboolean" c:type="gboolean"/>
+          </parameter>
+        </parameters>
+      </method>
+      <property name="icon"
+                version="1.0"
+                writable="1"
+                transfer-ownership="none">
+        <doc xml:space="preserve">The #AnacondaSpokeSelector:icon string is the standard icon name for an icon to display
+beside this spoke's :title.  It is strongly suggested that one of the
+"-symbolic" icons be used, as that is consistent with the style we
+are going for.</doc>
+        <type name="utf8" c:type="gchar*"/>
+      </property>
+      <property name="status"
+                version="1.0"
+                writable="1"
+                transfer-ownership="none">
+        <doc xml:space="preserve">The #AnacondaSpokeSelector:status string is text displayed underneath
+the spoke's #AnacondaSpokeSelector:title and also beside the
+#AnacondaSpokeSelector:icon.  This text very briefly describes what has
+been selected on the spoke associated with this selector.  For instance,
+it might be set up to "English" for a language-related spoke.  Special
+formatting will be applied to error status text for incomplete spokes.</doc>
+        <type name="utf8" c:type="gchar*"/>
+      </property>
+      <property name="title"
+                version="1.0"
+                writable="1"
+                transfer-ownership="none">
+        <doc xml:space="preserve">The :title of this selector, which will be displayed large and bold
+beside the :icon.  The title string should contain a keyboard mnemonic
+(a letter preceeded by an underscore), in which case this will be the
+keystroke that can be used to focus this selector.</doc>
+        <type name="utf8" c:type="gchar*"/>
+      </property>
+      <field name="parent">
+        <type name="Gtk.EventBox" c:type="GtkEventBox"/>
+      </field>
+      <field name="priv" readable="0" private="1">
+        <type name="SpokeSelectorPrivate"
+              c:type="AnacondaSpokeSelectorPrivate*"/>
+      </field>
+    </class>
+    <record name="SpokeSelectorClass"
+            c:type="AnacondaSpokeSelectorClass"
+            glib:is-gtype-struct-for="SpokeSelector">
+      <field name="parent_class">
+        <doc xml:space="preserve">The object class structure needs to be the first element in
+               the widget class structure in order for the class mechanism
+               to work correctly.  This allows an AnacondaSpokeSelectorClass
+               pointer to be cast to a #GtkEventBox pointer.</doc>
+        <type name="Gtk.EventBoxClass" c:type="GtkEventBoxClass"/>
+      </field>
+    </record>
+    <record name="SpokeSelectorPrivate"
+            c:type="AnacondaSpokeSelectorPrivate"
+            disguised="1">
+    </record>
+    <class name="SpokeWindow"
+           c:symbol-prefix="spoke_window"
+           c:type="AnacondaSpokeWindow"
+           parent="BaseWindow"
+           glib:type-name="AnacondaSpokeWindow"
+           glib:get-type="anaconda_spoke_window_get_type"
+           glib:type-struct="SpokeWindowClass">
+      <doc xml:space="preserve">The AnacondaSpokeWindow struct contains only private fields and should not
+be directly accessed.</doc>
+      <implements name="Atk.ImplementorIface"/>
+      <implements name="Gtk.Buildable"/>
+      <constructor name="new" c:identifier="anaconda_spoke_window_new">
+        <doc xml:space="preserve">Creates a new #AnacondaSpokeWindow, which is a window designed for
+displaying a single spoke, such as the keyboard or network configuration
+screens.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">A new #AnacondaSpokeWindow.</doc>
+          <type name="Gtk.Widget" c:type="GtkWidget*"/>
+        </return-value>
+      </constructor>
+      <virtual-method name="button_clicked">
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="window" transfer-ownership="none">
+            <type name="SpokeWindow" c:type="AnacondaSpokeWindow*"/>
+          </instance-parameter>
+        </parameters>
+      </virtual-method>
+      <field name="parent">
+        <type name="BaseWindow" c:type="AnacondaBaseWindow"/>
+      </field>
+      <field name="priv" readable="0" private="1">
+        <type name="SpokeWindowPrivate" c:type="AnacondaSpokeWindowPrivate*"/>
+      </field>
+      <glib:signal name="button-clicked" when="first" action="1" version="1.0">
+        <doc xml:space="preserve">Emitted when the button in the upper left corner has been activated
+(pressed and released).  This is commonly the button that takes the user
+back to the hub, but could do other things.  Note that we do not want
+to trap people in spokes, so there should always be a way back to the
+hub via this signal, even if it involves canceling some operation or
+resetting things.</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+      </glib:signal>
+    </class>
+    <record name="SpokeWindowClass"
+            c:type="AnacondaSpokeWindowClass"
+            glib:is-gtype-struct-for="SpokeWindow">
+      <field name="parent_class">
+        <doc xml:space="preserve">The object class structure needs to be the first element in
+               the widget class structure in order for the class mechanism
+               to work correctly.  This allows an AnacondaSpokeWindowClass
+               pointer to be cast to an #AnacondaBaseWindow pointer.</doc>
+        <type name="BaseWindowClass" c:type="AnacondaBaseWindowClass"/>
+      </field>
+      <field name="button_clicked">
+        <callback name="button_clicked">
+          <return-value transfer-ownership="none">
+            <type name="none" c:type="void"/>
+          </return-value>
+          <parameters>
+            <parameter name="window" transfer-ownership="none">
+              <type name="SpokeWindow" c:type="AnacondaSpokeWindow*"/>
+            </parameter>
+          </parameters>
+        </callback>
+      </field>
+    </record>
+    <record name="SpokeWindowPrivate"
+            c:type="AnacondaSpokeWindowPrivate"
+            disguised="1">
+    </record>
+    <class name="StandaloneWindow"
+           c:symbol-prefix="standalone_window"
+           c:type="AnacondaStandaloneWindow"
+           parent="BaseStandalone"
+           glib:type-name="AnacondaStandaloneWindow"
+           glib:get-type="anaconda_standalone_window_get_type"
+           glib:type-struct="StandaloneWindowClass">
+      <doc xml:space="preserve">The AnacondaStandaloneWindow struct contains only private fields and should not
+be directly accessed.</doc>
+      <implements name="Atk.ImplementorIface"/>
+      <implements name="Gtk.Buildable"/>
+      <constructor name="new" c:identifier="anaconda_standalone_window_new">
+        <doc xml:space="preserve">Creates a new #AnacondaStandaloneWindow, which is a window designed for
+displaying a standalone spoke, such as the welcome screen or network
+configuration.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:space="preserve">A new #AnacondaStandaloneWindow.</doc>
+          <type name="Gtk.Widget" c:type="GtkWidget*"/>
+        </return-value>
+      </constructor>
+      <method name="retranslate"
+              c:identifier="anaconda_standalone_window_retranslate"
+              version="1.0">
+        <doc xml:space="preserve">Reload translations for this widget as needed.  Generally, this is not
+needed.  However when changing the language during installation, we need
+to be able to make sure the screen gets retranslated.  This function is
+kind of ugly but avoids having to destroy and reload the screen.</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="win" transfer-ownership="none">
+            <doc xml:space="preserve">a #AnacondaStandaloneWindow</doc>
+            <type name="StandaloneWindow" c:type="AnacondaStandaloneWindow*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <property name="continue-button" transfer-ownership="none">
+        <type name="Gtk.Button"/>
+      </property>
+      <property name="quit-button" transfer-ownership="none">
+        <type name="Gtk.Button"/>
+      </property>
+      <field name="parent">
+        <type name="BaseStandalone" c:type="AnacondaBaseStandalone"/>
+      </field>
+      <field name="priv" readable="0" private="1">
+        <type name="StandaloneWindowPrivate"
+              c:type="AnacondaStandaloneWindowPrivate*"/>
+      </field>
+    </class>
+    <record name="StandaloneWindowClass"
+            c:type="AnacondaStandaloneWindowClass"
+            glib:is-gtype-struct-for="StandaloneWindow">
+      <field name="parent_class">
+        <doc xml:space="preserve">The object class structure needs to be the first element in
+               the widget class structure in order for the class mechanism
+               to work correctly.  This allows an AnacondaStandaloneWindowClass
+               pointer to be cast to an #AnacondaBaseWindow pointer.</doc>
+        <type name="BaseStandaloneClass" c:type="AnacondaBaseStandaloneClass"/>
+      </field>
+    </record>
+    <record name="StandaloneWindowPrivate"
+            c:type="AnacondaStandaloneWindowPrivate"
+            disguised="1">
+    </record>
+    <function name="apply_language"
+              c:identifier="anaconda_apply_language"
+              version="3.4">
+      <doc xml:space="preserve">Apply a Pango language attribute to a label.
+
+For some formatting decisions, in particular the font choice, the language
+of the text being rendered needs to be known. This is especially the case
+for the Chinese, Japanese and Korean translations, since Unicode uses a
+single codepoint for the CJK characters across languages, even when the
+particular language may render the character very differently. For example,
+U+76F4 (直) shows up a good bit in the translations, it is rendered differently
+in Chinese and Japanese, and it is considered unreadable between the two.
+
+This function applies a #PangoAttrLanguage attribute to the label so that
+the underlying renderer can do the right thing.</doc>
+      <return-value transfer-ownership="none">
+        <type name="none" c:type="void"/>
+      </return-value>
+      <parameters>
+        <parameter name="label" transfer-ownership="none">
+          <doc xml:space="preserve">The widget to which to apply the language</doc>
+          <type name="Gtk.Label" c:type="GtkLabel*"/>
+        </parameter>
+        <parameter name="language" transfer-ownership="none">
+          <doc xml:space="preserve">The language to apply to the widget</doc>
+          <type name="utf8" c:type="const gchar*"/>
+        </parameter>
+      </parameters>
+    </function>
+    <function name="widget_apply_stylesheet"
+              c:identifier="anaconda_widget_apply_stylesheet">
+      <doc xml:space="preserve">Apply CSS data to a widget's #GtkStyleContext. The data will not affect any
+other widgets, including children of this widget.
+
+The CSS data lives in the resource bundle, the advantage of which is that
+the stylesheet is just a normal stylesheet in the source tree with normal
+syntax highlighting and no weird C string stuff or anything. The
+disadvantage is that the stylesheet can only be applied to one widget at a
+time so there's a bunch of tiny little stylesheets in the resources
+directory, but that's the world we live in.
+
+The stylesheet should live in the resources/ directory in the source tree
+and will be fetched as /org/fedoraproject/anaconda/widgets/&lt;name&gt;.css.
+
+The stylesheet is added to the style context at one less than
+#GTK_STYLE_PROVIDER_PRIORITY_APPLICATION so that the style will not
+overridden by a sloppy wildcard in a theme somewhere, but it will be
+overridden by the application-level stylesheet, which may include
+product-specific customizations.</doc>
+      <return-value transfer-ownership="none">
+        <type name="none" c:type="void"/>
+      </return-value>
+      <parameters>
+        <parameter name="widget" transfer-ownership="none">
+          <doc xml:space="preserve">The widget to apply the style data to.</doc>
+          <type name="Gtk.Widget" c:type="GtkWidget*"/>
+        </parameter>
+        <parameter name="name" transfer-ownership="none">
+          <doc xml:space="preserve">The name of the widget's stylesheet.</doc>
+          <type name="utf8" c:type="const gchar*"/>
+        </parameter>
+      </parameters>
+    </function>
+  </namespace>
+</repository>

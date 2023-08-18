@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Welcome to Rocky Linux
+Exec=/usr/share/anaconda/gnome/rhel-welcome
+Terminal=false
+Type=Application
+StartupNotify=true
+NoDisplay=true
+X-GNOME-Autostart-enabled=true

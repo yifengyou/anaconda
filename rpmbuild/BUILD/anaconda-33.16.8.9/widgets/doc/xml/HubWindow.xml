@@ -1,0 +1,205 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+               "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd" [
+<!ENTITY % local.common.attrib "xmlns:xi  CDATA  #FIXED 'http://www.w3.org/2003/XInclude'">
+]>
+<refentry id="AnacondaHubWindow">
+<refmeta>
+<refentrytitle role="top_of_page" id="AnacondaHubWindow.top_of_page">AnacondaHubWindow</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>ANACONDAWIDGETS Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>AnacondaHubWindow</refname>
+<refpurpose>Window for displaying a Hub</refpurpose>
+</refnamediv>
+
+<refsect1 id="AnacondaHubWindow.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_return" colwidth="150px"/>
+<colspec colname="functions_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="GtkWidget"><returnvalue>GtkWidget</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="anaconda-hub-window-new">anaconda_hub_window_new</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="GtkWidget"><returnvalue>GtkWidget</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="anaconda-hub-window-get-spoke-area">anaconda_hub_window_get_spoke_area</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="AnacondaHubWindow.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="name" colwidth="150px"/>
+<colspec colname="description"/>
+<tbody>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="AnacondaHubWindow-struct">AnacondaHubWindow</link></entry></row>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="AnacondaHubWindowClass">AnacondaHubWindowClass</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="AnacondaHubWindow.object-hierarchy" role="object_hierarchy">
+<title role="object_hierarchy.title">Object Hierarchy</title>
+<screen>    <link linkend="GObject">GObject</link>
+    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GInitiallyUnowned">GInitiallyUnowned</link>
+        <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GtkWidget">GtkWidget</link>
+            <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GtkContainer">GtkContainer</link>
+                <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GtkBin">GtkBin</link>
+                    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="AnacondaBaseWindow">AnacondaBaseWindow</link>
+                        <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="AnacondaBaseStandalone">AnacondaBaseStandalone</link>
+                            <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> AnacondaHubWindow
+</screen>
+</refsect1>
+<refsect1 id="AnacondaHubWindow.implemented-interfaces" role="impl_interfaces">
+<title role="impl_interfaces.title">Implemented Interfaces</title>
+<para>
+AnacondaHubWindow implements
+ <link linkend="AtkImplementorIface">AtkImplementorIface</link> and  <link linkend="GtkBuildable">GtkBuildable</link>.</para>
+
+</refsect1>
+
+
+<refsect1 id="AnacondaHubWindow.description" role="desc">
+<title role="desc.title">Description</title>
+<para>A <link linkend="AnacondaHubWindow"><type>AnacondaHubWindow</type></link> is a widget that displays a hub on the screen.  A Hub
+allows selection of multiple configuration spokes from a single interface,
+as well as a place to display current configuration selections.</para>
+<para>The AnacondaHubWindow consists of three areas:</para>
+<itemizedlist>
+<listitem>
+<para>A navigation area in the top of the screen, inherited from <link linkend="AnacondaBaseWindow"><type>AnacondaBaseWindow</type></link>.</para>
+</listitem>
+<listitem>
+<para>A selection area in the middle of the screen, taking up a majority of the space.
+This is where spokes will be displayed and the user can decide what to do.</para>
+</listitem>
+<listitem>
+<para>An action area on the bottom of the screen.  This area is different for
+different kinds of hubs.  It may have buttons, or it may have progress
+information.</para>
+</listitem>
+</itemizedlist>
+<refsect2><title>AnacondaHubWindow as GtkBuildable</title><para>The AnacondaHubWindow implementation of the <link linkend="GtkBuildable"><type>GtkBuildable</type></link> interface exposes
+the <parameter>nav_area</parameter>
+, <parameter>action_area</parameter>
+ and <parameter>scrolled_window</parameter>
+ as internal children with the names
+"nav_area", "action_area" and "scrolled_window".  action_area, in this case,
+is largely there to give a box to contain both the scrolled_window and a
+<link linkend="GtkButtonBox"><type>GtkButtonBox</type></link>.</para>
+<para>A AnacondaHubWindow UI definition fragment:</para>
+<informalexample><programlisting role="example"><![CDATA[
+<object class="AnacondaHubWindow" id="hub1">
+    <child internal-child="main_box">
+        <object class="GtkBox" id="main_box1">
+            <child internal-child="nav_box">
+                <object class="GtkEventBox" id="nav_box1">
+                    <child internal-child="nav_area">
+                        <object class="GtkGrid" id="nav_area1">
+                            <child>...</child>
+                            <child>...</child>
+                        </object>
+                    </child>
+                </object>
+            </child>
+            <child internal-child="alignment">
+                <object class="GtkAlignment" id="alignment1">
+                    <child internal-child="action_area">
+                        <object class="GtkBox" id="action_area1">
+                            <child internal-child="scrolled_window">
+                                <object class="GtkScrolledWindow" id="scrolled_window1">
+                                    <child>...</child>
+                                </object>
+                            </child>
+                        </object>
+                    </child>
+                </object>
+            </child>
+        </object>
+    <child>
+        <object class="GtkButtonBox" id="buttonbox1">
+            <child>...</child>
+        </object>
+    </child>
+</object>
+]]></programlisting></informalexample>
+<para></para>
+</refsect2>
+
+</refsect1>
+<refsect1 id="AnacondaHubWindow.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="anaconda-hub-window-new" role="function">
+<title>anaconda_hub_window_new&#160;()</title>
+<indexterm zone="anaconda-hub-window-new"><primary>anaconda_hub_window_new</primary></indexterm>
+<programlisting language="C"><link linkend="GtkWidget"><returnvalue>GtkWidget</returnvalue></link>&#160;*
+anaconda_hub_window_new ();</programlisting>
+<para>Creates a new <link linkend="AnacondaHubWindow"><type>AnacondaHubWindow</type></link>, which is a window designed for displaying
+multiple spokes in one location.</para>
+<refsect3 id="anaconda-hub-window-new.returns" role="returns">
+<title>Returns</title>
+<para> A new <link linkend="AnacondaHubWindow"><type>AnacondaHubWindow</type></link>.</para>
+</refsect3></refsect2>
+<refsect2 id="anaconda-hub-window-get-spoke-area" role="function" condition="since:1.0">
+<title>anaconda_hub_window_get_spoke_area&#160;()</title>
+<indexterm zone="anaconda-hub-window-get-spoke-area" role="1.0"><primary>anaconda_hub_window_get_spoke_area</primary></indexterm>
+<programlisting language="C"><link linkend="GtkWidget"><returnvalue>GtkWidget</returnvalue></link>&#160;*
+anaconda_hub_window_get_spoke_area (<parameter><link linkend="AnacondaHubWindow"><type>AnacondaHubWindow</type></link> *win</parameter>);</programlisting>
+<para>Returns the scrolled window of <parameter>win</parameter>
+ where spokes may be displayed</para>
+<refsect3 id="anaconda-hub-window-get-spoke-area.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>win</para></entry>
+<entry role="parameter_description"><para>a <link linkend="AnacondaHubWindow"><type>AnacondaHubWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="anaconda-hub-window-get-spoke-area.returns" role="returns">
+<title>Returns</title>
+<para>The spoke area. </para>
+<para><emphasis role="annotation">[<acronym>transfer none</acronym>]</emphasis></para>
+</refsect3><para role="since">Since: <link linkend="api-index-1.0">1.0</link></para></refsect2>
+
+</refsect1>
+<refsect1 id="AnacondaHubWindow.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="AnacondaHubWindow-struct" role="struct">
+<title>struct AnacondaHubWindow</title>
+<indexterm zone="AnacondaHubWindow-struct"><primary>AnacondaHubWindow</primary></indexterm>
+<programlisting language="C">struct AnacondaHubWindow;</programlisting>
+<para>The AnacondaHubWindow struct contains only private fields and should not
+be directly accessed.</para>
+</refsect2>
+<refsect2 id="AnacondaHubWindowClass" role="struct">
+<title>struct AnacondaHubWindowClass</title>
+<indexterm zone="AnacondaHubWindowClass"><primary>AnacondaHubWindowClass</primary></indexterm>
+<programlisting language="C">struct AnacondaHubWindowClass {
+    AnacondaBaseStandaloneClass parent_class;
+};
+</programlisting>
+<refsect3 id="AnacondaHubWindowClass.members" role="struct_members">
+<title>Members</title>
+<informaltable role="struct_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="struct_members_name" colwidth="300px"/>
+<colspec colname="struct_members_description"/>
+<colspec colname="struct_members_annotations" colwidth="200px"/>
+<tbody>
+</tbody></tgroup></informaltable>
+</refsect3>
+</refsect2>
+
+</refsect1>
+
+</refentry>

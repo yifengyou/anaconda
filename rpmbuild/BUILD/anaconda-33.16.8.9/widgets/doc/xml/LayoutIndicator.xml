@@ -1,0 +1,278 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+               "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd" [
+<!ENTITY % local.common.attrib "xmlns:xi  CDATA  #FIXED 'http://www.w3.org/2003/XInclude'">
+]>
+<refentry id="AnacondaLayoutIndicator">
+<refmeta>
+<refentrytitle role="top_of_page" id="AnacondaLayoutIndicator.top_of_page">AnacondaLayoutIndicator</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>ANACONDAWIDGETS Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>AnacondaLayoutIndicator</refname>
+<refpurpose>An indicator of currently activated X layout</refpurpose>
+</refnamediv>
+
+<refsect1 id="AnacondaLayoutIndicator.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_return" colwidth="150px"/>
+<colspec colname="functions_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="GtkWidget"><returnvalue>GtkWidget</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="anaconda-layout-indicator-new">anaconda_layout_indicator_new</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gchar"><returnvalue>gchar</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="anaconda-layout-indicator-get-current-layout">anaconda_layout_indicator_get_current_layout</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="guint"><returnvalue>guint</returnvalue></link>
+</entry><entry role="function_name"><link linkend="anaconda-layout-indicator-get-label-width">anaconda_layout_indicator_get_label_width</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="anaconda-layout-indicator-set-label-width">anaconda_layout_indicator_set_label_width</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="anaconda-layout-indicator-retranslate">anaconda_layout_indicator_retranslate</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="AnacondaLayoutIndicator.properties" role="properties">
+<title role="properties.title">Properties</title>
+<informaltable frame="none">
+<tgroup cols="3">
+<colspec colname="properties_type" colwidth="150px"/>
+<colspec colname="properties_name" colwidth="300px"/>
+<colspec colname="properties_flags" colwidth="200px"/>
+<tbody>
+<row><entry role="property_type"><link linkend="guint"><type>guint</type></link></entry><entry role="property_name"><link linkend="AnacondaLayoutIndicator--label-width">label-width</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gchar"><type>gchar</type></link>&#160;*</entry><entry role="property_name"><link linkend="AnacondaLayoutIndicator--layout">layout</link></entry><entry role="property_flags">Read</entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="AnacondaLayoutIndicator.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="name" colwidth="150px"/>
+<colspec colname="description"/>
+<tbody>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="AnacondaLayoutIndicator-struct">AnacondaLayoutIndicator</link></entry></row>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="AnacondaLayoutIndicatorClass">AnacondaLayoutIndicatorClass</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="AnacondaLayoutIndicator.object-hierarchy" role="object_hierarchy">
+<title role="object_hierarchy.title">Object Hierarchy</title>
+<screen>    <link linkend="GObject">GObject</link>
+    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GInitiallyUnowned">GInitiallyUnowned</link>
+        <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GtkWidget">GtkWidget</link>
+            <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GtkContainer">GtkContainer</link>
+                <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GtkBin">GtkBin</link>
+                    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GtkEventBox">GtkEventBox</link>
+                        <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> AnacondaLayoutIndicator
+</screen>
+</refsect1>
+<refsect1 id="AnacondaLayoutIndicator.implemented-interfaces" role="impl_interfaces">
+<title role="impl_interfaces.title">Implemented Interfaces</title>
+<para>
+AnacondaLayoutIndicator implements
+ <link linkend="AtkImplementorIface">AtkImplementorIface</link> and  <link linkend="GtkBuildable">GtkBuildable</link>.</para>
+
+</refsect1>
+
+
+<refsect1 id="AnacondaLayoutIndicator.description" role="desc">
+<title role="desc.title">Description</title>
+<para>An <link linkend="AnacondaLayoutIndicator"><type>AnacondaLayoutIndicator</type></link> is a widget that can be used in any place where
+indication of currently activated X layout should be shown.</para>
+<para>An <link linkend="AnacondaLayoutIndicator"><type>AnacondaLayoutIndicator</type></link> is a subclass of a <link linkend="GtkEventBox"><type>GtkEventBox</type></link>.</para>
+<refsect2><title>CSS nodes</title><informalexample><programlisting role="example"><![CDATA[
+AnacondaLayoutIndicator
+├── #anaconda-layout-icon
+╰── #anaconda-layout-label
+]]></programlisting></informalexample>
+<para></para>
+<para>The internal widgets are accessible by name for the purposes of CSS
+selectors.</para>
+<itemizedlist>
+<listitem>
+<para>anaconda-layout-icon</para>
+<para>The keyboard icon indicating that this is a keyboard layout widget</para>
+</listitem>
+<listitem>
+<para>anaconda-layout-label</para>
+<para>A label describing the current layout</para>
+</listitem>
+</itemizedlist>
+</refsect2>
+
+</refsect1>
+<refsect1 id="AnacondaLayoutIndicator.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="anaconda-layout-indicator-new" role="function">
+<title>anaconda_layout_indicator_new&#160;()</title>
+<indexterm zone="anaconda-layout-indicator-new"><primary>anaconda_layout_indicator_new</primary></indexterm>
+<programlisting language="C"><link linkend="GtkWidget"><returnvalue>GtkWidget</returnvalue></link>&#160;*
+anaconda_layout_indicator_new ();</programlisting>
+<para>Creates a new <link linkend="AnacondaLayoutIndicator"><type>AnacondaLayoutIndicator</type></link>, which is an indicator of the
+currently activated X layout. When the indicator is clicked, it activates
+the next layout in the list of configured layouts.</para>
+<refsect3 id="anaconda-layout-indicator-new.returns" role="returns">
+<title>Returns</title>
+<para> A new <link linkend="AnacondaLayoutIndicator"><type>AnacondaLayoutIndicator</type></link>.</para>
+</refsect3></refsect2>
+<refsect2 id="anaconda-layout-indicator-get-current-layout" role="function" condition="since:1.0">
+<title>anaconda_layout_indicator_get_current_layout&#160;()</title>
+<indexterm zone="anaconda-layout-indicator-get-current-layout" role="1.0"><primary>anaconda_layout_indicator_get_current_layout</primary></indexterm>
+<programlisting language="C"><link linkend="gchar"><returnvalue>gchar</returnvalue></link>&#160;*
+anaconda_layout_indicator_get_current_layout
+                               (<parameter><link linkend="AnacondaLayoutIndicator"><type>AnacondaLayoutIndicator</type></link> *indicator</parameter>);</programlisting>
+<refsect3 id="anaconda-layout-indicator-get-current-layout.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>indicator</para></entry>
+<entry role="parameter_description"><para>a <link linkend="AnacondaLayoutIndicator"><type>AnacondaLayoutIndicator</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="anaconda-layout-indicator-get-current-layout.returns" role="returns">
+<title>Returns</title>
+<para>the currently activated X layout. </para>
+<para><emphasis role="annotation">[<acronym>transfer full</acronym>]</emphasis></para>
+</refsect3><para role="since">Since: <link linkend="api-index-1.0">1.0</link></para></refsect2>
+<refsect2 id="anaconda-layout-indicator-get-label-width" role="function" condition="since:1.0">
+<title>anaconda_layout_indicator_get_label_width&#160;()</title>
+<indexterm zone="anaconda-layout-indicator-get-label-width" role="1.0"><primary>anaconda_layout_indicator_get_label_width</primary></indexterm>
+<programlisting language="C"><link linkend="guint"><returnvalue>guint</returnvalue></link>
+anaconda_layout_indicator_get_label_width
+                               (<parameter><link linkend="AnacondaLayoutIndicator"><type>AnacondaLayoutIndicator</type></link> *indicator</parameter>);</programlisting>
+<refsect3 id="anaconda-layout-indicator-get-label-width.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>indicator</para></entry>
+<entry role="parameter_description"><para>a <link linkend="AnacondaLayoutIndicator"><type>AnacondaLayoutIndicator</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="anaconda-layout-indicator-get-label-width.returns" role="returns">
+<title>Returns</title>
+<para> the current width of the layout label in number of chars</para>
+</refsect3><para role="since">Since: <link linkend="api-index-1.0">1.0</link></para></refsect2>
+<refsect2 id="anaconda-layout-indicator-set-label-width" role="function" condition="since:1.0">
+<title>anaconda_layout_indicator_set_label_width&#160;()</title>
+<indexterm zone="anaconda-layout-indicator-set-label-width" role="1.0"><primary>anaconda_layout_indicator_set_label_width</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+anaconda_layout_indicator_set_label_width
+                               (<parameter><link linkend="AnacondaLayoutIndicator"><type>AnacondaLayoutIndicator</type></link> *indicator</parameter>,
+                                <parameter><link linkend="guint"><type>guint</type></link> new_width</parameter>);</programlisting>
+<refsect3 id="anaconda-layout-indicator-set-label-width.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>indicator</para></entry>
+<entry role="parameter_description"><para>a <link linkend="AnacondaLayoutIndicator"><type>AnacondaLayoutIndicator</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>new_width</para></entry>
+<entry role="parameter_description"><para>a new requested width of the layout label in number of chars</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><para role="since">Since: <link linkend="api-index-1.0">1.0</link></para></refsect2>
+<refsect2 id="anaconda-layout-indicator-retranslate" role="function" condition="since:1.0">
+<title>anaconda_layout_indicator_retranslate&#160;()</title>
+<indexterm zone="anaconda-layout-indicator-retranslate" role="1.0"><primary>anaconda_layout_indicator_retranslate</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+anaconda_layout_indicator_retranslate (<parameter><link linkend="AnacondaLayoutIndicator"><type>AnacondaLayoutIndicator</type></link> *indicator</parameter>);</programlisting>
+<para>Reload translations for this widget as needed.  Generally, this is not
+needed.  However when changing the language during installation, we need to
+be able to make sure the screen gets retranslated.  This function must be
+called after the LANG environment variable, locale and gettext magic are set.</para>
+<refsect3 id="anaconda-layout-indicator-retranslate.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>indicator</para></entry>
+<entry role="parameter_description"><para>a <link linkend="AnacondaLayoutIndicator"><type>AnacondaLayoutIndicator</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><para role="since">Since: <link linkend="api-index-1.0">1.0</link></para></refsect2>
+
+</refsect1>
+<refsect1 id="AnacondaLayoutIndicator.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="AnacondaLayoutIndicator-struct" role="struct">
+<title>struct AnacondaLayoutIndicator</title>
+<indexterm zone="AnacondaLayoutIndicator-struct"><primary>AnacondaLayoutIndicator</primary></indexterm>
+<programlisting language="C">struct AnacondaLayoutIndicator;</programlisting>
+<para>The AnacondaLayoutIndicator struct contains only private fields and should
+not be directly accessed.</para>
+</refsect2>
+<refsect2 id="AnacondaLayoutIndicatorClass" role="struct">
+<title>struct AnacondaLayoutIndicatorClass</title>
+<indexterm zone="AnacondaLayoutIndicatorClass"><primary>AnacondaLayoutIndicatorClass</primary></indexterm>
+<programlisting language="C">struct AnacondaLayoutIndicatorClass {
+    GtkEventBoxClass parent_class;
+
+    /* this has to be a class attribute, because XklEngine is a singleton that
+       should be used by all instances */
+    XklEngine *engine;
+};
+</programlisting>
+<refsect3 id="AnacondaLayoutIndicatorClass.members" role="struct_members">
+<title>Members</title>
+<informaltable role="struct_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="struct_members_name" colwidth="300px"/>
+<colspec colname="struct_members_description"/>
+<colspec colname="struct_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="member"><entry role="struct_member_name"><para><link linkend="XklEngine"><type>XklEngine</type></link>&#160;*<structfield id="AnacondaLayoutIndicatorClass.engine">engine</structfield>;</para></entry>
+<entry role="struct_member_description"><para>A singleton XklEngine instance that is used by all instances of
+LayoutIndicator.</para></entry>
+<entry role="struct_member_annotations"></entry>
+</row>
+</tbody></tgroup></informaltable>
+</refsect3>
+</refsect2>
+
+</refsect1>
+<refsect1 id="AnacondaLayoutIndicator.property-details" role="property_details">
+<title role="property_details.title">Property Details</title>
+<refsect2 id="AnacondaLayoutIndicator--label-width" role="property"><title>The <literal>“label-width”</literal> property</title>
+<indexterm zone="AnacondaLayoutIndicator--label-width" role="1.0"><primary>AnacondaLayoutIndicator:label-width</primary></indexterm>
+<programlisting>  “label-width”              <link linkend="guint"><type>guint</type></link></programlisting>
+<para>Width of the label showing the current layout in number of characters.</para>
+<para>Flags: Read / Write</para>
+<para>Allowed values: &lt;= 20</para>
+<para>Default value: 8</para>
+<para role="since">Since: <link linkend="api-index-1.0">1.0</link></para></refsect2>
+<refsect2 id="AnacondaLayoutIndicator--layout" role="property"><title>The <literal>“layout”</literal> property</title>
+<indexterm zone="AnacondaLayoutIndicator--layout" role="1.0"><primary>AnacondaLayoutIndicator:layout</primary></indexterm>
+<programlisting>  “layout”                   <link linkend="gchar"><type>gchar</type></link>&#160;*</programlisting>
+<para>The <link linkend="AnacondaLayoutIndicator--layout"><type>“layout”</type></link> is the currently activated X layout.</para>
+<para>Flags: Read</para>
+<para>Default value: "us"</para>
+<para role="since">Since: <link linkend="api-index-1.0">1.0</link></para></refsect2>
+
+</refsect1>
+
+</refentry>

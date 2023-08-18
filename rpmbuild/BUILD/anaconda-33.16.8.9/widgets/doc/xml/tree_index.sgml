@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE screen PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+               "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd" [
+<!ENTITY % local.common.attrib "xmlns:xi  CDATA  #FIXED 'http://www.w3.org/2003/XInclude'">
+]>
+<screen>
+    <link linkend="GObject">GObject</link>
+    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GInitiallyUnowned">GInitiallyUnowned</link>
+        <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GtkWidget">GtkWidget</link>
+            <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GtkContainer">GtkContainer</link>
+                <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GtkBin">GtkBin</link>
+                    <phrase role="lineart">&#9500;&#9472;&#9472;</phrase> <link linkend="AnacondaBaseWindow">AnacondaBaseWindow</link>
+                    <phrase role="lineart">&#9474;</phrase>   <phrase role="lineart">&#9500;&#9472;&#9472;</phrase> <link linkend="AnacondaBaseStandalone">AnacondaBaseStandalone</link>
+                    <phrase role="lineart">&#9474;</phrase>   <phrase role="lineart">&#9474;</phrase>   <phrase role="lineart">&#9500;&#9472;&#9472;</phrase> <link linkend="AnacondaHubWindow">AnacondaHubWindow</link>
+                    <phrase role="lineart">&#9474;</phrase>   <phrase role="lineart">&#9474;</phrase>   <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="AnacondaStandaloneWindow">AnacondaStandaloneWindow</link>
+                    <phrase role="lineart">&#9474;</phrase>   <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="AnacondaSpokeWindow">AnacondaSpokeWindow</link>
+                    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GtkEventBox">GtkEventBox</link>
+                        <phrase role="lineart">&#9500;&#9472;&#9472;</phrase> <link linkend="AnacondaDiskOverview">AnacondaDiskOverview</link>
+                        <phrase role="lineart">&#9500;&#9472;&#9472;</phrase> <link linkend="AnacondaLayoutIndicator">AnacondaLayoutIndicator</link>
+                        <phrase role="lineart">&#9500;&#9472;&#9472;</phrase> <link linkend="AnacondaMountpointSelector">AnacondaMountpointSelector</link>
+                        <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="AnacondaSpokeSelector">AnacondaSpokeSelector</link>
+</screen>

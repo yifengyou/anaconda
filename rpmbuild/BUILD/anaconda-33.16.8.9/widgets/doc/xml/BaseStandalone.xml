@@ -1,0 +1,319 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+               "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd" [
+<!ENTITY % local.common.attrib "xmlns:xi  CDATA  #FIXED 'http://www.w3.org/2003/XInclude'">
+]>
+<refentry id="AnacondaBaseStandalone">
+<refmeta>
+<refentrytitle role="top_of_page" id="AnacondaBaseStandalone.top_of_page">AnacondaBaseStandalone</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>ANACONDAWIDGETS Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>AnacondaBaseStandalone</refname>
+<refpurpose>Abstract base class for standalone Anaconda windows.</refpurpose>
+</refnamediv>
+
+<refsect1 id="AnacondaBaseStandalone.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_return" colwidth="150px"/>
+<colspec colname="functions_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="anaconda-base-standalone-get-may-continue">anaconda_base_standalone_get_may_continue</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="anaconda-base-standalone-set-may-continue">anaconda_base_standalone_set_may_continue</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="GtkButton"><returnvalue>GtkButton</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="anaconda-base-standalone-get-quit-button">anaconda_base_standalone_get_quit_button</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="GtkButton"><returnvalue>GtkButton</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="anaconda-base-standalone-get-continue-button">anaconda_base_standalone_get_continue_button</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="AnacondaBaseStandalone.properties" role="properties">
+<title role="properties.title">Properties</title>
+<informaltable frame="none">
+<tgroup cols="3">
+<colspec colname="properties_type" colwidth="150px"/>
+<colspec colname="properties_name" colwidth="300px"/>
+<colspec colname="properties_flags" colwidth="200px"/>
+<tbody>
+<row><entry role="property_type"><link linkend="GtkButton"><type>GtkButton</type></link>&#160;*</entry><entry role="property_name"><link linkend="AnacondaBaseStandalone--continue-button">continue-button</link></entry><entry role="property_flags">Read / Write / Construct</entry></row>
+<row><entry role="property_type"><link linkend="GtkButton"><type>GtkButton</type></link>&#160;*</entry><entry role="property_name"><link linkend="AnacondaBaseStandalone--quit-button">quit-button</link></entry><entry role="property_flags">Read / Write / Construct</entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="AnacondaBaseStandalone.signals" role="signal_proto">
+<title role="signal_proto.title">Signals</title>
+<informaltable frame="none">
+<tgroup cols="3">
+<colspec colname="signals_return" colwidth="150px"/>
+<colspec colname="signals_name" colwidth="300px"/>
+<colspec colname="signals_flags" colwidth="200px"/>
+<tbody>
+<row><entry role="signal_type"><link linkend="void"><returnvalue>void</returnvalue></link></entry><entry role="signal_name"><link linkend="AnacondaBaseStandalone-continue-clicked">continue-clicked</link></entry><entry role="signal_flags"><link linkend="G-SIGNAL-ACTION:CAPS">Action</link></entry></row>
+<row><entry role="signal_type"><link linkend="void"><returnvalue>void</returnvalue></link></entry><entry role="signal_name"><link linkend="AnacondaBaseStandalone-quit-clicked">quit-clicked</link></entry><entry role="signal_flags"><link linkend="G-SIGNAL-ACTION:CAPS">Action</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="AnacondaBaseStandalone.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="name" colwidth="150px"/>
+<colspec colname="description"/>
+<tbody>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="AnacondaBaseStandalone-struct">AnacondaBaseStandalone</link></entry></row>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="AnacondaBaseStandaloneClass">AnacondaBaseStandaloneClass</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="AnacondaBaseStandalone.object-hierarchy" role="object_hierarchy">
+<title role="object_hierarchy.title">Object Hierarchy</title>
+<screen>    <link linkend="GObject">GObject</link>
+    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GInitiallyUnowned">GInitiallyUnowned</link>
+        <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GtkWidget">GtkWidget</link>
+            <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GtkContainer">GtkContainer</link>
+                <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GtkBin">GtkBin</link>
+                    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="AnacondaBaseWindow">AnacondaBaseWindow</link>
+                        <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> AnacondaBaseStandalone
+                            <phrase role="lineart">&#9500;&#9472;&#9472;</phrase> <link linkend="AnacondaHubWindow">AnacondaHubWindow</link>
+                            <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="AnacondaStandaloneWindow">AnacondaStandaloneWindow</link>
+</screen>
+</refsect1>
+<refsect1 id="AnacondaBaseStandalone.implemented-interfaces" role="impl_interfaces">
+<title role="impl_interfaces.title">Implemented Interfaces</title>
+<para>
+AnacondaBaseStandalone implements
+ <link linkend="AtkImplementorIface">AtkImplementorIface</link> and  <link linkend="GtkBuildable">GtkBuildable</link>.</para>
+
+</refsect1>
+
+
+<refsect1 id="AnacondaBaseStandalone.description" role="desc">
+<title role="desc.title">Description</title>
+<para><link linkend="AnacondaBaseStandalone"><type>AnacondaBaseStandalone</type></link> is an abstract base class for standalone windows
+in Anaconda; i.e., windows that do not appear in or depend upon a hub.
+A <link linkend="AnacondaBaseStandalone"><type>AnacondaBaseStandalone</type></link> can continue to the next <link linkend="AnacondaBaseStandalone"><type>AnacondaBaseStandalone</type></link>
+or quit the installer.</para>
+
+</refsect1>
+<refsect1 id="AnacondaBaseStandalone.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="anaconda-base-standalone-get-may-continue" role="function" condition="since:3.0">
+<title>anaconda_base_standalone_get_may_continue&#160;()</title>
+<indexterm zone="anaconda-base-standalone-get-may-continue" role="3.0"><primary>anaconda_base_standalone_get_may_continue</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+anaconda_base_standalone_get_may_continue
+                               (<parameter><link linkend="AnacondaBaseStandalone"><type>AnacondaBaseStandalone</type></link> *win</parameter>);</programlisting>
+<refsect3 id="anaconda-base-standalone-get-may-continue.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>win</para></entry>
+<entry role="parameter_description"><para>a <link linkend="AnacondaBaseStandalone"><type>AnacondaBaseStandalone</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="anaconda-base-standalone-get-may-continue.returns" role="returns">
+<title>Returns</title>
+<para> Whether or not the continue button is sensitive (thus, whether the
+user may continue forward from this window).</para>
+</refsect3><para role="since">Since: <link linkend="api-index-3.0">3.0</link></para></refsect2>
+<refsect2 id="anaconda-base-standalone-set-may-continue" role="function" condition="since:3.0">
+<title>anaconda_base_standalone_set_may_continue&#160;()</title>
+<indexterm zone="anaconda-base-standalone-set-may-continue" role="3.0"><primary>anaconda_base_standalone_set_may_continue</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+anaconda_base_standalone_set_may_continue
+                               (<parameter><link linkend="AnacondaBaseStandalone"><type>AnacondaBaseStandalone</type></link> *win</parameter>,
+                                <parameter><link linkend="gboolean"><type>gboolean</type></link> may_continue</parameter>);</programlisting>
+<para>Specifies whether the user may continue forward from this window.  If so,
+the continue button will be made sensitive.  Windows default to continuable
+so you must set it as false if you want.  The reason the user may not be
+able to continue is if there is required information the user must enter
+when no reasonable default may be given.</para>
+<refsect3 id="anaconda-base-standalone-set-may-continue.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>win</para></entry>
+<entry role="parameter_description"><para>a <link linkend="AnacondaBaseStandalone"><type>AnacondaBaseStandalone</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>may_continue</para></entry>
+<entry role="parameter_description"><para><link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if this window's continue buttons should be sensitive</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><para role="since">Since: <link linkend="api-index-3.0">3.0</link></para></refsect2>
+<refsect2 id="anaconda-base-standalone-get-quit-button" role="function" condition="since:3.0">
+<title>anaconda_base_standalone_get_quit_button&#160;()</title>
+<indexterm zone="anaconda-base-standalone-get-quit-button" role="3.0"><primary>anaconda_base_standalone_get_quit_button</primary></indexterm>
+<programlisting language="C"><link linkend="GtkButton"><returnvalue>GtkButton</returnvalue></link>&#160;*
+anaconda_base_standalone_get_quit_button
+                               (<parameter><link linkend="AnacondaBaseStandalone"><type>AnacondaBaseStandalone</type></link> *win</parameter>);</programlisting>
+<refsect3 id="anaconda-base-standalone-get-quit-button.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>win</para></entry>
+<entry role="parameter_description"><para>a <link linkend="AnacondaBaseStandalone"><type>AnacondaBaseStandalone</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="anaconda-base-standalone-get-quit-button.returns" role="returns">
+<title>Returns</title>
+<para>the quit button. </para>
+<para><emphasis role="annotation">[<acronym>transfer none</acronym>]</emphasis></para>
+</refsect3><para role="since">Since: <link linkend="api-index-3.0">3.0</link></para></refsect2>
+<refsect2 id="anaconda-base-standalone-get-continue-button" role="function" condition="since:3.0">
+<title>anaconda_base_standalone_get_continue_button&#160;()</title>
+<indexterm zone="anaconda-base-standalone-get-continue-button" role="3.0"><primary>anaconda_base_standalone_get_continue_button</primary></indexterm>
+<programlisting language="C"><link linkend="GtkButton"><returnvalue>GtkButton</returnvalue></link>&#160;*
+anaconda_base_standalone_get_continue_button
+                               (<parameter><link linkend="AnacondaBaseStandalone"><type>AnacondaBaseStandalone</type></link> *win</parameter>);</programlisting>
+<refsect3 id="anaconda-base-standalone-get-continue-button.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>win</para></entry>
+<entry role="parameter_description"><para>a <link linkend="AnacondaBaseStandalone"><type>AnacondaBaseStandalone</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="anaconda-base-standalone-get-continue-button.returns" role="returns">
+<title>Returns</title>
+<para>the continue button. </para>
+<para><emphasis role="annotation">[<acronym>transfer none</acronym>]</emphasis></para>
+</refsect3><para role="since">Since: <link linkend="api-index-3.0">3.0</link></para></refsect2>
+
+</refsect1>
+<refsect1 id="AnacondaBaseStandalone.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="AnacondaBaseStandalone-struct" role="struct">
+<title>struct AnacondaBaseStandalone</title>
+<indexterm zone="AnacondaBaseStandalone-struct"><primary>AnacondaBaseStandalone</primary></indexterm>
+<programlisting language="C">struct AnacondaBaseStandalone;</programlisting>
+<para>The AnacondaBaseStandalone class contains only private fields and should not
+be directly accessed.</para>
+</refsect2>
+<refsect2 id="AnacondaBaseStandaloneClass" role="struct">
+<title>struct AnacondaBaseStandaloneClass</title>
+<indexterm zone="AnacondaBaseStandaloneClass"><primary>AnacondaBaseStandaloneClass</primary></indexterm>
+<programlisting language="C">struct AnacondaBaseStandaloneClass {
+    AnacondaBaseWindowClass parent_class;
+
+    void (* quit_clicked)     (AnacondaBaseStandalone *window);
+    void (* continue_clicked) (AnacondaBaseStandalone *window);
+};
+</programlisting>
+<refsect3 id="AnacondaBaseStandaloneClass.members" role="struct_members">
+<title>Members</title>
+<informaltable role="struct_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="struct_members_name" colwidth="300px"/>
+<colspec colname="struct_members_description"/>
+<colspec colname="struct_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="member"><entry role="struct_member_name"><para><structfield id="AnacondaBaseStandaloneClass.quit-clicked">quit_clicked</structfield>&#160;()</para></entry>
+<entry role="struct_member_description"><para>Function pointer called when the <link linkend="AnacondaBaseStandalone-quit-clicked"><type>“quit-clicked”</type></link>
+signal is emitted.</para></entry>
+<entry role="struct_member_annotations"></entry>
+</row>
+<row role="member"><entry role="struct_member_name"><para><structfield id="AnacondaBaseStandaloneClass.continue-clicked">continue_clicked</structfield>&#160;()</para></entry>
+<entry role="struct_member_description"><para>Function pointer called when the <link linkend="AnacondaBaseStandalone-continue-clicked"><type>“continue-clicked”</type></link>
+signal is emitted.</para></entry>
+<entry role="struct_member_annotations"></entry>
+</row>
+</tbody></tgroup></informaltable>
+</refsect3>
+</refsect2>
+
+</refsect1>
+<refsect1 id="AnacondaBaseStandalone.property-details" role="property_details">
+<title role="property_details.title">Property Details</title>
+<refsect2 id="AnacondaBaseStandalone--continue-button" role="property"><title>The <literal>“continue-button”</literal> property</title>
+<indexterm zone="AnacondaBaseStandalone--continue-button"><primary>AnacondaBaseStandalone:continue-button</primary></indexterm>
+<programlisting>  “continue-button”          <link linkend="GtkButton"><type>GtkButton</type></link>&#160;*</programlisting>
+<para>The button to continue to the next window.</para><para>Flags: Read / Write / Construct</para>
+</refsect2>
+<refsect2 id="AnacondaBaseStandalone--quit-button" role="property"><title>The <literal>“quit-button”</literal> property</title>
+<indexterm zone="AnacondaBaseStandalone--quit-button"><primary>AnacondaBaseStandalone:quit-button</primary></indexterm>
+<programlisting>  “quit-button”              <link linkend="GtkButton"><type>GtkButton</type></link>&#160;*</programlisting>
+<para>The button to quit Anaconda.</para><para>Flags: Read / Write / Construct</para>
+</refsect2>
+
+</refsect1>
+<refsect1 id="AnacondaBaseStandalone.signal-details" role="signals">
+<title role="signals.title">Signal Details</title>
+<refsect2 id="AnacondaBaseStandalone-continue-clicked" role="signal"><title>The <literal>“continue-clicked”</literal> signal</title>
+<indexterm zone="AnacondaBaseStandalone-continue-clicked" role="3.0"><primary>AnacondaBaseStandalone::continue-clicked</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+user_function (<link linkend="AnacondaBaseStandalone"><type>AnacondaBaseStandalone</type></link> *window,
+               <link linkend="gpointer"><type>gpointer</type></link>                user_data)</programlisting>
+<para>Emitted when the <link linkend="AnacondaBaseStandalone--continue-button"><type>“continue-button”</type></link> has been
+activated (pressed and released).</para>
+<refsect3 id="AnacondaBaseStandalone-continue-clicked.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>window</para></entry>
+<entry role="parameter_description"><para>the window that received the signal</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><simpara>user_data</simpara></entry>
+<entry role="parameter_description"><simpara>user data set when the signal handler was connected.</simpara></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><para>Flags: <link linkend="G-SIGNAL-ACTION:CAPS">Action</link></para>
+<para role="since">Since: <link linkend="api-index-3.0">3.0</link></para></refsect2><refsect2 id="AnacondaBaseStandalone-quit-clicked" role="signal"><title>The <literal>“quit-clicked”</literal> signal</title>
+<indexterm zone="AnacondaBaseStandalone-quit-clicked" role="3.0"><primary>AnacondaBaseStandalone::quit-clicked</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+user_function (<link linkend="AnacondaBaseStandalone"><type>AnacondaBaseStandalone</type></link> *window,
+               <link linkend="gpointer"><type>gpointer</type></link>                user_data)</programlisting>
+<para>Emitted when the <link linkend="AnacondaBaseStandalone--quit-button"><type>“quit-button”</type></link> has been activated
+(pressed and released).</para>
+<refsect3 id="AnacondaBaseStandalone-quit-clicked.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>window</para></entry>
+<entry role="parameter_description"><para>the window that received the signal</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><simpara>user_data</simpara></entry>
+<entry role="parameter_description"><simpara>user data set when the signal handler was connected.</simpara></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><para>Flags: <link linkend="G-SIGNAL-ACTION:CAPS">Action</link></para>
+<para role="since">Since: <link linkend="api-index-3.0">3.0</link></para></refsect2>
+</refsect1>
+
+</refentry>

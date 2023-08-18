@@ -1,0 +1,698 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+               "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd" [
+<!ENTITY % local.common.attrib "xmlns:xi  CDATA  #FIXED 'http://www.w3.org/2003/XInclude'">
+]>
+<refentry id="AnacondaBaseWindow">
+<refmeta>
+<refentrytitle role="top_of_page" id="AnacondaBaseWindow.top_of_page">AnacondaBaseWindow</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>ANACONDAWIDGETS Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>AnacondaBaseWindow</refname>
+<refpurpose>Top-level, non-resizeable window</refpurpose>
+</refnamediv>
+
+<refsect1 id="AnacondaBaseWindow.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_return" colwidth="150px"/>
+<colspec colname="functions_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="GtkWidget"><returnvalue>GtkWidget</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="anaconda-base-window-new">anaconda_base_window_new</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="anaconda-base-window-retranslate">anaconda_base_window_retranslate</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="anaconda-base-window-get-beta">anaconda_base_window_get_beta</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="anaconda-base-window-set-beta">anaconda_base_window_set_beta</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="anaconda-base-window-set-error">anaconda_base_window_set_error</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="anaconda-base-window-set-info">anaconda_base_window_set_info</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="anaconda-base-window-set-warning">anaconda_base_window_set_warning</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="anaconda-base-window-clear-info">anaconda_base_window_clear_info</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="GtkWidget"><returnvalue>GtkWidget</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="anaconda-base-window-get-action-area">anaconda_base_window_get_action_area</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="GtkWidget"><returnvalue>GtkWidget</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="anaconda-base-window-get-alignment">anaconda_base_window_get_alignment</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="GtkWidget"><returnvalue>GtkWidget</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="anaconda-base-window-get-main-box">anaconda_base_window_get_main_box</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="GtkWidget"><returnvalue>GtkWidget</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="anaconda-base-window-get-nav-area">anaconda_base_window_get_nav_area</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="GtkWidget"><returnvalue>GtkWidget</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="anaconda-base-window-get-nav-area-background-window">anaconda_base_window_get_nav_area_background_window</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="GtkWidget"><returnvalue>GtkWidget</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="anaconda-base-window-get-help-button">anaconda_base_window_get_help_button</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="AnacondaBaseWindow.properties" role="properties">
+<title role="properties.title">Properties</title>
+<informaltable frame="none">
+<tgroup cols="3">
+<colspec colname="properties_type" colwidth="150px"/>
+<colspec colname="properties_name" colwidth="300px"/>
+<colspec colname="properties_flags" colwidth="200px"/>
+<tbody>
+<row><entry role="property_type"><link linkend="gchar"><type>gchar</type></link>&#160;*</entry><entry role="property_name"><link linkend="AnacondaBaseWindow--distribution">distribution</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gchar"><type>gchar</type></link>&#160;*</entry><entry role="property_name"><link linkend="AnacondaBaseWindow--window-name">window-name</link></entry><entry role="property_flags">Read / Write</entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="AnacondaBaseWindow.signals" role="signal_proto">
+<title role="signal_proto.title">Signals</title>
+<informaltable frame="none">
+<tgroup cols="3">
+<colspec colname="signals_return" colwidth="150px"/>
+<colspec colname="signals_name" colwidth="300px"/>
+<colspec colname="signals_flags" colwidth="200px"/>
+<tbody>
+<row><entry role="signal_type"><link linkend="void"><returnvalue>void</returnvalue></link></entry><entry role="signal_name"><link linkend="AnacondaBaseWindow-help-button-clicked">help-button-clicked</link></entry><entry role="signal_flags"><link linkend="G-SIGNAL-ACTION:CAPS">Action</link></entry></row>
+<row><entry role="signal_type"><link linkend="void"><returnvalue>void</returnvalue></link></entry><entry role="signal_name"><link linkend="AnacondaBaseWindow-info-bar-clicked">info-bar-clicked</link></entry><entry role="signal_flags"><link linkend="G-SIGNAL-ACTION:CAPS">Action</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="AnacondaBaseWindow.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="name" colwidth="150px"/>
+<colspec colname="description"/>
+<tbody>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="AnacondaBaseWindow-struct">AnacondaBaseWindow</link></entry></row>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="AnacondaBaseWindowClass">AnacondaBaseWindowClass</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="AnacondaBaseWindow.object-hierarchy" role="object_hierarchy">
+<title role="object_hierarchy.title">Object Hierarchy</title>
+<screen>    <link linkend="GObject">GObject</link>
+    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GInitiallyUnowned">GInitiallyUnowned</link>
+        <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GtkWidget">GtkWidget</link>
+            <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GtkContainer">GtkContainer</link>
+                <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GtkBin">GtkBin</link>
+                    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> AnacondaBaseWindow
+                        <phrase role="lineart">&#9500;&#9472;&#9472;</phrase> <link linkend="AnacondaBaseStandalone">AnacondaBaseStandalone</link>
+                        <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="AnacondaSpokeWindow">AnacondaSpokeWindow</link>
+</screen>
+</refsect1>
+<refsect1 id="AnacondaBaseWindow.implemented-interfaces" role="impl_interfaces">
+<title role="impl_interfaces.title">Implemented Interfaces</title>
+<para>
+AnacondaBaseWindow implements
+ <link linkend="AtkImplementorIface">AtkImplementorIface</link> and  <link linkend="GtkBuildable">GtkBuildable</link>.</para>
+
+</refsect1>
+
+
+<refsect1 id="AnacondaBaseWindow.description" role="desc">
+<title role="desc.title">Description</title>
+<para>A <link linkend="AnacondaBaseWindow"><type>AnacondaBaseWindow</type></link> is a widget that contains other widgets and serves as
+the base class from which all other specialized Anaconda windows are
+derived.</para>
+<para>The AnacondaBaseWindow consists of two areas:</para>
+<itemizedlist>
+<listitem>
+<para>A navigation area in the top of the screen, consisting of some basic
+information about what is being displayed and what is being installed.</para>
+</listitem>
+<listitem>
+<para>An action area in the majority of the screen.  This area is where
+subclasses should add their particular widgets.</para>
+</listitem>
+</itemizedlist>
+<refsect2><title>AnacondaBaseWindow as GtkBuildable</title><para>The AnacondaBaseWindow implementation of the <link linkend="GtkBuildable"><type>GtkBuildable</type></link> interface exposes
+the <parameter>nav_area</parameter>
+ as an internal child with the name "nav_area" and the
+<parameter>action_area</parameter>
+ as an internal child with the name "action_area".</para>
+<para>A AnacondaBaseWindow UI definition fragment:</para>
+<informalexample><programlisting role="example"><![CDATA[
+<object class="AnacondaBaseWindow" id="window1">
+    <child internal-child="main_box">
+        <object class="GtkBox" id="main_box1">
+            <child internal-child="nav_box">
+                <object class="GtkEventBox" id="nav_box1">
+                    <child internal-child="nav_area">
+                        <object class="GtkGrid" id="nav_area1">
+                            <child>...</child>
+                            <child>...</child>
+                        </object>
+                    </child>
+                </object>
+            </child>
+            <child internal-child="alignment">
+                <object class="GtkAlignment" id="alignment1">
+                    <child internal-child="action_area">
+                        <object class="GtkBox" id="action_area1">
+                            <child>
+                                <object class="GtkLabel" id="label1">
+                                    <property name="label" translatable="yes">THIS IS ONE LABEL</property>
+                                </object>
+                            </child>
+                            <child>
+                                <object class="GtkLabel" id="label2">
+                                    <property name="label" translatable="yes">THIS IS ANOTHER LABEL</property>
+                                </object>
+                            </child>
+                        </object>
+                    </child>
+                </object>
+            </child>
+        </object>
+    </child>
+</object>
+]]></programlisting></informalexample>
+<para></para>
+</refsect2>
+<refsect2><title>CSS nodes</title><informalexample><programlisting role="example"><![CDATA[
+AnacondaBaseWindow
+╰── #nav-box
+    ├── #anaconda-name-label
+    ├── #anaconda-distro-label
+    ├── #anaconda-beta-label
+    ├── #layout-indicator
+    ╰── #anaconda-help-button
+]]></programlisting></informalexample>
+<para></para>
+<para>The internal widgets are accessible by name for the purposes of CSS
+selectors.</para>
+<itemizedlist>
+<listitem>
+<para>nav-box</para>
+<para>The navigation area at the top of the screen.</para>
+</listitem>
+<listitem>
+<para>anaconda-name-label</para>
+<para>The window name. This is title of the window, such as "INSTALLATION
+SUMMARY" or "SOFTWARE SELECTION".</para>
+</listitem>
+<listitem>
+<para>anaconda-distro-label</para>
+<para>The distrubtion name; e.g., "FEDORA 23 INSTALLATION"</para>
+</listitem>
+<listitem>
+<para>anaconda-beta-label</para>
+<para>The "PRE-RELEASE / TESTING" label shown in pre-release installers.</para>
+</listitem>
+<listitem>
+<para>layout-indicator</para>
+<para>The <link linkend="AnacondaLayoutIndicator"><type>AnacondaLayoutIndicator</type></link> widget.</para>
+</listitem>
+<listitem>
+<para>anaconda-help-button</para>
+<para>The help <link linkend="GtkButton"><type>GtkButton</type></link>.</para>
+</listitem>
+</itemizedlist>
+</refsect2>
+
+</refsect1>
+<refsect1 id="AnacondaBaseWindow.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="anaconda-base-window-new" role="function">
+<title>anaconda_base_window_new&#160;()</title>
+<indexterm zone="anaconda-base-window-new"><primary>anaconda_base_window_new</primary></indexterm>
+<programlisting language="C"><link linkend="GtkWidget"><returnvalue>GtkWidget</returnvalue></link>&#160;*
+anaconda_base_window_new ();</programlisting>
+<para>Creates a new <link linkend="AnacondaBaseWindow"><type>AnacondaBaseWindow</type></link>, which is a toplevel, non-resizeable
+window that contains other widgets.  This is the base class for all other
+Anaconda windows and creates the window style that all windows will share.</para>
+<refsect3 id="anaconda-base-window-new.returns" role="returns">
+<title>Returns</title>
+<para> A new <link linkend="AnacondaBaseWindow"><type>AnacondaBaseWindow</type></link>.</para>
+</refsect3></refsect2>
+<refsect2 id="anaconda-base-window-retranslate" role="function" condition="since:1.0">
+<title>anaconda_base_window_retranslate&#160;()</title>
+<indexterm zone="anaconda-base-window-retranslate" role="1.0"><primary>anaconda_base_window_retranslate</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+anaconda_base_window_retranslate (<parameter><link linkend="AnacondaBaseWindow"><type>AnacondaBaseWindow</type></link> *win</parameter>);</programlisting>
+<para>Reload translations for this widget as needed.  Generally, this is not
+needed.  However when changing the language during installation, we need
+to be able to make sure the screen gets retranslated.  This function is
+kind of ugly but avoids having to destroy and reload the screen.</para>
+<refsect3 id="anaconda-base-window-retranslate.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>win</para></entry>
+<entry role="parameter_description"><para>a <link linkend="AnacondaBaseWindow"><type>AnacondaBaseWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><para role="since">Since: <link linkend="api-index-1.0">1.0</link></para></refsect2>
+<refsect2 id="anaconda-base-window-get-beta" role="function" condition="since:1.0">
+<title>anaconda_base_window_get_beta&#160;()</title>
+<indexterm zone="anaconda-base-window-get-beta" role="1.0"><primary>anaconda_base_window_get_beta</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+anaconda_base_window_get_beta (<parameter><link linkend="AnacondaBaseWindow"><type>AnacondaBaseWindow</type></link> *win</parameter>);</programlisting>
+<para>Returns whether or not this window is set to display the beta label.</para>
+<refsect3 id="anaconda-base-window-get-beta.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>win</para></entry>
+<entry role="parameter_description"><para>a <link linkend="AnacondaBaseWindow"><type>AnacondaBaseWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="anaconda-base-window-get-beta.returns" role="returns">
+<title>Returns</title>
+<para> Whether <parameter>win</parameter>
+is set to display the betanag warning</para>
+</refsect3><para role="since">Since: <link linkend="api-index-1.0">1.0</link></para></refsect2>
+<refsect2 id="anaconda-base-window-set-beta" role="function" condition="since:1.0">
+<title>anaconda_base_window_set_beta&#160;()</title>
+<indexterm zone="anaconda-base-window-set-beta" role="1.0"><primary>anaconda_base_window_set_beta</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+anaconda_base_window_set_beta (<parameter><link linkend="AnacondaBaseWindow"><type>AnacondaBaseWindow</type></link> *win</parameter>,
+                               <parameter><link linkend="gboolean"><type>gboolean</type></link> is_beta</parameter>);</programlisting>
+<para>Sets up the window to display the beta label in red along the top of the
+screen.</para>
+<refsect3 id="anaconda-base-window-set-beta.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>win</para></entry>
+<entry role="parameter_description"><para>a <link linkend="AnacondaBaseWindow"><type>AnacondaBaseWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>is_beta</para></entry>
+<entry role="parameter_description"><para><link linkend="TRUE:CAPS"><literal>TRUE</literal></link> to display the betanag warning</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><para role="since">Since: <link linkend="api-index-1.0">1.0</link></para></refsect2>
+<refsect2 id="anaconda-base-window-set-error" role="function" condition="since:1.0">
+<title>anaconda_base_window_set_error&#160;()</title>
+<indexterm zone="anaconda-base-window-set-error" role="1.0"><primary>anaconda_base_window_set_error</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+anaconda_base_window_set_error (<parameter><link linkend="AnacondaBaseWindow"><type>AnacondaBaseWindow</type></link> *win</parameter>,
+                                <parameter>const <link linkend="char"><type>char</type></link> *msg</parameter>);</programlisting>
+<para>Causes an info bar to be shown at the bottom of the screen with the provided
+message.  Only one message may be shown at a time.  In order to show
+a second message, <link linkend="anaconda-base-window-clear-info"><function>anaconda_base_window_clear_info()</function></link> must first be called.</para>
+<para>The message will be interpreted as Pango markup. Clickable messages are
+encouraged to include a clickable link using the <link linkend="GtkLabel"><type>GtkLabel</type></link> syntax in order
+to make the info bar accessible via the keyboard. The link URI will be
+ignored, and all link clicks will emit the
+<link linkend="AnacondaBaseWindow-info-bar-clicked"><type>“info-bar-clicked”</type></link> signal on <parameter>win</parameter>
+.</para>
+<refsect3 id="anaconda-base-window-set-error.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>win</para></entry>
+<entry role="parameter_description"><para>a <link linkend="AnacondaBaseWindow"><type>AnacondaBaseWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>msg</para></entry>
+<entry role="parameter_description"><para>a message</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><para role="since">Since: <link linkend="api-index-1.0">1.0</link></para></refsect2>
+<refsect2 id="anaconda-base-window-set-info" role="function" condition="since:1.0">
+<title>anaconda_base_window_set_info&#160;()</title>
+<indexterm zone="anaconda-base-window-set-info" role="1.0"><primary>anaconda_base_window_set_info</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+anaconda_base_window_set_info (<parameter><link linkend="AnacondaBaseWindow"><type>AnacondaBaseWindow</type></link> *win</parameter>,
+                               <parameter>const <link linkend="char"><type>char</type></link> *msg</parameter>);</programlisting>
+<para>Causes an info bar to be shown at the bottom of the screen with the provided
+message.  Only one message may be shown at a time.  In order to show
+a second message, <link linkend="anaconda-base-window-clear-info"><function>anaconda_base_window_clear_info()</function></link> must first be called.</para>
+<para>The message will be interpreted as Pango markup. Clickable messages are
+encouraged to include a clickable link using the <link linkend="GtkLabel"><type>GtkLabel</type></link> syntax in order
+to make the info bar accessible via the keyboard. The link URI will be
+ignored, and all link clicks will emit the
+<link linkend="AnacondaBaseWindow-info-bar-clicked"><type>“info-bar-clicked”</type></link> signal on <parameter>win</parameter>
+.</para>
+<refsect3 id="anaconda-base-window-set-info.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>win</para></entry>
+<entry role="parameter_description"><para>a <link linkend="AnacondaBaseWindow"><type>AnacondaBaseWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>msg</para></entry>
+<entry role="parameter_description"><para>a message</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><para role="since">Since: <link linkend="api-index-1.0">1.0</link></para></refsect2>
+<refsect2 id="anaconda-base-window-set-warning" role="function" condition="since:1.0">
+<title>anaconda_base_window_set_warning&#160;()</title>
+<indexterm zone="anaconda-base-window-set-warning" role="1.0"><primary>anaconda_base_window_set_warning</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+anaconda_base_window_set_warning (<parameter><link linkend="AnacondaBaseWindow"><type>AnacondaBaseWindow</type></link> *win</parameter>,
+                                  <parameter>const <link linkend="char"><type>char</type></link> *msg</parameter>);</programlisting>
+<para>Causes an info bar to be shown at the bottom of the screen with the provided
+message.  Only one message may be shown at a time.  In order to show
+a second message, <link linkend="anaconda-base-window-clear-info"><function>anaconda_base_window_clear_info()</function></link> must first be called.</para>
+<para>The message will be interpreted as Pango markup. Clickable messages are
+encouraged to include a clickable link using the <link linkend="GtkLabel"><type>GtkLabel</type></link> syntax in order
+to make the info bar accessible via the keyboard. The link URI will be
+ignored, and all link clicks will emit the
+<link linkend="AnacondaBaseWindow-info-bar-clicked"><type>“info-bar-clicked”</type></link> signal on <parameter>win</parameter>
+.</para>
+<refsect3 id="anaconda-base-window-set-warning.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>win</para></entry>
+<entry role="parameter_description"><para>a <link linkend="AnacondaBaseWindow"><type>AnacondaBaseWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>msg</para></entry>
+<entry role="parameter_description"><para>a message</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><para role="since">Since: <link linkend="api-index-1.0">1.0</link></para></refsect2>
+<refsect2 id="anaconda-base-window-clear-info" role="function" condition="since:1.0">
+<title>anaconda_base_window_clear_info&#160;()</title>
+<indexterm zone="anaconda-base-window-clear-info" role="1.0"><primary>anaconda_base_window_clear_info</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+anaconda_base_window_clear_info (<parameter><link linkend="AnacondaBaseWindow"><type>AnacondaBaseWindow</type></link> *win</parameter>);</programlisting>
+<para>Clear and hide any info bar being shown at the bottom of the screen.  This
+must be called before a second call to <link linkend="anaconda-base-window-set-info"><function>anaconda_base_window_set_info()</function></link> takes
+effect.</para>
+<refsect3 id="anaconda-base-window-clear-info.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>win</para></entry>
+<entry role="parameter_description"><para>a <link linkend="AnacondaBaseWindow"><type>AnacondaBaseWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><para role="since">Since: <link linkend="api-index-1.0">1.0</link></para></refsect2>
+<refsect2 id="anaconda-base-window-get-action-area" role="function" condition="since:1.0">
+<title>anaconda_base_window_get_action_area&#160;()</title>
+<indexterm zone="anaconda-base-window-get-action-area" role="1.0"><primary>anaconda_base_window_get_action_area</primary></indexterm>
+<programlisting language="C"><link linkend="GtkWidget"><returnvalue>GtkWidget</returnvalue></link>&#160;*
+anaconda_base_window_get_action_area (<parameter><link linkend="AnacondaBaseWindow"><type>AnacondaBaseWindow</type></link> *win</parameter>);</programlisting>
+<para>Returns the action area of <parameter>win</parameter>
+.  This is the area of the screen where most
+of the widgets the user interacts with will live.</para>
+<refsect3 id="anaconda-base-window-get-action-area.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>win</para></entry>
+<entry role="parameter_description"><para>a <link linkend="AnacondaBaseWindow"><type>AnacondaBaseWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="anaconda-base-window-get-action-area.returns" role="returns">
+<title>Returns</title>
+<para>The action area. </para>
+<para><emphasis role="annotation">[<acronym>transfer none</acronym>]</emphasis></para>
+</refsect3><para role="since">Since: <link linkend="api-index-1.0">1.0</link></para></refsect2>
+<refsect2 id="anaconda-base-window-get-alignment" role="function" condition="since:1.0">
+<title>anaconda_base_window_get_alignment&#160;()</title>
+<indexterm zone="anaconda-base-window-get-alignment" role="1.0"><primary>anaconda_base_window_get_alignment</primary></indexterm>
+<programlisting language="C"><link linkend="GtkWidget"><returnvalue>GtkWidget</returnvalue></link>&#160;*
+anaconda_base_window_get_alignment (<parameter><link linkend="AnacondaBaseWindow"><type>AnacondaBaseWindow</type></link> *win</parameter>);</programlisting>
+<para>Returns the internal alignment widget of <parameter>win</parameter>
+.  Currently, this is only used
+by <link linkend="AnacondaHubWindow"><type>AnacondaHubWindow</type></link> to set different alignment values than the spokes have.
+This function should probably not be used elsewhere.</para>
+<refsect3 id="anaconda-base-window-get-alignment.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>win</para></entry>
+<entry role="parameter_description"><para>a <link linkend="AnacondaBaseWindow"><type>AnacondaBaseWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="anaconda-base-window-get-alignment.returns" role="returns">
+<title>Returns</title>
+<para>The alignment widget. </para>
+<para><emphasis role="annotation">[<acronym>transfer none</acronym>]</emphasis></para>
+</refsect3><para role="since">Since: <link linkend="api-index-1.0">1.0</link></para></refsect2>
+<refsect2 id="anaconda-base-window-get-main-box" role="function" condition="since:1.0">
+<title>anaconda_base_window_get_main_box&#160;()</title>
+<indexterm zone="anaconda-base-window-get-main-box" role="1.0"><primary>anaconda_base_window_get_main_box</primary></indexterm>
+<programlisting language="C"><link linkend="GtkWidget"><returnvalue>GtkWidget</returnvalue></link>&#160;*
+anaconda_base_window_get_main_box (<parameter><link linkend="AnacondaBaseWindow"><type>AnacondaBaseWindow</type></link> *win</parameter>);</programlisting>
+<para>Returns the main content area of <parameter>win</parameter>
+.  This widget holds both the action_area
+and the nav_area.  Currently, this is only used by <link linkend="AnacondaStandaloneWindow"><type>AnacondaStandaloneWindow</type></link>
+as a place to store the extra Continue button.  This function should probably
+not be used elsewhere.</para>
+<refsect3 id="anaconda-base-window-get-main-box.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>win</para></entry>
+<entry role="parameter_description"><para>a <link linkend="AnacondaBaseWindow"><type>AnacondaBaseWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="anaconda-base-window-get-main-box.returns" role="returns">
+<title>Returns</title>
+<para>The main content area. </para>
+<para><emphasis role="annotation">[<acronym>transfer none</acronym>]</emphasis></para>
+</refsect3><para role="since">Since: <link linkend="api-index-1.0">1.0</link></para></refsect2>
+<refsect2 id="anaconda-base-window-get-nav-area" role="function" condition="since:1.0">
+<title>anaconda_base_window_get_nav_area&#160;()</title>
+<indexterm zone="anaconda-base-window-get-nav-area" role="1.0"><primary>anaconda_base_window_get_nav_area</primary></indexterm>
+<programlisting language="C"><link linkend="GtkWidget"><returnvalue>GtkWidget</returnvalue></link>&#160;*
+anaconda_base_window_get_nav_area (<parameter><link linkend="AnacondaBaseWindow"><type>AnacondaBaseWindow</type></link> *win</parameter>);</programlisting>
+<para>Returns the navigation area of <parameter>win</parameter>
+.  This is the area at the top of the
+screen displaying the window's title (if it has one), distribution, and
+so forth.</para>
+<refsect3 id="anaconda-base-window-get-nav-area.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>win</para></entry>
+<entry role="parameter_description"><para>a <link linkend="AnacondaBaseWindow"><type>AnacondaBaseWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="anaconda-base-window-get-nav-area.returns" role="returns">
+<title>Returns</title>
+<para>The navigation area. </para>
+<para><emphasis role="annotation">[<acronym>transfer none</acronym>]</emphasis></para>
+</refsect3><para role="since">Since: <link linkend="api-index-1.0">1.0</link></para></refsect2>
+<refsect2 id="anaconda-base-window-get-nav-area-background-window" role="function" condition="since:1.0">
+<title>anaconda_base_window_get_nav_area_background_window&#160;()</title>
+<indexterm zone="anaconda-base-window-get-nav-area-background-window" role="1.0"><primary>anaconda_base_window_get_nav_area_background_window</primary></indexterm>
+<programlisting language="C"><link linkend="GtkWidget"><returnvalue>GtkWidget</returnvalue></link>&#160;*
+anaconda_base_window_get_nav_area_background_window
+                               (<parameter><link linkend="AnacondaBaseWindow"><type>AnacondaBaseWindow</type></link> *win</parameter>);</programlisting>
+<para>Returns the event box that houses background window of the navigation area of <parameter>win</parameter>
+.
+Currently, this is only used by <link linkend="AnacondaSpokeWindow"><type>AnacondaSpokeWindow</type></link> to have a place to store the
+gradient image.  This function should probably not be used elsewhere.</para>
+<refsect3 id="anaconda-base-window-get-nav-area-background-window.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>win</para></entry>
+<entry role="parameter_description"><para>a <link linkend="AnacondaBaseWindow"><type>AnacondaBaseWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="anaconda-base-window-get-nav-area-background-window.returns" role="returns">
+<title>Returns</title>
+<para>The event box. </para>
+<para><emphasis role="annotation">[<acronym>transfer none</acronym>]</emphasis></para>
+</refsect3><para role="since">Since: <link linkend="api-index-1.0">1.0</link></para></refsect2>
+<refsect2 id="anaconda-base-window-get-help-button" role="function" condition="since:3.1">
+<title>anaconda_base_window_get_help_button&#160;()</title>
+<indexterm zone="anaconda-base-window-get-help-button" role="3.1"><primary>anaconda_base_window_get_help_button</primary></indexterm>
+<programlisting language="C"><link linkend="GtkWidget"><returnvalue>GtkWidget</returnvalue></link>&#160;*
+anaconda_base_window_get_help_button (<parameter><link linkend="AnacondaBaseWindow"><type>AnacondaBaseWindow</type></link> *win</parameter>);</programlisting>
+<para>Returns the help button.</para>
+<refsect3 id="anaconda-base-window-get-help-button.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>win</para></entry>
+<entry role="parameter_description"><para>a <link linkend="AnacondaBaseWindow"><type>AnacondaBaseWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="anaconda-base-window-get-help-button.returns" role="returns">
+<title>Returns</title>
+<para>the help button. </para>
+<para><emphasis role="annotation">[<acronym>transfer none</acronym>]</emphasis></para>
+</refsect3><para role="since">Since: <link linkend="api-index-3.1">3.1</link></para></refsect2>
+
+</refsect1>
+<refsect1 id="AnacondaBaseWindow.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="AnacondaBaseWindow-struct" role="struct">
+<title>struct AnacondaBaseWindow</title>
+<indexterm zone="AnacondaBaseWindow-struct"><primary>AnacondaBaseWindow</primary></indexterm>
+<programlisting language="C">struct AnacondaBaseWindow;</programlisting>
+<para>The AnacondaBaseWindow struct contains only private fields and should not
+be directly accessed.</para>
+</refsect2>
+<refsect2 id="AnacondaBaseWindowClass" role="struct">
+<title>struct AnacondaBaseWindowClass</title>
+<indexterm zone="AnacondaBaseWindowClass"><primary>AnacondaBaseWindowClass</primary></indexterm>
+<programlisting language="C">struct AnacondaBaseWindowClass {
+    GtkBinClass parent_class;
+
+    void (* info_bar_clicked) (AnacondaBaseWindow *window);
+    void (* help_button_clicked) (AnacondaBaseWindow *window);
+};
+</programlisting>
+<refsect3 id="AnacondaBaseWindowClass.members" role="struct_members">
+<title>Members</title>
+<informaltable role="struct_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="struct_members_name" colwidth="300px"/>
+<colspec colname="struct_members_description"/>
+<colspec colname="struct_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="member"><entry role="struct_member_name"><para><structfield id="AnacondaBaseWindowClass.info-bar-clicked">info_bar_clicked</structfield>&#160;()</para></entry>
+<entry role="struct_member_description"><para>Function pointer called when the <link linkend="AnacondaBaseWindow-info-bar-clicked"><type>“info-bar-clicked”</type></link>
+signal is emitted.</para></entry>
+<entry role="struct_member_annotations"></entry>
+</row>
+<row role="member"><entry role="struct_member_name"><para><structfield id="AnacondaBaseWindowClass.help-button-clicked">help_button_clicked</structfield>&#160;()</para></entry>
+<entry role="struct_member_description"><para>Function pointer called when the <link linkend="AnacondaBaseWindow-help-button-clicked"><type>“help-button-clicked”</type></link>
+signal is emitted.</para></entry>
+<entry role="struct_member_annotations"></entry>
+</row>
+</tbody></tgroup></informaltable>
+</refsect3>
+</refsect2>
+
+</refsect1>
+<refsect1 id="AnacondaBaseWindow.property-details" role="property_details">
+<title role="property_details.title">Property Details</title>
+<refsect2 id="AnacondaBaseWindow--distribution" role="property"><title>The <literal>“distribution”</literal> property</title>
+<indexterm zone="AnacondaBaseWindow--distribution" role="1.0"><primary>AnacondaBaseWindow:distribution</primary></indexterm>
+<programlisting>  “distribution”             <link linkend="gchar"><type>gchar</type></link>&#160;*</programlisting>
+<para>The <link linkend="AnacondaBaseWindow--distribution"><type>“distribution”</type></link> string is displayed in the upper right corner of all
+windows throughout installation.</para>
+<para>Flags: Read / Write</para>
+<para>Default value: "DISTRIBUTION INSTALLATION"</para>
+<para role="since">Since: <link linkend="api-index-1.0">1.0</link></para></refsect2>
+<refsect2 id="AnacondaBaseWindow--window-name" role="property"><title>The <literal>“window-name”</literal> property</title>
+<indexterm zone="AnacondaBaseWindow--window-name" role="1.0"><primary>AnacondaBaseWindow:window-name</primary></indexterm>
+<programlisting>  “window-name”              <link linkend="gchar"><type>gchar</type></link>&#160;*</programlisting>
+<para>The name of the currently displayed window, displayed in the upper
+left corner of all windows with a title throughout installation.
+StandaloneWindows should not have a title, so no name will be displayed
+for those.</para>
+<para>Flags: Read / Write</para>
+<para>Default value: "SPOKE NAME"</para>
+<para role="since">Since: <link linkend="api-index-1.0">1.0</link></para></refsect2>
+
+</refsect1>
+<refsect1 id="AnacondaBaseWindow.signal-details" role="signals">
+<title role="signals.title">Signal Details</title>
+<refsect2 id="AnacondaBaseWindow-help-button-clicked" role="signal"><title>The <literal>“help-button-clicked”</literal> signal</title>
+<indexterm zone="AnacondaBaseWindow-help-button-clicked" role="3.1"><primary>AnacondaBaseWindow::help-button-clicked</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+user_function (<link linkend="AnacondaBaseWindow"><type>AnacondaBaseWindow</type></link> *window,
+               <link linkend="gpointer"><type>gpointer</type></link>            user_data)</programlisting>
+<para>Emitted when the help button in the right corner has been activated
+(pressed and released). This is commonly used to open the help view with
+help content for the given spoke or hub</para>
+<refsect3 id="AnacondaBaseWindow-help-button-clicked.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>window</para></entry>
+<entry role="parameter_description"><para>the window that received the signal</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><simpara>user_data</simpara></entry>
+<entry role="parameter_description"><simpara>user data set when the signal handler was connected.</simpara></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><para>Flags: <link linkend="G-SIGNAL-ACTION:CAPS">Action</link></para>
+<para role="since">Since: <link linkend="api-index-3.1">3.1</link></para></refsect2><refsect2 id="AnacondaBaseWindow-info-bar-clicked" role="signal"><title>The <literal>“info-bar-clicked”</literal> signal</title>
+<indexterm zone="AnacondaBaseWindow-info-bar-clicked" role="1.0"><primary>AnacondaBaseWindow::info-bar-clicked</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+user_function (<link linkend="AnacondaBaseWindow"><type>AnacondaBaseWindow</type></link> *window,
+               <link linkend="gpointer"><type>gpointer</type></link>            user_data)</programlisting>
+<para>Emitted when a visible info bar at the bottom of the window has been clicked
+(pressed and released).  This allows, for instance, popping up a dialog with
+more detailed information.</para>
+<para>Activatable info bars are encouraged to include a link in the message for the
+purpose of keyboard navigation.  Clicking the link will emit the
+info-bar-clicked signal. See <link linkend="anaconda-base-window-set-error"><function>anaconda_base_window_set_error()</function></link> for more
+information.</para>
+<refsect3 id="AnacondaBaseWindow-info-bar-clicked.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>window</para></entry>
+<entry role="parameter_description"><para>the window that received the signal</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><simpara>user_data</simpara></entry>
+<entry role="parameter_description"><simpara>user data set when the signal handler was connected.</simpara></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><para>Flags: <link linkend="G-SIGNAL-ACTION:CAPS">Action</link></para>
+<para role="since">Since: <link linkend="api-index-1.0">1.0</link></para></refsect2>
+</refsect1>
+
+</refentry>

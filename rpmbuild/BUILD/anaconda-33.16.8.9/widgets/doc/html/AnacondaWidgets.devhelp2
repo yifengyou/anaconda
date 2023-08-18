@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<book xmlns="http://www.devhelp.net/book" title="The AnacondaWidgets Library Reference Manual" link="index.html" author="Chris Lumens" name="AnacondaWidgets" version="2" language="c">
+  <chapters>
+    <sub name="Window Widgets" link="windows.html">
+      <sub name="AnacondaBaseWindow" link="AnacondaBaseWindow.html"/>
+      <sub name="AnacondaBaseStandalone" link="AnacondaBaseStandalone.html"/>
+      <sub name="AnacondaHubWindow" link="AnacondaHubWindow.html"/>
+      <sub name="AnacondaSpokeWindow" link="AnacondaSpokeWindow.html"/>
+      <sub name="AnacondaStandaloneWindow" link="AnacondaStandaloneWindow.html"/>
+    </sub>
+    <sub name="Disk-Related Widgets" link="disks.html">
+      <sub name="AnacondaDiskOverview" link="AnacondaDiskOverview.html"/>
+      <sub name="AnacondaMountpointSelector" link="AnacondaMountpointSelector.html"/>
+    </sub>
+    <sub name="Miscellaneous Widgets" link="miscellaneous.html">
+      <sub name="AnacondaSpokeSelector" link="AnacondaSpokeSelector.html"/>
+      <sub name="AnacondaLayoutIndicator" link="AnacondaLayoutIndicator.html"/>
+    </sub>
+    <sub name="Utility Functions" link="utility.html">
+      <sub name="widgets-common" link="AnacondaWidgets-widgets-common.html"/>
+    </sub>
+    <sub name="Object Hierarchy" link="hierarchy.html"/>
+    <sub name="Index" link="api-index-full.html"/>
+    <sub name="Index of symbols in 1.0" link="api-index-1.0.html"/>
+    <sub name="Index of new symbols in 3.0" link="api-index-3.0.html"/>
+    <sub name="Index of new symbols in 3.1" link="api-index-3.1.html"/>
+    <sub name="Index of new symbols in 3.4" link="api-index-3.4.html"/>
+    <sub name="Annotation Glossary" link="annotation-glossary.html"/>
+  </chapters>
+  <functions>
+    <keyword type="function" name="anaconda_base_window_new ()" link="AnacondaBaseWindow.html#anaconda-base-window-new"/>
+    <keyword type="function" name="anaconda_base_window_retranslate ()" link="AnacondaBaseWindow.html#anaconda-base-window-retranslate" since="1.0"/>
+    <keyword type="function" name="anaconda_base_window_get_beta ()" link="AnacondaBaseWindow.html#anaconda-base-window-get-beta" since="1.0"/>
+    <keyword type="function" name="anaconda_base_window_set_beta ()" link="AnacondaBaseWindow.html#anaconda-base-window-set-beta" since="1.0"/>
+    <keyword type="function" name="anaconda_base_window_set_error ()" link="AnacondaBaseWindow.html#anaconda-base-window-set-error" since="1.0"/>
+    <keyword type="function" name="anaconda_base_window_set_info ()" link="AnacondaBaseWindow.html#anaconda-base-window-set-info" since="1.0"/>
+    <keyword type="function" name="anaconda_base_window_set_warning ()" link="AnacondaBaseWindow.html#anaconda-base-window-set-warning" since="1.0"/>
+    <keyword type="function" name="anaconda_base_window_clear_info ()" link="AnacondaBaseWindow.html#anaconda-base-window-clear-info" since="1.0"/>
+    <keyword type="function" name="anaconda_base_window_get_action_area ()" link="AnacondaBaseWindow.html#anaconda-base-window-get-action-area" since="1.0"/>
+    <keyword type="function" name="anaconda_base_window_get_alignment ()" link="AnacondaBaseWindow.html#anaconda-base-window-get-alignment" since="1.0"/>
+    <keyword type="function" name="anaconda_base_window_get_main_box ()" link="AnacondaBaseWindow.html#anaconda-base-window-get-main-box" since="1.0"/>
+    <keyword type="function" name="anaconda_base_window_get_nav_area ()" link="AnacondaBaseWindow.html#anaconda-base-window-get-nav-area" since="1.0"/>
+    <keyword type="function" name="anaconda_base_window_get_nav_area_background_window ()" link="AnacondaBaseWindow.html#anaconda-base-window-get-nav-area-background-window" since="1.0"/>
+    <keyword type="function" name="anaconda_base_window_get_help_button ()" link="AnacondaBaseWindow.html#anaconda-base-window-get-help-button" since="3.1"/>
+    <keyword type="struct" name="struct AnacondaBaseWindow" link="AnacondaBaseWindow.html#AnacondaBaseWindow-struct"/>
+    <keyword type="struct" name="struct AnacondaBaseWindowClass" link="AnacondaBaseWindow.html#AnacondaBaseWindowClass"/>
+    <keyword type="property" name="The “distribution” property" link="AnacondaBaseWindow.html#AnacondaBaseWindow--distribution"/>
+    <keyword type="property" name="The “window-name” property" link="AnacondaBaseWindow.html#AnacondaBaseWindow--window-name"/>
+    <keyword type="signal" name="The “help-button-clicked” signal" link="AnacondaBaseWindow.html#AnacondaBaseWindow-help-button-clicked"/>
+    <keyword type="signal" name="The “info-bar-clicked” signal" link="AnacondaBaseWindow.html#AnacondaBaseWindow-info-bar-clicked"/>
+    <keyword type="function" name="anaconda_base_standalone_get_may_continue ()" link="AnacondaBaseStandalone.html#anaconda-base-standalone-get-may-continue" since="3.0"/>
+    <keyword type="function" name="anaconda_base_standalone_set_may_continue ()" link="AnacondaBaseStandalone.html#anaconda-base-standalone-set-may-continue" since="3.0"/>
+    <keyword type="function" name="anaconda_base_standalone_get_quit_button ()" link="AnacondaBaseStandalone.html#anaconda-base-standalone-get-quit-button" since="3.0"/>
+    <keyword type="function" name="anaconda_base_standalone_get_continue_button ()" link="AnacondaBaseStandalone.html#anaconda-base-standalone-get-continue-button" since="3.0"/>
+    <keyword type="struct" name="struct AnacondaBaseStandalone" link="AnacondaBaseStandalone.html#AnacondaBaseStandalone-struct"/>
+    <keyword type="struct" name="struct AnacondaBaseStandaloneClass" link="AnacondaBaseStandalone.html#AnacondaBaseStandaloneClass"/>
+    <keyword type="property" name="The “continue-button” property" link="AnacondaBaseStandalone.html#AnacondaBaseStandalone--continue-button"/>
+    <keyword type="property" name="The “quit-button” property" link="AnacondaBaseStandalone.html#AnacondaBaseStandalone--quit-button"/>
+    <keyword type="signal" name="The “continue-clicked” signal" link="AnacondaBaseStandalone.html#AnacondaBaseStandalone-continue-clicked"/>
+    <keyword type="signal" name="The “quit-clicked” signal" link="AnacondaBaseStandalone.html#AnacondaBaseStandalone-quit-clicked"/>
+    <keyword type="function" name="anaconda_hub_window_new ()" link="AnacondaHubWindow.html#anaconda-hub-window-new"/>
+    <keyword type="function" name="anaconda_hub_window_get_spoke_area ()" link="AnacondaHubWindow.html#anaconda-hub-window-get-spoke-area" since="1.0"/>
+    <keyword type="struct" name="struct AnacondaHubWindow" link="AnacondaHubWindow.html#AnacondaHubWindow-struct"/>
+    <keyword type="struct" name="struct AnacondaHubWindowClass" link="AnacondaHubWindow.html#AnacondaHubWindowClass"/>
+    <keyword type="function" name="anaconda_spoke_window_new ()" link="AnacondaSpokeWindow.html#anaconda-spoke-window-new"/>
+    <keyword type="struct" name="struct AnacondaSpokeWindow" link="AnacondaSpokeWindow.html#AnacondaSpokeWindow-struct"/>
+    <keyword type="struct" name="struct AnacondaSpokeWindowClass" link="AnacondaSpokeWindow.html#AnacondaSpokeWindowClass"/>
+    <keyword type="signal" name="The “button-clicked” signal" link="AnacondaSpokeWindow.html#AnacondaSpokeWindow-button-clicked"/>
+    <keyword type="function" name="anaconda_standalone_window_new ()" link="AnacondaStandaloneWindow.html#anaconda-standalone-window-new"/>
+    <keyword type="function" name="anaconda_standalone_window_retranslate ()" link="AnacondaStandaloneWindow.html#anaconda-standalone-window-retranslate" since="1.0"/>
+    <keyword type="struct" name="struct AnacondaStandaloneWindow" link="AnacondaStandaloneWindow.html#AnacondaStandaloneWindow-struct"/>
+    <keyword type="struct" name="struct AnacondaStandaloneWindowClass" link="AnacondaStandaloneWindow.html#AnacondaStandaloneWindowClass"/>
+    <keyword type="property" name="The “continue-button” property" link="AnacondaStandaloneWindow.html#AnacondaStandaloneWindow--continue-button"/>
+    <keyword type="property" name="The “quit-button” property" link="AnacondaStandaloneWindow.html#AnacondaStandaloneWindow--quit-button"/>
+    <keyword type="function" name="anaconda_disk_overview_new ()" link="AnacondaDiskOverview.html#anaconda-disk-overview-new"/>
+    <keyword type="function" name="anaconda_disk_overview_get_chosen ()" link="AnacondaDiskOverview.html#anaconda-disk-overview-get-chosen" since="1.0"/>
+    <keyword type="function" name="anaconda_disk_overview_set_chosen ()" link="AnacondaDiskOverview.html#anaconda-disk-overview-set-chosen" since="1.0"/>
+    <keyword type="struct" name="struct AnacondaDiskOverview" link="AnacondaDiskOverview.html#AnacondaDiskOverview-struct"/>
+    <keyword type="struct" name="struct AnacondaDiskOverviewClass" link="AnacondaDiskOverview.html#AnacondaDiskOverviewClass"/>
+    <keyword type="property" name="The “capacity” property" link="AnacondaDiskOverview.html#AnacondaDiskOverview--capacity"/>
+    <keyword type="property" name="The “description” property" link="AnacondaDiskOverview.html#AnacondaDiskOverview--description"/>
+    <keyword type="property" name="The “free” property" link="AnacondaDiskOverview.html#AnacondaDiskOverview--free"/>
+    <keyword type="property" name="The “kind” property" link="AnacondaDiskOverview.html#AnacondaDiskOverview--kind"/>
+    <keyword type="property" name="The “name” property" link="AnacondaDiskOverview.html#AnacondaDiskOverview--name"/>
+    <keyword type="property" name="The “popup-info” property" link="AnacondaDiskOverview.html#AnacondaDiskOverview--popup-info"/>
+    <keyword type="function" name="anaconda_mountpoint_selector_new ()" link="AnacondaMountpointSelector.html#anaconda-mountpoint-selector-new"/>
+    <keyword type="function" name="anaconda_mountpoint_selector_get_chosen ()" link="AnacondaMountpointSelector.html#anaconda-mountpoint-selector-get-chosen" since="1.0"/>
+    <keyword type="function" name="anaconda_mountpoint_selector_set_chosen ()" link="AnacondaMountpointSelector.html#anaconda-mountpoint-selector-set-chosen" since="1.0"/>
+    <keyword type="function" name="anaconda_mountpoint_selector_get_page ()" link="AnacondaMountpointSelector.html#anaconda-mountpoint-selector-get-page" since="3.4"/>
+    <keyword type="function" name="anaconda_mountpoint_selector_set_page ()" link="AnacondaMountpointSelector.html#anaconda-mountpoint-selector-set-page" since="3.4"/>
+    <keyword type="struct" name="struct AnacondaMountpointSelector" link="AnacondaMountpointSelector.html#AnacondaMountpointSelector-struct"/>
+    <keyword type="struct" name="struct AnacondaMountpointSelectorClass" link="AnacondaMountpointSelector.html#AnacondaMountpointSelectorClass"/>
+    <keyword type="property" name="The “mountpoint” property" link="AnacondaMountpointSelector.html#AnacondaMountpointSelector--mountpoint"/>
+    <keyword type="property" name="The “name” property" link="AnacondaMountpointSelector.html#AnacondaMountpointSelector--name"/>
+    <keyword type="property" name="The “show-arrow” property" link="AnacondaMountpointSelector.html#AnacondaMountpointSelector--show-arrow"/>
+    <keyword type="property" name="The “size” property" link="AnacondaMountpointSelector.html#AnacondaMountpointSelector--size"/>
+    <keyword type="signal" name="The “chosen-changed” signal" link="AnacondaMountpointSelector.html#AnacondaMountpointSelector-chosen-changed"/>
+    <keyword type="function" name="anaconda_spoke_selector_new ()" link="AnacondaSpokeSelector.html#anaconda-spoke-selector-new"/>
+    <keyword type="function" name="anaconda_spoke_selector_get_incomplete ()" link="AnacondaSpokeSelector.html#anaconda-spoke-selector-get-incomplete" since="1.0"/>
+    <keyword type="function" name="anaconda_spoke_selector_set_incomplete ()" link="AnacondaSpokeSelector.html#anaconda-spoke-selector-set-incomplete" since="1.0"/>
+    <keyword type="struct" name="struct AnacondaSpokeSelector" link="AnacondaSpokeSelector.html#AnacondaSpokeSelector-struct"/>
+    <keyword type="struct" name="struct AnacondaSpokeSelectorClass" link="AnacondaSpokeSelector.html#AnacondaSpokeSelectorClass"/>
+    <keyword type="property" name="The “icon” property" link="AnacondaSpokeSelector.html#AnacondaSpokeSelector--icon"/>
+    <keyword type="property" name="The “status” property" link="AnacondaSpokeSelector.html#AnacondaSpokeSelector--status"/>
+    <keyword type="property" name="The “title” property" link="AnacondaSpokeSelector.html#AnacondaSpokeSelector--title"/>
+    <keyword type="function" name="anaconda_layout_indicator_new ()" link="AnacondaLayoutIndicator.html#anaconda-layout-indicator-new"/>
+    <keyword type="function" name="anaconda_layout_indicator_get_current_layout ()" link="AnacondaLayoutIndicator.html#anaconda-layout-indicator-get-current-layout" since="1.0"/>
+    <keyword type="function" name="anaconda_layout_indicator_get_label_width ()" link="AnacondaLayoutIndicator.html#anaconda-layout-indicator-get-label-width" since="1.0"/>
+    <keyword type="function" name="anaconda_layout_indicator_set_label_width ()" link="AnacondaLayoutIndicator.html#anaconda-layout-indicator-set-label-width" since="1.0"/>
+    <keyword type="function" name="anaconda_layout_indicator_retranslate ()" link="AnacondaLayoutIndicator.html#anaconda-layout-indicator-retranslate" since="1.0"/>
+    <keyword type="struct" name="struct AnacondaLayoutIndicator" link="AnacondaLayoutIndicator.html#AnacondaLayoutIndicator-struct"/>
+    <keyword type="struct" name="struct AnacondaLayoutIndicatorClass" link="AnacondaLayoutIndicator.html#AnacondaLayoutIndicatorClass"/>
+    <keyword type="property" name="The “label-width” property" link="AnacondaLayoutIndicator.html#AnacondaLayoutIndicator--label-width"/>
+    <keyword type="property" name="The “layout” property" link="AnacondaLayoutIndicator.html#AnacondaLayoutIndicator--layout"/>
+    <keyword type="function" name="anaconda_apply_language ()" link="AnacondaWidgets-widgets-common.html#anaconda-apply-language" since="3.4"/>
+    <keyword type="macro" name="ANACONDA_RESOURCE_PATH" link="AnacondaWidgets-widgets-common.html#ANACONDA-RESOURCE-PATH:CAPS"/>
+    <keyword type="member" name="AnacondaBaseWindowClass.info-bar-clicked" link="AnacondaBaseWindow.html#AnacondaBaseWindowClass.info-bar-clicked"/>
+    <keyword type="member" name="AnacondaBaseWindowClass.help-button-clicked" link="AnacondaBaseWindow.html#AnacondaBaseWindowClass.help-button-clicked"/>
+    <keyword type="member" name="AnacondaBaseStandaloneClass.quit-clicked" link="AnacondaBaseStandalone.html#AnacondaBaseStandaloneClass.quit-clicked"/>
+    <keyword type="member" name="AnacondaBaseStandaloneClass.continue-clicked" link="AnacondaBaseStandalone.html#AnacondaBaseStandaloneClass.continue-clicked"/>
+    <keyword type="member" name="AnacondaSpokeWindowClass.button-clicked" link="AnacondaSpokeWindow.html#AnacondaSpokeWindowClass.button-clicked"/>
+    <keyword type="member" name="AnacondaLayoutIndicatorClass.engine" link="AnacondaLayoutIndicator.html#AnacondaLayoutIndicatorClass.engine"/>
+  </functions>
+</book>

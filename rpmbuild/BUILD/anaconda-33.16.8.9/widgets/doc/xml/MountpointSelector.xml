@@ -1,0 +1,346 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+               "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd" [
+<!ENTITY % local.common.attrib "xmlns:xi  CDATA  #FIXED 'http://www.w3.org/2003/XInclude'">
+]>
+<refentry id="AnacondaMountpointSelector">
+<refmeta>
+<refentrytitle role="top_of_page" id="AnacondaMountpointSelector.top_of_page">AnacondaMountpointSelector</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>ANACONDAWIDGETS Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>AnacondaMountpointSelector</refname>
+<refpurpose>A graphical way to select a mount point.</refpurpose>
+</refnamediv>
+
+<refsect1 id="AnacondaMountpointSelector.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_return" colwidth="150px"/>
+<colspec colname="functions_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="GtkWidget"><returnvalue>GtkWidget</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="anaconda-mountpoint-selector-new">anaconda_mountpoint_selector_new</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="anaconda-mountpoint-selector-get-chosen">anaconda_mountpoint_selector_get_chosen</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="anaconda-mountpoint-selector-set-chosen">anaconda_mountpoint_selector_set_chosen</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="GtkWidget"><returnvalue>GtkWidget</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="anaconda-mountpoint-selector-get-page">anaconda_mountpoint_selector_get_page</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="anaconda-mountpoint-selector-set-page">anaconda_mountpoint_selector_set_page</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="AnacondaMountpointSelector.properties" role="properties">
+<title role="properties.title">Properties</title>
+<informaltable frame="none">
+<tgroup cols="3">
+<colspec colname="properties_type" colwidth="150px"/>
+<colspec colname="properties_name" colwidth="300px"/>
+<colspec colname="properties_flags" colwidth="200px"/>
+<tbody>
+<row><entry role="property_type"><link linkend="gchar"><type>gchar</type></link>&#160;*</entry><entry role="property_name"><link linkend="AnacondaMountpointSelector--mountpoint">mountpoint</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gchar"><type>gchar</type></link>&#160;*</entry><entry role="property_name"><link linkend="AnacondaMountpointSelector--name">name</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gboolean"><type>gboolean</type></link></entry><entry role="property_name"><link linkend="AnacondaMountpointSelector--show-arrow">show-arrow</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gchar"><type>gchar</type></link>&#160;*</entry><entry role="property_name"><link linkend="AnacondaMountpointSelector--size">size</link></entry><entry role="property_flags">Read / Write</entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="AnacondaMountpointSelector.signals" role="signal_proto">
+<title role="signal_proto.title">Signals</title>
+<informaltable frame="none">
+<tgroup cols="3">
+<colspec colname="signals_return" colwidth="150px"/>
+<colspec colname="signals_name" colwidth="300px"/>
+<colspec colname="signals_flags" colwidth="200px"/>
+<tbody>
+<row><entry role="signal_type"><link linkend="void"><returnvalue>void</returnvalue></link></entry><entry role="signal_name"><link linkend="AnacondaMountpointSelector-chosen-changed">chosen-changed</link></entry><entry role="signal_flags"><link linkend="G-SIGNAL-NO-HOOKS:CAPS">No Hooks</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="AnacondaMountpointSelector.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="name" colwidth="150px"/>
+<colspec colname="description"/>
+<tbody>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="AnacondaMountpointSelector-struct">AnacondaMountpointSelector</link></entry></row>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="AnacondaMountpointSelectorClass">AnacondaMountpointSelectorClass</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="AnacondaMountpointSelector.object-hierarchy" role="object_hierarchy">
+<title role="object_hierarchy.title">Object Hierarchy</title>
+<screen>    <link linkend="GObject">GObject</link>
+    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GInitiallyUnowned">GInitiallyUnowned</link>
+        <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GtkWidget">GtkWidget</link>
+            <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GtkContainer">GtkContainer</link>
+                <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GtkBin">GtkBin</link>
+                    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GtkEventBox">GtkEventBox</link>
+                        <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> AnacondaMountpointSelector
+</screen>
+</refsect1>
+<refsect1 id="AnacondaMountpointSelector.implemented-interfaces" role="impl_interfaces">
+<title role="impl_interfaces.title">Implemented Interfaces</title>
+<para>
+AnacondaMountpointSelector implements
+ <link linkend="AtkImplementorIface">AtkImplementorIface</link> and  <link linkend="GtkBuildable">GtkBuildable</link>.</para>
+
+</refsect1>
+
+
+<refsect1 id="AnacondaMountpointSelector.description" role="desc">
+<title role="desc.title">Description</title>
+<para>A <link linkend="AnacondaMountpointSelector"><type>AnacondaMountpointSelector</type></link> is a widget that appears on the custom partitioning
+spoke and allows the user to select a single mount point to do additional
+configuration.</para>
+<para>As a <link linkend="AnacondaMountpointSelector"><type>AnacondaMountpointSelector</type></link> is a subclass of a <link linkend="GtkEventBox"><type>GtkEventBox</type></link>, any signals
+may be caught.  However <link linkend="GtkWidget-button-press-event"><type>“button-press-event”</type></link> is the most important
+one and is how we determine what should be displayed on the rest of the
+screen.</para>
+<refsect2><title>CSS nodes</title><informalexample><programlisting role="example"><![CDATA[
+AnacondaMountpointSelector
+├── #anaconda-mountpoint-label
+├── #anaconda-mountpoint-size-label
+├── #anaconda-mountpoint-arrow
+╰── #anaconda-mountpoint-name-label
+]]></programlisting></informalexample>
+<para></para>
+<para>The internal widgets are accessible by name for the purposes of CSS
+selectors</para>
+<itemizedlist>
+<listitem>
+<para>anaconda-mountpoint-name-label</para>
+<para>The name of the mountpoint (e.g., /boot, /home, swap).</para>
+</listitem>
+<listitem>
+<para>anaconda-mountpoint-size-label</para>
+<para>The size of the mountpoint.</para>
+</listitem>
+<listitem>
+<para>anaconda-mountpoint-arrow</para>
+<para>The arrow image displayed on the selected mountpoint.</para>
+</listitem>
+<listitem>
+<para>anaconda-mountpoint-name-label</para>
+<para>The secondary text displayed for the mountpoint. This is commonly the
+name of the device node containing the mountpoint.</para>
+</listitem>
+</itemizedlist>
+</refsect2>
+
+</refsect1>
+<refsect1 id="AnacondaMountpointSelector.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="anaconda-mountpoint-selector-new" role="function">
+<title>anaconda_mountpoint_selector_new&#160;()</title>
+<indexterm zone="anaconda-mountpoint-selector-new"><primary>anaconda_mountpoint_selector_new</primary></indexterm>
+<programlisting language="C"><link linkend="GtkWidget"><returnvalue>GtkWidget</returnvalue></link>&#160;*
+anaconda_mountpoint_selector_new ();</programlisting>
+<para>Creates a new <link linkend="AnacondaMountpointSelector"><type>AnacondaMountpointSelector</type></link>, which is a selectable display for a
+single mountpoint.  Many mountpoints may be put together into a list, displaying
+all configured filesystems at once.</para>
+<refsect3 id="anaconda-mountpoint-selector-new.returns" role="returns">
+<title>Returns</title>
+<para> A new <link linkend="AnacondaMountpointSelector"><type>AnacondaMountpointSelector</type></link>.</para>
+</refsect3></refsect2>
+<refsect2 id="anaconda-mountpoint-selector-get-chosen" role="function" condition="since:1.0">
+<title>anaconda_mountpoint_selector_get_chosen&#160;()</title>
+<indexterm zone="anaconda-mountpoint-selector-get-chosen" role="1.0"><primary>anaconda_mountpoint_selector_get_chosen</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+anaconda_mountpoint_selector_get_chosen
+                               (<parameter><link linkend="AnacondaMountpointSelector"><type>AnacondaMountpointSelector</type></link> *widget</parameter>);</programlisting>
+<para>Returns whether or not this mountpoint has been chosen by the user.</para>
+<refsect3 id="anaconda-mountpoint-selector-get-chosen.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>widget</para></entry>
+<entry role="parameter_description"><para>a <link linkend="AnacondaMountpointSelector"><type>AnacondaMountpointSelector</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="anaconda-mountpoint-selector-get-chosen.returns" role="returns">
+<title>Returns</title>
+<para> Whether <parameter>widget</parameter>
+has been chosen.</para>
+</refsect3><para role="since">Since: <link linkend="api-index-1.0">1.0</link></para></refsect2>
+<refsect2 id="anaconda-mountpoint-selector-set-chosen" role="function" condition="since:1.0">
+<title>anaconda_mountpoint_selector_set_chosen&#160;()</title>
+<indexterm zone="anaconda-mountpoint-selector-set-chosen" role="1.0"><primary>anaconda_mountpoint_selector_set_chosen</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+anaconda_mountpoint_selector_set_chosen
+                               (<parameter><link linkend="AnacondaMountpointSelector"><type>AnacondaMountpointSelector</type></link> *widget</parameter>,
+                                <parameter><link linkend="gboolean"><type>gboolean</type></link> is_chosen</parameter>);</programlisting>
+<para>Specifies whether the mountpoint shown by this selector has been chosen by
+the user.  If so, a special background will be set as a visual indicator.</para>
+<refsect3 id="anaconda-mountpoint-selector-set-chosen.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>widget</para></entry>
+<entry role="parameter_description"><para>a <link linkend="AnacondaMountpointSelector"><type>AnacondaMountpointSelector</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>is_chosen</para></entry>
+<entry role="parameter_description"><para><link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if this mountpoint is chosen.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><para role="since">Since: <link linkend="api-index-1.0">1.0</link></para></refsect2>
+<refsect2 id="anaconda-mountpoint-selector-get-page" role="function" condition="since:3.4">
+<title>anaconda_mountpoint_selector_get_page&#160;()</title>
+<indexterm zone="anaconda-mountpoint-selector-get-page" role="3.4"><primary>anaconda_mountpoint_selector_get_page</primary></indexterm>
+<programlisting language="C"><link linkend="GtkWidget"><returnvalue>GtkWidget</returnvalue></link>&#160;*
+anaconda_mountpoint_selector_get_page (<parameter><link linkend="AnacondaMountpointSelector"><type>AnacondaMountpointSelector</type></link> *widget</parameter>);</programlisting>
+<para>Return pointer to Page where this <link linkend="AnacondaMountpointSelector"><type>AnacondaMountpointSelector</type></link> is contained.</para>
+<refsect3 id="anaconda-mountpoint-selector-get-page.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>widget</para></entry>
+<entry role="parameter_description"><para>a <link linkend="AnacondaMountpointSelector"><type>AnacondaMountpointSelector</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="anaconda-mountpoint-selector-get-page.returns" role="returns">
+<title>Returns</title>
+<para>Pointer to GtkWidget page or <link linkend="NONE:CAPS"><type>NONE</type></link>. </para>
+<para><emphasis role="annotation">[<acronym>transfer none</acronym>]</emphasis></para>
+</refsect3><para role="since">Since: <link linkend="api-index-3.4">3.4</link></para></refsect2>
+<refsect2 id="anaconda-mountpoint-selector-set-page" role="function" condition="since:3.4">
+<title>anaconda_mountpoint_selector_set_page&#160;()</title>
+<indexterm zone="anaconda-mountpoint-selector-set-page" role="3.4"><primary>anaconda_mountpoint_selector_set_page</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+anaconda_mountpoint_selector_set_page (<parameter><link linkend="AnacondaMountpointSelector"><type>AnacondaMountpointSelector</type></link> *widget</parameter>,
+                                       <parameter><link linkend="GtkWidget"><type>GtkWidget</type></link> *parent_page</parameter>);</programlisting>
+<para>Set a pointer to Page where this <link linkend="AnacondaMountpointSelector"><type>AnacondaMountpointSelector</type></link> is contained.</para>
+<refsect3 id="anaconda-mountpoint-selector-set-page.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>widget</para></entry>
+<entry role="parameter_description"><para>a <link linkend="AnacondaMountpointSelector"><type>AnacondaMountpointSelector</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>parent_page</para></entry>
+<entry role="parameter_description"><para>Page object which owns this <link linkend="AnacondaMountpointSelector"><type>AnacondaMountpointSelector</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><para role="since">Since: <link linkend="api-index-3.4">3.4</link></para></refsect2>
+
+</refsect1>
+<refsect1 id="AnacondaMountpointSelector.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="AnacondaMountpointSelector-struct" role="struct">
+<title>struct AnacondaMountpointSelector</title>
+<indexterm zone="AnacondaMountpointSelector-struct"><primary>AnacondaMountpointSelector</primary></indexterm>
+<programlisting language="C">struct AnacondaMountpointSelector;</programlisting>
+<para>The AnacondaMountpointSelector struct contains only private fields and should
+not be directly accessed.</para>
+</refsect2>
+<refsect2 id="AnacondaMountpointSelectorClass" role="struct">
+<title>struct AnacondaMountpointSelectorClass</title>
+<indexterm zone="AnacondaMountpointSelectorClass"><primary>AnacondaMountpointSelectorClass</primary></indexterm>
+<programlisting language="C">struct AnacondaMountpointSelectorClass {
+    GtkEventBoxClass parent_class;
+};
+</programlisting>
+<refsect3 id="AnacondaMountpointSelectorClass.members" role="struct_members">
+<title>Members</title>
+<informaltable role="struct_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="struct_members_name" colwidth="300px"/>
+<colspec colname="struct_members_description"/>
+<colspec colname="struct_members_annotations" colwidth="200px"/>
+<tbody>
+</tbody></tgroup></informaltable>
+</refsect3>
+</refsect2>
+
+</refsect1>
+<refsect1 id="AnacondaMountpointSelector.property-details" role="property_details">
+<title role="property_details.title">Property Details</title>
+<refsect2 id="AnacondaMountpointSelector--mountpoint" role="property"><title>The <literal>“mountpoint”</literal> property</title>
+<indexterm zone="AnacondaMountpointSelector--mountpoint" role="1.0"><primary>AnacondaMountpointSelector:mountpoint</primary></indexterm>
+<programlisting>  “mountpoint”               <link linkend="gchar"><type>gchar</type></link>&#160;*</programlisting>
+<para>The <link linkend="AnacondaMountpointSelector--mountpoint"><type>“mountpoint”</type></link> string is the primary text displayed for this widget.
+It shows where on the filesystem this device is mounted.</para>
+<para>Flags: Read / Write</para>
+<para>Default value: ""</para>
+<para role="since">Since: <link linkend="api-index-1.0">1.0</link></para></refsect2>
+<refsect2 id="AnacondaMountpointSelector--name" role="property"><title>The <literal>“name”</literal> property</title>
+<indexterm zone="AnacondaMountpointSelector--name" role="1.0"><primary>AnacondaMountpointSelector:name</primary></indexterm>
+<programlisting>  “name”                     <link linkend="gchar"><type>gchar</type></link>&#160;*</programlisting>
+<para>The <link linkend="AnacondaMountpointSelector--name"><type>“name”</type></link> string is the secondary text displayed for this widget.  It is
+commonly going to be the name of the device node containing this
+mountpoint.</para>
+<para>Flags: Read / Write</para>
+<para>Default value: ""</para>
+<para role="since">Since: <link linkend="api-index-1.0">1.0</link></para></refsect2>
+<refsect2 id="AnacondaMountpointSelector--show-arrow" role="property"><title>The <literal>“show-arrow”</literal> property</title>
+<indexterm zone="AnacondaMountpointSelector--show-arrow" role="3.4"><primary>AnacondaMountpointSelector:show-arrow</primary></indexterm>
+<programlisting>  “show-arrow”               <link linkend="gboolean"><type>gboolean</type></link></programlisting>
+<para>The <link linkend="AnacondaMountpointSelector--show-arrow"><type>“show-arrow”</type></link> boolean is used when arrow on the left should
+or shouldn't be visible.</para>
+<para>Flags: Read / Write</para>
+<para>Default value: TRUE</para>
+<para role="since">Since: <link linkend="api-index-3.4">3.4</link></para></refsect2>
+<refsect2 id="AnacondaMountpointSelector--size" role="property"><title>The <literal>“size”</literal> property</title>
+<indexterm zone="AnacondaMountpointSelector--size" role="1.0"><primary>AnacondaMountpointSelector:size</primary></indexterm>
+<programlisting>  “size”                     <link linkend="gchar"><type>gchar</type></link>&#160;*</programlisting>
+<para>The <link linkend="AnacondaMountpointSelector--size"><type>“size”</type></link> string is the size of the mountpoint, including whatever units
+it is measured in.</para>
+<para>Flags: Read / Write</para>
+<para>Default value: "0 GB"</para>
+<para role="since">Since: <link linkend="api-index-1.0">1.0</link></para></refsect2>
+
+</refsect1>
+<refsect1 id="AnacondaMountpointSelector.signal-details" role="signals">
+<title role="signals.title">Signal Details</title>
+<refsect2 id="AnacondaMountpointSelector-chosen-changed" role="signal"><title>The <literal>“chosen-changed”</literal> signal</title>
+<indexterm zone="AnacondaMountpointSelector-chosen-changed" role="3.4"><primary>AnacondaMountpointSelector::chosen-changed</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+user_function (<link linkend="AnacondaMountpointSelector"><type>AnacondaMountpointSelector</type></link> *anacondamountpointselector,
+               <link linkend="gpointer"><type>gpointer</type></link>                    user_data)</programlisting>
+<para>The <link linkend="AnacondaMountpointSelector--chosen-changed"><type>“chosen-changed”</type></link> signals when set_chosen is called.</para>
+<refsect3 id="AnacondaMountpointSelector-chosen-changed.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><simpara>user_data</simpara></entry>
+<entry role="parameter_description"><simpara>user data set when the signal handler was connected.</simpara></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><para>Flags: <link linkend="G-SIGNAL-NO-HOOKS:CAPS">No Hooks</link></para>
+<para role="since">Since: <link linkend="api-index-3.4">3.4</link></para></refsect2>
+</refsect1>
+
+</refentry>

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE indexdiv PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+               "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd" [
+<!ENTITY % local.common.attrib "xmlns:xi  CDATA  #FIXED 'http://www.w3.org/2003/XInclude'">
+]>
+<indexdiv id="api-index-3.4">
+<indexdiv><title>A</title>
+<indexentry><primaryie linkends="anaconda-apply-language"><link linkend="anaconda-apply-language">anaconda_apply_language</link>, function in <link linkend="AnacondaWidgets-widgets-common">widgets-common</link></primaryie></indexentry>
+</indexdiv>
+<indexdiv><title>M</title>
+<indexentry><primaryie linkends="AnacondaMountpointSelector-chosen-changed"><link linkend="AnacondaMountpointSelector-chosen-changed">AnacondaMountpointSelector::chosen-changed</link>, object signal in <link linkend="AnacondaMountpointSelector">AnacondaMountpointSelector</link></primaryie></indexentry>
+<indexentry><primaryie linkends="AnacondaMountpointSelector--show-arrow"><link linkend="AnacondaMountpointSelector--show-arrow">AnacondaMountpointSelector:show-arrow</link>, object property in <link linkend="AnacondaMountpointSelector">AnacondaMountpointSelector</link></primaryie></indexentry>
+<indexentry><primaryie linkends="anaconda-mountpoint-selector-get-page"><link linkend="anaconda-mountpoint-selector-get-page">anaconda_mountpoint_selector_get_page</link>, function in <link linkend="AnacondaMountpointSelector">AnacondaMountpointSelector</link></primaryie></indexentry>
+<indexentry><primaryie linkends="anaconda-mountpoint-selector-set-page"><link linkend="anaconda-mountpoint-selector-set-page">anaconda_mountpoint_selector_set_page</link>, function in <link linkend="AnacondaMountpointSelector">AnacondaMountpointSelector</link></primaryie></indexentry>
+</indexdiv>
+</indexdiv>

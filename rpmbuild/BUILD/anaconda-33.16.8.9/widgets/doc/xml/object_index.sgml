@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE informaltable PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+               "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd" [
+<!ENTITY % local.common.attrib "xmlns:xi  CDATA  #FIXED 'http://www.w3.org/2003/XInclude'">
+]>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colwidth="1*"/>
+<colspec colwidth="1*"/>
+<colspec colwidth="1*"/>
+<tbody>
+<row>
+<entry><link linkend="AnacondaBaseStandalone">AnacondaBaseStandalone</link></entry>
+<entry><link linkend="AnacondaBaseWindow">AnacondaBaseWindow</link></entry>
+<entry><link linkend="AnacondaDiskOverview">AnacondaDiskOverview</link></entry>
+</row>
+<row>
+<entry><link linkend="AnacondaHubWindow">AnacondaHubWindow</link></entry>
+<entry><link linkend="AnacondaLayoutIndicator">AnacondaLayoutIndicator</link></entry>
+<entry><link linkend="AnacondaMountpointSelector">AnacondaMountpointSelector</link></entry>
+</row>
+<row>
+<entry><link linkend="AnacondaSpokeSelector">AnacondaSpokeSelector</link></entry>
+<entry><link linkend="AnacondaSpokeWindow">AnacondaSpokeWindow</link></entry>
+<entry><link linkend="AnacondaStandaloneWindow">AnacondaStandaloneWindow</link></entry>
+</row>
+<row>
+<entry><link linkend="GInitiallyUnowned">GInitiallyUnowned</link></entry>
+<entry><link linkend="GObject">GObject</link></entry>
+<entry><link linkend="GtkBin">GtkBin</link></entry>
+</row>
+<row>
+<entry><link linkend="GtkContainer">GtkContainer</link></entry>
+<entry><link linkend="GtkEventBox">GtkEventBox</link></entry>
+<entry><link linkend="GtkWidget">GtkWidget</link></entry>
+</row>
+</tbody></tgroup></informaltable>

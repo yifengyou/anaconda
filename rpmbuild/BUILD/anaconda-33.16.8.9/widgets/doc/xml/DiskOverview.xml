@@ -1,0 +1,291 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+               "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd" [
+<!ENTITY % local.common.attrib "xmlns:xi  CDATA  #FIXED 'http://www.w3.org/2003/XInclude'">
+]>
+<refentry id="AnacondaDiskOverview">
+<refmeta>
+<refentrytitle role="top_of_page" id="AnacondaDiskOverview.top_of_page">AnacondaDiskOverview</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>ANACONDAWIDGETS Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>AnacondaDiskOverview</refname>
+<refpurpose>A widget that displays basic information about a disk</refpurpose>
+</refnamediv>
+
+<refsect1 id="AnacondaDiskOverview.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_return" colwidth="150px"/>
+<colspec colname="functions_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="GtkWidget"><returnvalue>GtkWidget</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="anaconda-disk-overview-new">anaconda_disk_overview_new</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="anaconda-disk-overview-get-chosen">anaconda_disk_overview_get_chosen</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="anaconda-disk-overview-set-chosen">anaconda_disk_overview_set_chosen</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="AnacondaDiskOverview.properties" role="properties">
+<title role="properties.title">Properties</title>
+<informaltable frame="none">
+<tgroup cols="3">
+<colspec colname="properties_type" colwidth="150px"/>
+<colspec colname="properties_name" colwidth="300px"/>
+<colspec colname="properties_flags" colwidth="200px"/>
+<tbody>
+<row><entry role="property_type"><link linkend="gchar"><type>gchar</type></link>&#160;*</entry><entry role="property_name"><link linkend="AnacondaDiskOverview--capacity">capacity</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gchar"><type>gchar</type></link>&#160;*</entry><entry role="property_name"><link linkend="AnacondaDiskOverview--description">description</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gchar"><type>gchar</type></link>&#160;*</entry><entry role="property_name"><link linkend="AnacondaDiskOverview--free">free</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gchar"><type>gchar</type></link>&#160;*</entry><entry role="property_name"><link linkend="AnacondaDiskOverview--kind">kind</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gchar"><type>gchar</type></link>&#160;*</entry><entry role="property_name"><link linkend="AnacondaDiskOverview--name">name</link></entry><entry role="property_flags">Read / Write</entry></row>
+<row><entry role="property_type"><link linkend="gchar"><type>gchar</type></link>&#160;*</entry><entry role="property_name"><link linkend="AnacondaDiskOverview--popup-info">popup-info</link></entry><entry role="property_flags">Read / Write</entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="AnacondaDiskOverview.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="name" colwidth="150px"/>
+<colspec colname="description"/>
+<tbody>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="AnacondaDiskOverview-struct">AnacondaDiskOverview</link></entry></row>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="AnacondaDiskOverviewClass">AnacondaDiskOverviewClass</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="AnacondaDiskOverview.object-hierarchy" role="object_hierarchy">
+<title role="object_hierarchy.title">Object Hierarchy</title>
+<screen>    <link linkend="GObject">GObject</link>
+    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GInitiallyUnowned">GInitiallyUnowned</link>
+        <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GtkWidget">GtkWidget</link>
+            <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GtkContainer">GtkContainer</link>
+                <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GtkBin">GtkBin</link>
+                    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GtkEventBox">GtkEventBox</link>
+                        <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> AnacondaDiskOverview
+</screen>
+</refsect1>
+<refsect1 id="AnacondaDiskOverview.implemented-interfaces" role="impl_interfaces">
+<title role="impl_interfaces.title">Implemented Interfaces</title>
+<para>
+AnacondaDiskOverview implements
+ <link linkend="AtkImplementorIface">AtkImplementorIface</link> and  <link linkend="GtkBuildable">GtkBuildable</link>.</para>
+
+</refsect1>
+
+
+<refsect1 id="AnacondaDiskOverview.description" role="desc">
+<title role="desc.title">Description</title>
+<para>A <link linkend="AnacondaDiskOverview"><type>AnacondaDiskOverview</type></link> is a potentially selectable widget that displays a
+disk device's size, kind, and a prominant icon based on the kind of device.
+This widget can come in different sizes, depending on where it needs to be
+used.</para>
+<para>As a <link linkend="AnacondaDiskOverview"><type>AnacondaDiskOverview</type></link> is a subclass of a <link linkend="GtkEventBox"><type>GtkEventBox</type></link>, any signals
+may be caught.  The <link linkend="GtkWidget-button-press-event"><type>“button-press-event”</type></link> signal is already
+handled internally to change the background color, but may also be handled
+by user code in order to take some action based on the disk clicked upon.</para>
+<refsect2><title>CSS nodes</title><informalexample><programlisting role="example"><![CDATA[
+AnacondaDiskOverview
+├── #anaconda-disk-capacity
+├── #anaconda-disk-kind
+├── #anaconda-disk-description
+├── #anaconda-disk-name[.anaconda-disk-details]
+├── #anaconda-disk-separator[.anaconda-disk-details]
+╰── #anaconda-disk-free[.anaconda-disk-details]
+]]></programlisting></informalexample>
+<para></para>
+<para>The internal widgets are accessible by name for the purposes of CSS
+selectors.</para>
+<itemizedlist>
+<listitem>
+<para>anaconda-disk-capacity</para>
+<para>The total size of the disk, plus units</para>
+</listitem>
+<listitem>
+<para>anaconda-disk-kind</para>
+<para>The icon displayed for the type of disk this widget is describing</para>
+</listitem>
+<listitem>
+<para>anaconda-disk-description</para>
+<para>The string describing the disk</para>
+</listitem>
+<listitem>
+<para>anaconda-disk-name</para>
+<para>The name of the device</para>
+</listitem>
+<listitem>
+<para>anaconda-disk-free</para>
+<para>The amount of free, unpartitioned space on the disk, plus units</para>
+</listitem>
+<listitem>
+<para>anaconda-disk-separator</para>
+<para>A string separating the name and free labels.</para>
+</listitem>
+</itemizedlist>
+<para>Additionally, anaconda-disk-name, anaconda-disk-free, and
+anaconda-disk-separator are all accessible via the .anaconda-disk-details
+class.</para>
+</refsect2>
+
+</refsect1>
+<refsect1 id="AnacondaDiskOverview.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="anaconda-disk-overview-new" role="function">
+<title>anaconda_disk_overview_new&#160;()</title>
+<indexterm zone="anaconda-disk-overview-new"><primary>anaconda_disk_overview_new</primary></indexterm>
+<programlisting language="C"><link linkend="GtkWidget"><returnvalue>GtkWidget</returnvalue></link>&#160;*
+anaconda_disk_overview_new ();</programlisting>
+<para>Creates a new <link linkend="AnacondaDiskOverview"><type>AnacondaDiskOverview</type></link>, which is a potentially selectable
+widget that displays basic information about a single storage device, be
+that a regular disk or a more complicated network device.</para>
+<refsect3 id="anaconda-disk-overview-new.returns" role="returns">
+<title>Returns</title>
+<para> A new <link linkend="AnacondaDiskOverview"><type>AnacondaDiskOverview</type></link>.</para>
+</refsect3></refsect2>
+<refsect2 id="anaconda-disk-overview-get-chosen" role="function" condition="since:1.0">
+<title>anaconda_disk_overview_get_chosen&#160;()</title>
+<indexterm zone="anaconda-disk-overview-get-chosen" role="1.0"><primary>anaconda_disk_overview_get_chosen</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+anaconda_disk_overview_get_chosen (<parameter><link linkend="AnacondaDiskOverview"><type>AnacondaDiskOverview</type></link> *widget</parameter>);</programlisting>
+<para>Returns whether or not this disk has been chosen by the user.</para>
+<refsect3 id="anaconda-disk-overview-get-chosen.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>widget</para></entry>
+<entry role="parameter_description"><para>a <link linkend="AnacondaDiskOverview"><type>AnacondaDiskOverview</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="anaconda-disk-overview-get-chosen.returns" role="returns">
+<title>Returns</title>
+<para> Whether <parameter>widget</parameter>
+has been chosen.</para>
+</refsect3><para role="since">Since: <link linkend="api-index-1.0">1.0</link></para></refsect2>
+<refsect2 id="anaconda-disk-overview-set-chosen" role="function" condition="since:1.0">
+<title>anaconda_disk_overview_set_chosen&#160;()</title>
+<indexterm zone="anaconda-disk-overview-set-chosen" role="1.0"><primary>anaconda_disk_overview_set_chosen</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+anaconda_disk_overview_set_chosen (<parameter><link linkend="AnacondaDiskOverview"><type>AnacondaDiskOverview</type></link> *widget</parameter>,
+                                   <parameter><link linkend="gboolean"><type>gboolean</type></link> is_chosen</parameter>);</programlisting>
+<para>Specifies whether the disk shown by this overview has been chosen by
+the user for inclusion in installation.  If so, a special background will
+be set as a visual indicator.</para>
+<refsect3 id="anaconda-disk-overview-set-chosen.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>widget</para></entry>
+<entry role="parameter_description"><para>a <link linkend="AnacondaDiskOverview"><type>AnacondaDiskOverview</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>is_chosen</para></entry>
+<entry role="parameter_description"><para><link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if this disk is chosen.</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><para role="since">Since: <link linkend="api-index-1.0">1.0</link></para></refsect2>
+
+</refsect1>
+<refsect1 id="AnacondaDiskOverview.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="AnacondaDiskOverview-struct" role="struct">
+<title>struct AnacondaDiskOverview</title>
+<indexterm zone="AnacondaDiskOverview-struct"><primary>AnacondaDiskOverview</primary></indexterm>
+<programlisting language="C">struct AnacondaDiskOverview;</programlisting>
+<para>The AnacondaDiskOverview struct contains only private fields and should not
+be directly accessed.</para>
+</refsect2>
+<refsect2 id="AnacondaDiskOverviewClass" role="struct">
+<title>struct AnacondaDiskOverviewClass</title>
+<indexterm zone="AnacondaDiskOverviewClass"><primary>AnacondaDiskOverviewClass</primary></indexterm>
+<programlisting language="C">struct AnacondaDiskOverviewClass {
+    GtkEventBoxClass parent_class;
+};
+</programlisting>
+<refsect3 id="AnacondaDiskOverviewClass.members" role="struct_members">
+<title>Members</title>
+<informaltable role="struct_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="struct_members_name" colwidth="300px"/>
+<colspec colname="struct_members_description"/>
+<colspec colname="struct_members_annotations" colwidth="200px"/>
+<tbody>
+</tbody></tgroup></informaltable>
+</refsect3>
+</refsect2>
+
+</refsect1>
+<refsect1 id="AnacondaDiskOverview.property-details" role="property_details">
+<title role="property_details.title">Property Details</title>
+<refsect2 id="AnacondaDiskOverview--capacity" role="property"><title>The <literal>“capacity”</literal> property</title>
+<indexterm zone="AnacondaDiskOverview--capacity" role="1.0"><primary>AnacondaDiskOverview:capacity</primary></indexterm>
+<programlisting>  “capacity”                 <link linkend="gchar"><type>gchar</type></link>&#160;*</programlisting>
+<para>The <link linkend="AnacondaDiskOverview--capacity"><type>“capacity”</type></link> string is the total size of the disk, plus units.</para>
+<para>Flags: Read / Write</para>
+<para>Default value: "0 MB"</para>
+<para role="since">Since: <link linkend="api-index-1.0">1.0</link></para></refsect2>
+<refsect2 id="AnacondaDiskOverview--description" role="property"><title>The <literal>“description”</literal> property</title>
+<indexterm zone="AnacondaDiskOverview--description" role="1.0"><primary>AnacondaDiskOverview:description</primary></indexterm>
+<programlisting>  “description”              <link linkend="gchar"><type>gchar</type></link>&#160;*</programlisting>
+<para>The <link linkend="AnacondaDiskOverview--description"><type>“description”</type></link> string is a very basic description of the device
+and is displayed in bold letters under the icon.</para>
+<para>Flags: Read / Write</para>
+<para>Default value: "New Device"</para>
+<para role="since">Since: <link linkend="api-index-1.0">1.0</link></para></refsect2>
+<refsect2 id="AnacondaDiskOverview--free" role="property"><title>The <literal>“free”</literal> property</title>
+<indexterm zone="AnacondaDiskOverview--free" role="1.0"><primary>AnacondaDiskOverview:free</primary></indexterm>
+<programlisting>  “free”                     <link linkend="gchar"><type>gchar</type></link>&#160;*</programlisting>
+<para>The <link linkend="AnacondaDiskOverview--free"><type>“free”</type></link> string is the amount of free, unpartitioned space on the disk,
+plus units.</para>
+<para>Flags: Read / Write</para>
+<para>Default value: "0 MB"</para>
+<para role="since">Since: <link linkend="api-index-1.0">1.0</link></para></refsect2>
+<refsect2 id="AnacondaDiskOverview--kind" role="property"><title>The <literal>“kind”</literal> property</title>
+<indexterm zone="AnacondaDiskOverview--kind" role="1.0"><primary>AnacondaDiskOverview:kind</primary></indexterm>
+<programlisting>  “kind”                     <link linkend="gchar"><type>gchar</type></link>&#160;*</programlisting>
+<para>The <link linkend="AnacondaDiskOverview--kind"><type>“kind”</type></link> string specifies what type of disk device this is, used to
+figure out what icon to be displayed.  This should be something like
+"drive-harddisk", "drive-removable-media", etc.</para>
+<para>Flags: Read / Write</para>
+<para>Default value: "drive-harddisk"</para>
+<para role="since">Since: <link linkend="api-index-1.0">1.0</link></para></refsect2>
+<refsect2 id="AnacondaDiskOverview--name" role="property"><title>The <literal>“name”</literal> property</title>
+<indexterm zone="AnacondaDiskOverview--name" role="1.0"><primary>AnacondaDiskOverview:name</primary></indexterm>
+<programlisting>  “name”                     <link linkend="gchar"><type>gchar</type></link>&#160;*</programlisting>
+<para>The <link linkend="AnacondaDiskOverview--name"><type>“name”</type></link> string provides this device's node name (like 'sda').  Note
+that these names aren't guaranteed to be consistent across reboots but
+their use is so ingrained that we need to continue displaying them.</para>
+<para>Flags: Read / Write</para>
+<para>Default value: ""</para>
+<para role="since">Since: <link linkend="api-index-1.0">1.0</link></para></refsect2>
+<refsect2 id="AnacondaDiskOverview--popup-info" role="property"><title>The <literal>“popup-info”</literal> property</title>
+<indexterm zone="AnacondaDiskOverview--popup-info" role="1.0"><primary>AnacondaDiskOverview:popup-info</primary></indexterm>
+<programlisting>  “popup-info”               <link linkend="gchar"><type>gchar</type></link>&#160;*</programlisting>
+<para>The <link linkend="AnacondaDiskOverview--popup-info"><type>“popup-info”</type></link> string is text that should appear in a tooltip when the
+<link linkend="AnacondaDiskOverview"><type>AnacondaDiskOverview</type></link> is hovered over.  For normal disk devices, this
+could be available space information.  For more complex devics, this
+could be WWID, LUN, and so forth.</para>
+<para>Flags: Read / Write</para>
+<para>Default value: ""</para>
+<para role="since">Since: <link linkend="api-index-1.0">1.0</link></para></refsect2>
+
+</refsect1>
+
+</refentry>

@@ -1,0 +1,3 @@
+GtkBuildable GObject
+GtkActionable GtkWidget
+GtkActivatable GObject

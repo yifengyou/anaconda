@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!DOCTYPE indexdiv PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+               "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd" [
+<!ENTITY % local.common.attrib "xmlns:xi  CDATA  #FIXED 'http://www.w3.org/2003/XInclude'">
+]>
+<indexdiv id="api-index-3.1">
+<indexdiv><title>B</title>
+<indexentry><primaryie linkends="AnacondaBaseWindow-help-button-clicked"><link linkend="AnacondaBaseWindow-help-button-clicked">AnacondaBaseWindow::help-button-clicked</link>, object signal in <link linkend="AnacondaBaseWindow">AnacondaBaseWindow</link></primaryie></indexentry>
+<indexentry><primaryie linkends="anaconda-base-window-get-help-button"><link linkend="anaconda-base-window-get-help-button">anaconda_base_window_get_help_button</link>, function in <link linkend="AnacondaBaseWindow">AnacondaBaseWindow</link></primaryie></indexentry>
+</indexdiv>
+</indexdiv>

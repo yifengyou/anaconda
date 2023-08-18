@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gresources>
+  <gresource prefix='/org/fedoraproject/anaconda/widgets'>
+    <file>BaseWindow-name-label.css</file>
+    <file>MountpointSelector-size.css</file>
+    <file preprocess='xml-stripblanks'>anaconda-selected-icon.svg</file>
+    <file>MountpointSelector-mountpoint.css</file>
+    <file>DiskOverview-free.css</file>
+    <file>SpokeSelector-title.css</file>
+    <file preprocess='xml-stripblanks'>dialog-warning-symbolic.svg</file>
+    <file>MountpointSelector-name.css</file>
+    <file>LayoutIndicator-label.css</file>
+    <file>BaseWindow-beta-label.css</file>
+    <file preprocess='to-pixdata'>left-arrow-icon.png</file>
+    <file>SpokeSelector-status.css</file>
+    <file>DiskOverview-capacity.css</file>
+    <file>LayoutIndicator.css</file>
+    <file>DiskOverview-description.css</file>
+    <file>BaseWindow-distro-label.css</file>
+    <file>DiskOverview-name.css</file>
+    <file preprocess='to-pixdata'>right-arrow-icon.png</file>
+  </gresource>
+</gresources>

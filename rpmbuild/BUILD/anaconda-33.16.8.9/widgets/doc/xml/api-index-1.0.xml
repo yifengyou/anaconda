@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<!DOCTYPE indexdiv PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+               "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd" [
+<!ENTITY % local.common.attrib "xmlns:xi  CDATA  #FIXED 'http://www.w3.org/2003/XInclude'">
+]>
+<indexdiv id="api-index-1.0">
+<indexdiv><title>B</title>
+<indexentry><primaryie linkends="AnacondaBaseWindow-info-bar-clicked"><link linkend="AnacondaBaseWindow-info-bar-clicked">AnacondaBaseWindow::info-bar-clicked</link>, object signal in <link linkend="AnacondaBaseWindow">AnacondaBaseWindow</link></primaryie></indexentry>
+<indexentry><primaryie linkends="AnacondaBaseWindow--distribution"><link linkend="AnacondaBaseWindow--distribution">AnacondaBaseWindow:distribution</link>, object property in <link linkend="AnacondaBaseWindow">AnacondaBaseWindow</link></primaryie></indexentry>
+<indexentry><primaryie linkends="AnacondaBaseWindow--window-name"><link linkend="AnacondaBaseWindow--window-name">AnacondaBaseWindow:window-name</link>, object property in <link linkend="AnacondaBaseWindow">AnacondaBaseWindow</link></primaryie></indexentry>
+<indexentry><primaryie linkends="anaconda-base-window-clear-info"><link linkend="anaconda-base-window-clear-info">anaconda_base_window_clear_info</link>, function in <link linkend="AnacondaBaseWindow">AnacondaBaseWindow</link></primaryie></indexentry>
+<indexentry><primaryie linkends="anaconda-base-window-get-action-area"><link linkend="anaconda-base-window-get-action-area">anaconda_base_window_get_action_area</link>, function in <link linkend="AnacondaBaseWindow">AnacondaBaseWindow</link></primaryie></indexentry>
+<indexentry><primaryie linkends="anaconda-base-window-get-alignment"><link linkend="anaconda-base-window-get-alignment">anaconda_base_window_get_alignment</link>, function in <link linkend="AnacondaBaseWindow">AnacondaBaseWindow</link></primaryie></indexentry>
+<indexentry><primaryie linkends="anaconda-base-window-get-beta"><link linkend="anaconda-base-window-get-beta">anaconda_base_window_get_beta</link>, function in <link linkend="AnacondaBaseWindow">AnacondaBaseWindow</link></primaryie></indexentry>
+<indexentry><primaryie linkends="anaconda-base-window-get-main-box"><link linkend="anaconda-base-window-get-main-box">anaconda_base_window_get_main_box</link>, function in <link linkend="AnacondaBaseWindow">AnacondaBaseWindow</link></primaryie></indexentry>
+<indexentry><primaryie linkends="anaconda-base-window-get-nav-area"><link linkend="anaconda-base-window-get-nav-area">anaconda_base_window_get_nav_area</link>, function in <link linkend="AnacondaBaseWindow">AnacondaBaseWindow</link></primaryie></indexentry>
+<indexentry><primaryie linkends="anaconda-base-window-get-nav-area-background-window"><link linkend="anaconda-base-window-get-nav-area-background-window">anaconda_base_window_get_nav_area_background_window</link>, function in <link linkend="AnacondaBaseWindow">AnacondaBaseWindow</link></primaryie></indexentry>
+<indexentry><primaryie linkends="anaconda-base-window-retranslate"><link linkend="anaconda-base-window-retranslate">anaconda_base_window_retranslate</link>, function in <link linkend="AnacondaBaseWindow">AnacondaBaseWindow</link></primaryie></indexentry>
+<indexentry><primaryie linkends="anaconda-base-window-set-beta"><link linkend="anaconda-base-window-set-beta">anaconda_base_window_set_beta</link>, function in <link linkend="AnacondaBaseWindow">AnacondaBaseWindow</link></primaryie></indexentry>
+<indexentry><primaryie linkends="anaconda-base-window-set-error"><link linkend="anaconda-base-window-set-error">anaconda_base_window_set_error</link>, function in <link linkend="AnacondaBaseWindow">AnacondaBaseWindow</link></primaryie></indexentry>
+<indexentry><primaryie linkends="anaconda-base-window-set-info"><link linkend="anaconda-base-window-set-info">anaconda_base_window_set_info</link>, function in <link linkend="AnacondaBaseWindow">AnacondaBaseWindow</link></primaryie></indexentry>
+<indexentry><primaryie linkends="anaconda-base-window-set-warning"><link linkend="anaconda-base-window-set-warning">anaconda_base_window_set_warning</link>, function in <link linkend="AnacondaBaseWindow">AnacondaBaseWindow</link></primaryie></indexentry>
+</indexdiv>
+<indexdiv><title>D</title>
+<indexentry><primaryie linkends="AnacondaDiskOverview--capacity"><link linkend="AnacondaDiskOverview--capacity">AnacondaDiskOverview:capacity</link>, object property in <link linkend="AnacondaDiskOverview">AnacondaDiskOverview</link></primaryie></indexentry>
+<indexentry><primaryie linkends="AnacondaDiskOverview--description"><link linkend="AnacondaDiskOverview--description">AnacondaDiskOverview:description</link>, object property in <link linkend="AnacondaDiskOverview">AnacondaDiskOverview</link></primaryie></indexentry>
+<indexentry><primaryie linkends="AnacondaDiskOverview--free"><link linkend="AnacondaDiskOverview--free">AnacondaDiskOverview:free</link>, object property in <link linkend="AnacondaDiskOverview">AnacondaDiskOverview</link></primaryie></indexentry>
+<indexentry><primaryie linkends="AnacondaDiskOverview--kind"><link linkend="AnacondaDiskOverview--kind">AnacondaDiskOverview:kind</link>, object property in <link linkend="AnacondaDiskOverview">AnacondaDiskOverview</link></primaryie></indexentry>
+<indexentry><primaryie linkends="AnacondaDiskOverview--name"><link linkend="AnacondaDiskOverview--name">AnacondaDiskOverview:name</link>, object property in <link linkend="AnacondaDiskOverview">AnacondaDiskOverview</link></primaryie></indexentry>
+<indexentry><primaryie linkends="AnacondaDiskOverview--popup-info"><link linkend="AnacondaDiskOverview--popup-info">AnacondaDiskOverview:popup-info</link>, object property in <link linkend="AnacondaDiskOverview">AnacondaDiskOverview</link></primaryie></indexentry>
+<indexentry><primaryie linkends="anaconda-disk-overview-get-chosen"><link linkend="anaconda-disk-overview-get-chosen">anaconda_disk_overview_get_chosen</link>, function in <link linkend="AnacondaDiskOverview">AnacondaDiskOverview</link></primaryie></indexentry>
+<indexentry><primaryie linkends="anaconda-disk-overview-set-chosen"><link linkend="anaconda-disk-overview-set-chosen">anaconda_disk_overview_set_chosen</link>, function in <link linkend="AnacondaDiskOverview">AnacondaDiskOverview</link></primaryie></indexentry>
+</indexdiv>
+<indexdiv><title>H</title>
+<indexentry><primaryie linkends="anaconda-hub-window-get-spoke-area"><link linkend="anaconda-hub-window-get-spoke-area">anaconda_hub_window_get_spoke_area</link>, function in <link linkend="AnacondaHubWindow">AnacondaHubWindow</link></primaryie></indexentry>
+</indexdiv>
+<indexdiv><title>L</title>
+<indexentry><primaryie linkends="AnacondaLayoutIndicator--label-width"><link linkend="AnacondaLayoutIndicator--label-width">AnacondaLayoutIndicator:label-width</link>, object property in <link linkend="AnacondaLayoutIndicator">AnacondaLayoutIndicator</link></primaryie></indexentry>
+<indexentry><primaryie linkends="AnacondaLayoutIndicator--layout"><link linkend="AnacondaLayoutIndicator--layout">AnacondaLayoutIndicator:layout</link>, object property in <link linkend="AnacondaLayoutIndicator">AnacondaLayoutIndicator</link></primaryie></indexentry>
+<indexentry><primaryie linkends="anaconda-layout-indicator-get-current-layout"><link linkend="anaconda-layout-indicator-get-current-layout">anaconda_layout_indicator_get_current_layout</link>, function in <link linkend="AnacondaLayoutIndicator">AnacondaLayoutIndicator</link></primaryie></indexentry>
+<indexentry><primaryie linkends="anaconda-layout-indicator-get-label-width"><link linkend="anaconda-layout-indicator-get-label-width">anaconda_layout_indicator_get_label_width</link>, function in <link linkend="AnacondaLayoutIndicator">AnacondaLayoutIndicator</link></primaryie></indexentry>
+<indexentry><primaryie linkends="anaconda-layout-indicator-retranslate"><link linkend="anaconda-layout-indicator-retranslate">anaconda_layout_indicator_retranslate</link>, function in <link linkend="AnacondaLayoutIndicator">AnacondaLayoutIndicator</link></primaryie></indexentry>
+<indexentry><primaryie linkends="anaconda-layout-indicator-set-label-width"><link linkend="anaconda-layout-indicator-set-label-width">anaconda_layout_indicator_set_label_width</link>, function in <link linkend="AnacondaLayoutIndicator">AnacondaLayoutIndicator</link></primaryie></indexentry>
+</indexdiv>
+<indexdiv><title>M</title>
+<indexentry><primaryie linkends="AnacondaMountpointSelector--mountpoint"><link linkend="AnacondaMountpointSelector--mountpoint">AnacondaMountpointSelector:mountpoint</link>, object property in <link linkend="AnacondaMountpointSelector">AnacondaMountpointSelector</link></primaryie></indexentry>
+<indexentry><primaryie linkends="AnacondaMountpointSelector--name"><link linkend="AnacondaMountpointSelector--name">AnacondaMountpointSelector:name</link>, object property in <link linkend="AnacondaMountpointSelector">AnacondaMountpointSelector</link></primaryie></indexentry>
+<indexentry><primaryie linkends="AnacondaMountpointSelector--size"><link linkend="AnacondaMountpointSelector--size">AnacondaMountpointSelector:size</link>, object property in <link linkend="AnacondaMountpointSelector">AnacondaMountpointSelector</link></primaryie></indexentry>
+<indexentry><primaryie linkends="anaconda-mountpoint-selector-get-chosen"><link linkend="anaconda-mountpoint-selector-get-chosen">anaconda_mountpoint_selector_get_chosen</link>, function in <link linkend="AnacondaMountpointSelector">AnacondaMountpointSelector</link></primaryie></indexentry>
+<indexentry><primaryie linkends="anaconda-mountpoint-selector-set-chosen"><link linkend="anaconda-mountpoint-selector-set-chosen">anaconda_mountpoint_selector_set_chosen</link>, function in <link linkend="AnacondaMountpointSelector">AnacondaMountpointSelector</link></primaryie></indexentry>
+</indexdiv>
+<indexdiv><title>S</title>
+<indexentry><primaryie linkends="AnacondaSpokeSelector--icon"><link linkend="AnacondaSpokeSelector--icon">AnacondaSpokeSelector:icon</link>, object property in <link linkend="AnacondaSpokeSelector">AnacondaSpokeSelector</link></primaryie></indexentry>
+<indexentry><primaryie linkends="AnacondaSpokeSelector--status"><link linkend="AnacondaSpokeSelector--status">AnacondaSpokeSelector:status</link>, object property in <link linkend="AnacondaSpokeSelector">AnacondaSpokeSelector</link></primaryie></indexentry>
+<indexentry><primaryie linkends="AnacondaSpokeSelector--title"><link linkend="AnacondaSpokeSelector--title">AnacondaSpokeSelector:title</link>, object property in <link linkend="AnacondaSpokeSelector">AnacondaSpokeSelector</link></primaryie></indexentry>
+<indexentry><primaryie linkends="AnacondaSpokeWindow-button-clicked"><link linkend="AnacondaSpokeWindow-button-clicked">AnacondaSpokeWindow::button-clicked</link>, object signal in <link linkend="AnacondaSpokeWindow">AnacondaSpokeWindow</link></primaryie></indexentry>
+<indexentry><primaryie linkends="anaconda-spoke-selector-get-incomplete"><link linkend="anaconda-spoke-selector-get-incomplete">anaconda_spoke_selector_get_incomplete</link>, function in <link linkend="AnacondaSpokeSelector">AnacondaSpokeSelector</link></primaryie></indexentry>
+<indexentry><primaryie linkends="anaconda-spoke-selector-set-incomplete"><link linkend="anaconda-spoke-selector-set-incomplete">anaconda_spoke_selector_set_incomplete</link>, function in <link linkend="AnacondaSpokeSelector">AnacondaSpokeSelector</link></primaryie></indexentry>
+<indexentry><primaryie linkends="anaconda-standalone-window-retranslate"><link linkend="anaconda-standalone-window-retranslate">anaconda_standalone_window_retranslate</link>, function in <link linkend="AnacondaStandaloneWindow">AnacondaStandaloneWindow</link></primaryie></indexentry>
+</indexdiv>
+</indexdiv>

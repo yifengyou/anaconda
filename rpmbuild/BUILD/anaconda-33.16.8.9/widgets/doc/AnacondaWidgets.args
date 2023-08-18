@@ -1,0 +1,210 @@
+<ARG>
+<NAME>AnacondaBaseStandalone::continue-button</NAME>
+<TYPE>GtkButton*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rwx</FLAGS>
+<NICK>Continue button</NICK>
+<BLURB>The button to continue to the next window.</BLURB>
+<DEFAULT></DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>AnacondaBaseStandalone::quit-button</NAME>
+<TYPE>GtkButton*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rwx</FLAGS>
+<NICK>Quit button</NICK>
+<BLURB>The button to quit Anaconda.</BLURB>
+<DEFAULT></DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>AnacondaBaseWindow::distribution</NAME>
+<TYPE>gchar*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>Distribution</NICK>
+<BLURB>The distribution being installed.</BLURB>
+<DEFAULT>"DISTRIBUTION INSTALLATION"</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>AnacondaBaseWindow::window-name</NAME>
+<TYPE>gchar*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>Window Name</NICK>
+<BLURB>The name of this spoke.</BLURB>
+<DEFAULT>"SPOKE NAME"</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>AnacondaDiskOverview::capacity</NAME>
+<TYPE>gchar*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>Capacity</NICK>
+<BLURB>The drive size (including units).</BLURB>
+<DEFAULT>"0 MB"</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>AnacondaDiskOverview::description</NAME>
+<TYPE>gchar*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>Description</NICK>
+<BLURB>The drive description.</BLURB>
+<DEFAULT>"New Device"</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>AnacondaDiskOverview::free</NAME>
+<TYPE>gchar*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>Free space</NICK>
+<BLURB>The drive's unpartitioned free space (including units).</BLURB>
+<DEFAULT>"0 MB"</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>AnacondaDiskOverview::kind</NAME>
+<TYPE>gchar*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>kind</NICK>
+<BLURB>Drive kind icon.</BLURB>
+<DEFAULT>"drive-harddisk"</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>AnacondaDiskOverview::name</NAME>
+<TYPE>gchar*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>Device node name</NICK>
+<BLURB>Device node name.</BLURB>
+<DEFAULT>""</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>AnacondaDiskOverview::popup-info</NAME>
+<TYPE>gchar*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>Detailed Disk Information</NICK>
+<BLURB>Tooltip information for this drive.</BLURB>
+<DEFAULT>""</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>AnacondaLayoutIndicator::label-width</NAME>
+<TYPE>guint</TYPE>
+<RANGE><= 20</RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>Label width</NICK>
+<BLURB>Width of the label showing the current layout.</BLURB>
+<DEFAULT>8</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>AnacondaLayoutIndicator::layout</NAME>
+<TYPE>gchar*</TYPE>
+<RANGE></RANGE>
+<FLAGS>r</FLAGS>
+<NICK>layout</NICK>
+<BLURB>Current layout.</BLURB>
+<DEFAULT>"us"</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>AnacondaMountpointSelector::mountpoint</NAME>
+<TYPE>gchar*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>mountpoint</NICK>
+<BLURB>Mount point display.</BLURB>
+<DEFAULT>""</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>AnacondaMountpointSelector::name</NAME>
+<TYPE>gchar*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>name</NICK>
+<BLURB>Name display.</BLURB>
+<DEFAULT>""</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>AnacondaMountpointSelector::show-arrow</NAME>
+<TYPE>gboolean</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>show-arrow</NICK>
+<BLURB>Show arrow when selected.</BLURB>
+<DEFAULT>TRUE</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>AnacondaMountpointSelector::size</NAME>
+<TYPE>gchar*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>size</NICK>
+<BLURB>Size display.</BLURB>
+<DEFAULT>"0 GB"</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>AnacondaSpokeSelector::icon</NAME>
+<TYPE>gchar*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>Icon</NICK>
+<BLURB>Icon to appear next to the title.</BLURB>
+<DEFAULT>"image-missing"</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>AnacondaSpokeSelector::status</NAME>
+<TYPE>gchar*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>Status</NICK>
+<BLURB>Status display.</BLURB>
+<DEFAULT>"None"</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>AnacondaSpokeSelector::title</NAME>
+<TYPE>gchar*</TYPE>
+<RANGE></RANGE>
+<FLAGS>rw</FLAGS>
+<NICK>Title</NICK>
+<BLURB>The title of the spoke selector.</BLURB>
+<DEFAULT>"New Selector"</DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>AnacondaStandaloneWindow::continue-button</NAME>
+<TYPE>GtkButton*</TYPE>
+<RANGE></RANGE>
+<FLAGS>r</FLAGS>
+<NICK>Continue button</NICK>
+<BLURB>The button to continue to the next window.</BLURB>
+<DEFAULT></DEFAULT>
+</ARG>
+
+<ARG>
+<NAME>AnacondaStandaloneWindow::quit-button</NAME>
+<TYPE>GtkButton*</TYPE>
+<RANGE></RANGE>
+<FLAGS>r</FLAGS>
+<NICK>Quit button</NICK>
+<BLURB>The button to quit Anaconda.</BLURB>
+<DEFAULT></DEFAULT>
+</ARG>
+

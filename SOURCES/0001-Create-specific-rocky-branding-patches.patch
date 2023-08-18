@@ -1,0 +1,204 @@
+From 6e56b0527043e5376055d5a7a70e6991b3ecc698 Mon Sep 17 00:00:00 2001
+From: Louis Abel <label@rockylinux.org>
+Date: Fri, 17 Feb 2023 21:36:11 -0700
+Subject: [PATCH] General Rocky Patches
+
+---
+ data/anaconda-gtk.css                         |  3 +-
+ data/liveinst/gnome/rhel-welcome.desktop      |  2 +-
+ data/liveinst/gnome/rhel-welcome.js           |  6 +--
+ data/product.d/rocky.conf                     | 37 +++++++++++++++++++
+ docs/intro.rst                                |  4 +-
+ docs/iscsi.rst                                |  4 +-
+ pyanaconda/core/constants.py                  |  5 ++-
+ .../ui/gui/spokes/installation_source.py      |  2 +
+ pyanaconda/ui/gui/spokes/subscription.py      |  4 ++
+ 9 files changed, 56 insertions(+), 11 deletions(-)
+ create mode 100644 data/product.d/rocky.conf
+
+diff --git a/data/anaconda-gtk.css b/data/anaconda-gtk.css
+index 60a670e..70fbbe2 100644
+--- a/data/anaconda-gtk.css
++++ b/data/anaconda-gtk.css
+@@ -92,10 +92,11 @@ infobar.error {
+ 
+ @define-color redhat #2d2d2d;
+ @define-color fedora #2f4265;
++@define-color rocky #18181b;
+ 
+ /* theme colors/images */
+ 
+-@define-color product_bg_color @redhat;
++@define-color product_bg_color @rocky;
+ 
+ /* logo and sidebar classes */
+ 
+diff --git a/data/liveinst/gnome/rhel-welcome.desktop b/data/liveinst/gnome/rhel-welcome.desktop
+index 8f81a1b..9310477 100644
+--- a/data/liveinst/gnome/rhel-welcome.desktop
++++ b/data/liveinst/gnome/rhel-welcome.desktop
+@@ -1,5 +1,5 @@
+ [Desktop Entry]
+-Name=Welcome to Red Hat Enterprise Linux
++Name=Welcome to Rocky Linux
+ Exec=/usr/share/anaconda/gnome/rhel-welcome
+ Terminal=false
+ Type=Application
+diff --git a/data/liveinst/gnome/rhel-welcome.js b/data/liveinst/gnome/rhel-welcome.js
+index 7b6df63..bdb5b72 100755
+--- a/data/liveinst/gnome/rhel-welcome.js
++++ b/data/liveinst/gnome/rhel-welcome.js
+@@ -59,7 +59,7 @@ const WelcomeWindow = new Lang.Class({
+                                                 default_width: 600,
+                                                 default_height: 550,
+                                                 skip_taskbar_hint: true,
+-                                                title: _("Welcome to Red Hat Enterprise Linux"),
++                                                title: _("Welcome to Rocky Linux"),
+                                                 window_position: Gtk.WindowPosition.CENTER });
+       this.window.connect('key-press-event', Lang.bind(this,
+           function(w, event) {
+@@ -88,7 +88,7 @@ const WelcomeWindow = new Lang.Class({
+                                      spacing: 16 });
+       tryContent.add(new Gtk.Image({ icon_name: 'media-optical',
+                                      pixel_size: 256 }));
+-      tryContent.add(makeLabel(_("Try RHEL"), true));
++      tryContent.add(makeLabel(_("Try Rocky"), true));
+ 
+       let tryButton = new Gtk.Button({ child: tryContent });
+       buttonBox.add(tryButton);
+@@ -104,7 +104,7 @@ const WelcomeWindow = new Lang.Class({
+       let installButton = new Gtk.Button({ child: installContent });
+       buttonBox.add(installButton);
+ 
+-      this._label = makeLabel(_("You are currently running Red Hat Enterprise Linux from live media.\nYou can install Red Hat Enterprise Linux now, or choose \"Install to Hard Drive\" in the Activities Overview at any later time."), false);
++      this._label = makeLabel(_("You are currently running Rocky Linux from live media.\nYou can install Rocky Linux now, or choose \"Install to Hard Drive\" in the Activities Overview at any later time."), false);
+       mainGrid.add(this._label);
+ 
+       installButton.connect('clicked', Lang.bind(this,
+diff --git a/data/product.d/rocky.conf b/data/product.d/rocky.conf
+new file mode 100644
+index 0000000..55ba233
+--- /dev/null
++++ b/data/product.d/rocky.conf
+@@ -0,0 +1,37 @@
++# Anaconda configuration file for Rocky Linux.
++
++[Product]
++product_name = Rocky Linux
++
++[Base Product]
++product_name = Red Hat Enterprise Linux
++
++[Anaconda]
++# List of enabled Anaconda DBus modules for RHEL.
++#  but without org.fedoraproject.Anaconda.Modules.Subscription
++kickstart_modules =
++    org.fedoraproject.Anaconda.Modules.Timezone
++    org.fedoraproject.Anaconda.Modules.Network
++    org.fedoraproject.Anaconda.Modules.Localization
++    org.fedoraproject.Anaconda.Modules.Security
++    org.fedoraproject.Anaconda.Modules.Users
++    org.fedoraproject.Anaconda.Modules.Payloads
++    org.fedoraproject.Anaconda.Modules.Storage
++    org.fedoraproject.Anaconda.Modules.Services
++
++[Bootloader]
++efi_dir = rocky
++
++[User Interface]
++help_directory = /usr/share/anaconda/help/rocky
++default_help_pages =
++    rocky_help_placeholder.txt
++    rocky_help_placeholder.xml
++    rocky_help_placeholder.xml
++
++[Payload]
++enable_closest_mirror = True
++default_source = CLOSEST_MIRROR
++
++[License]
++eula = /usr/share/rocky-release/EULA
+diff --git a/docs/intro.rst b/docs/intro.rst
+index bbaf74f..ec2ed94 100644
+--- a/docs/intro.rst
++++ b/docs/intro.rst
+@@ -1,8 +1,8 @@
+ Introduction to Anaconda
+ ========================
+ 
+-Anaconda is the installation program used by Fedora, Red Hat Enterprise Linux
+-and some other distributions.
++Anaconda is the installation program used by Fedora, Red Hat Enterprise Linux,
++Rocky Linux, and some other distributions.
+ 
+ During installation, a target computer's hardware is identified and configured
+ and the appropriate file systems for the system's architecture are created.
+diff --git a/docs/iscsi.rst b/docs/iscsi.rst
+index 847078d..13b4df3 100644
+--- a/docs/iscsi.rst
++++ b/docs/iscsi.rst
+@@ -139,8 +139,8 @@ If for some reason the DeviceTree fails at recognizing iscsi devices as such,
+ The booting problems are either due to incorrectly generated dracut boot
+ arguments or they are simply dracut bugs.
+ 
+-Note that many of the iscsi adapters are installed in different Red Hat machines
+-and so the issues can often be reproduced and debugged.
++Note that many of the iscsi adapters are installed in different Enterprise Linux
++machines and so the issues can often be reproduced and debugged.
+ 
+ 
+ Future of iSCSI in Anaconda
+diff --git a/pyanaconda/core/constants.py b/pyanaconda/core/constants.py
+index 0ab2627..b11fa75 100644
+--- a/pyanaconda/core/constants.py
++++ b/pyanaconda/core/constants.py
+@@ -61,7 +61,8 @@ DEFAULT_REPOS = [productName.split('-')[0].lower(),
+                  "fedora-modular-server",
+                  "rawhide",
+                  "BaseOS",  # Used by RHEL
+-                 "baseos"]  # Used by CentOS Stream
++                 "baseos",  # Used by CentOS Stream and Derivatives
++                 "Minimal"] # Rocky Linux Minimal Repository
+ 
+ # Get list of repo names which should be used as updates repos
+ DEFAULT_UPDATE_REPOS = ["updates",
+@@ -161,7 +162,7 @@ WARNING_SUPPORT_REMOVED = N_(
+ )
+ 
+ WARNING_HARDWARE_UNSUPPORTED = N_(
+-    "This hardware (or a combination thereof) is not supported by Red Hat. For more information "
++    "This hardware (or a combination thereof) is not supported by Red Hat nor Rocky Linux. For more information "
+     "on supported hardware, please refer to http://www.redhat.com/hardware."
+ )
+ 
+diff --git a/pyanaconda/ui/gui/spokes/installation_source.py b/pyanaconda/ui/gui/spokes/installation_source.py
+index d0d4da7..4d1c659 100644
+--- a/pyanaconda/ui/gui/spokes/installation_source.py
++++ b/pyanaconda/ui/gui/spokes/installation_source.py
+@@ -704,6 +704,8 @@ class SourceSpoke(NormalSpoke, GUISpokeInputCheckHandler, SourceSwitchHandler):
+         self._network_button = self.builder.get_object("networkRadioButton")
+         self._network_box = self.builder.get_object("networkBox")
+ 
++        really_hide(self._cdn_button)
++
+         self._url_entry = self.builder.get_object("urlEntry")
+         self._protocol_combo_box = self.builder.get_object("protocolComboBox")
+         self._iso_chooser_button = self.builder.get_object("isoChooserButton")
+diff --git a/pyanaconda/ui/gui/spokes/subscription.py b/pyanaconda/ui/gui/spokes/subscription.py
+index f4ee772..27d6b42 100644
+--- a/pyanaconda/ui/gui/spokes/subscription.py
++++ b/pyanaconda/ui/gui/spokes/subscription.py
+@@ -547,6 +547,10 @@ class SubscriptionSpoke(NormalSpoke):
+         # also set the spoke warning banner
+         self.show_warning_message(error_message)
+ 
++    @property
++    def showable(self):
++        return False
++
+     def initialize(self):
+         NormalSpoke.initialize(self)
+         self.initialize_start()
+-- 
+2.39.1
+

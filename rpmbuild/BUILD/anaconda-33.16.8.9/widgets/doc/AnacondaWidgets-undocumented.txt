@@ -1,0 +1,26 @@
+83% symbol docs coverage.
+93 symbols documented.
+0 symbols incomplete.
+19 not documented.
+
+
+ANACONDA_RESOURCE_PATH
+AnacondaBaseStandaloneClass
+AnacondaBaseWindowClass
+AnacondaDiskOverviewClass
+AnacondaHubWindowClass
+AnacondaLayoutIndicatorClass
+AnacondaMountpointSelectorClass
+AnacondaSpokeSelectorClass
+AnacondaSpokeWindowClass
+AnacondaStandaloneWindowClass
+anaconda_base_standalone_get_continue_button
+anaconda_base_standalone_get_may_continue
+anaconda_base_standalone_get_quit_button
+anaconda_layout_indicator_get_current_layout
+anaconda_layout_indicator_get_label_width
+anaconda_layout_indicator_set_label_width
+get_current_layout
+
+widgets-common:Long_Description
+widgets-common:Short_Description

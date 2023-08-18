@@ -1,0 +1,187 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+               "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd" [
+<!ENTITY % local.common.attrib "xmlns:xi  CDATA  #FIXED 'http://www.w3.org/2003/XInclude'">
+]>
+<refentry id="AnacondaStandaloneWindow">
+<refmeta>
+<refentrytitle role="top_of_page" id="AnacondaStandaloneWindow.top_of_page">AnacondaStandaloneWindow</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>ANACONDAWIDGETS Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>AnacondaStandaloneWindow</refname>
+<refpurpose>Window for displaying standalone spokes</refpurpose>
+</refnamediv>
+
+<refsect1 id="AnacondaStandaloneWindow.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_return" colwidth="150px"/>
+<colspec colname="functions_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="GtkWidget"><returnvalue>GtkWidget</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="anaconda-standalone-window-new">anaconda_standalone_window_new</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="anaconda-standalone-window-retranslate">anaconda_standalone_window_retranslate</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="AnacondaStandaloneWindow.properties" role="properties">
+<title role="properties.title">Properties</title>
+<informaltable frame="none">
+<tgroup cols="3">
+<colspec colname="properties_type" colwidth="150px"/>
+<colspec colname="properties_name" colwidth="300px"/>
+<colspec colname="properties_flags" colwidth="200px"/>
+<tbody>
+<row><entry role="property_type"><link linkend="GtkButton"><type>GtkButton</type></link>&#160;*</entry><entry role="property_name"><link linkend="AnacondaStandaloneWindow--continue-button">continue-button</link></entry><entry role="property_flags">Read</entry></row>
+<row><entry role="property_type"><link linkend="GtkButton"><type>GtkButton</type></link>&#160;*</entry><entry role="property_name"><link linkend="AnacondaStandaloneWindow--quit-button">quit-button</link></entry><entry role="property_flags">Read</entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="AnacondaStandaloneWindow.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="name" colwidth="150px"/>
+<colspec colname="description"/>
+<tbody>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="AnacondaStandaloneWindow-struct">AnacondaStandaloneWindow</link></entry></row>
+<row><entry role="datatype_keyword">struct</entry><entry role="function_name"><link linkend="AnacondaStandaloneWindowClass">AnacondaStandaloneWindowClass</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="AnacondaStandaloneWindow.object-hierarchy" role="object_hierarchy">
+<title role="object_hierarchy.title">Object Hierarchy</title>
+<screen>    <link linkend="GObject">GObject</link>
+    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GInitiallyUnowned">GInitiallyUnowned</link>
+        <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GtkWidget">GtkWidget</link>
+            <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GtkContainer">GtkContainer</link>
+                <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="GtkBin">GtkBin</link>
+                    <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="AnacondaBaseWindow">AnacondaBaseWindow</link>
+                        <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> <link linkend="AnacondaBaseStandalone">AnacondaBaseStandalone</link>
+                            <phrase role="lineart">&#9584;&#9472;&#9472;</phrase> AnacondaStandaloneWindow
+</screen>
+</refsect1>
+<refsect1 id="AnacondaStandaloneWindow.implemented-interfaces" role="impl_interfaces">
+<title role="impl_interfaces.title">Implemented Interfaces</title>
+<para>
+AnacondaStandaloneWindow implements
+ <link linkend="AtkImplementorIface">AtkImplementorIface</link> and  <link linkend="GtkBuildable">GtkBuildable</link>.</para>
+
+</refsect1>
+
+
+<refsect1 id="AnacondaStandaloneWindow.description" role="desc">
+<title role="desc.title">Description</title>
+<para>A <link linkend="AnacondaStandaloneWindow"><type>AnacondaStandaloneWindow</type></link> is a widget that displays a standalone
+spoke.  A standalone spoke is like a normal spoke, but is not entered via a
+hub.  Instead, it is displayed by itself.  Examples include the welcome and
+network configuration screens at the beginning of installation.</para>
+<para>The AnacondaStandaloneWindow consist of three areas:</para>
+<itemizedlist>
+<listitem>
+<para>A navigation area in the top of the screen, inherited from <link linkend="AnacondaBaseWindow"><type>AnacondaBaseWindow</type></link>.</para>
+</listitem>
+<listitem>
+<para>A button box at the bottom of the screen, with Quit and Continue buttons.
+The Continue button may not be enabled until required information is
+entered by the user.</para>
+</listitem>
+<listitem><para>An action area in the middle of the screen, taking up a majority of the
+space.  This is where widgets will be added and the user will do things.</para></listitem>
+</itemizedlist>
+
+</refsect1>
+<refsect1 id="AnacondaStandaloneWindow.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="anaconda-standalone-window-new" role="function">
+<title>anaconda_standalone_window_new&#160;()</title>
+<indexterm zone="anaconda-standalone-window-new"><primary>anaconda_standalone_window_new</primary></indexterm>
+<programlisting language="C"><link linkend="GtkWidget"><returnvalue>GtkWidget</returnvalue></link>&#160;*
+anaconda_standalone_window_new ();</programlisting>
+<para>Creates a new <link linkend="AnacondaStandaloneWindow"><type>AnacondaStandaloneWindow</type></link>, which is a window designed for
+displaying a standalone spoke, such as the welcome screen or network
+configuration.</para>
+<refsect3 id="anaconda-standalone-window-new.returns" role="returns">
+<title>Returns</title>
+<para> A new <link linkend="AnacondaStandaloneWindow"><type>AnacondaStandaloneWindow</type></link>.</para>
+</refsect3></refsect2>
+<refsect2 id="anaconda-standalone-window-retranslate" role="function" condition="since:1.0">
+<title>anaconda_standalone_window_retranslate&#160;()</title>
+<indexterm zone="anaconda-standalone-window-retranslate" role="1.0"><primary>anaconda_standalone_window_retranslate</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+anaconda_standalone_window_retranslate
+                               (<parameter><link linkend="AnacondaStandaloneWindow"><type>AnacondaStandaloneWindow</type></link> *win</parameter>);</programlisting>
+<para>Reload translations for this widget as needed.  Generally, this is not
+needed.  However when changing the language during installation, we need
+to be able to make sure the screen gets retranslated.  This function is
+kind of ugly but avoids having to destroy and reload the screen.</para>
+<refsect3 id="anaconda-standalone-window-retranslate.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>win</para></entry>
+<entry role="parameter_description"><para>a <link linkend="AnacondaStandaloneWindow"><type>AnacondaStandaloneWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><para role="since">Since: <link linkend="api-index-1.0">1.0</link></para></refsect2>
+
+</refsect1>
+<refsect1 id="AnacondaStandaloneWindow.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="AnacondaStandaloneWindow-struct" role="struct">
+<title>struct AnacondaStandaloneWindow</title>
+<indexterm zone="AnacondaStandaloneWindow-struct"><primary>AnacondaStandaloneWindow</primary></indexterm>
+<programlisting language="C">struct AnacondaStandaloneWindow;</programlisting>
+<para>The AnacondaStandaloneWindow struct contains only private fields and should not
+be directly accessed.</para>
+</refsect2>
+<refsect2 id="AnacondaStandaloneWindowClass" role="struct">
+<title>struct AnacondaStandaloneWindowClass</title>
+<indexterm zone="AnacondaStandaloneWindowClass"><primary>AnacondaStandaloneWindowClass</primary></indexterm>
+<programlisting language="C">struct AnacondaStandaloneWindowClass {
+    AnacondaBaseStandaloneClass parent_class;
+};
+</programlisting>
+<refsect3 id="AnacondaStandaloneWindowClass.members" role="struct_members">
+<title>Members</title>
+<informaltable role="struct_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="struct_members_name" colwidth="300px"/>
+<colspec colname="struct_members_description"/>
+<colspec colname="struct_members_annotations" colwidth="200px"/>
+<tbody>
+</tbody></tgroup></informaltable>
+</refsect3>
+</refsect2>
+
+</refsect1>
+<refsect1 id="AnacondaStandaloneWindow.property-details" role="property_details">
+<title role="property_details.title">Property Details</title>
+<refsect2 id="AnacondaStandaloneWindow--continue-button" role="property"><title>The <literal>“continue-button”</literal> property</title>
+<indexterm zone="AnacondaStandaloneWindow--continue-button"><primary>AnacondaStandaloneWindow:continue-button</primary></indexterm>
+<programlisting>  “continue-button”          <link linkend="GtkButton"><type>GtkButton</type></link>&#160;*</programlisting>
+<para>The button to continue to the next window.</para><para>Flags: Read</para>
+</refsect2>
+<refsect2 id="AnacondaStandaloneWindow--quit-button" role="property"><title>The <literal>“quit-button”</literal> property</title>
+<indexterm zone="AnacondaStandaloneWindow--quit-button"><primary>AnacondaStandaloneWindow:quit-button</primary></indexterm>
+<programlisting>  “quit-button”              <link linkend="GtkButton"><type>GtkButton</type></link>&#160;*</programlisting>
+<para>The button to quit Anaconda.</para><para>Flags: Read</para>
+</refsect2>
+
+</refsect1>
+
+</refentry>

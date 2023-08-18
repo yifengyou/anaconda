@@ -1,0 +1,42 @@
+<SIGNAL>
+<NAME>AnacondaBaseStandalone::continue-clicked</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>fa</FLAGS>
+AnacondaBaseStandalone *anacondabasestandalone
+</SIGNAL>
+
+<SIGNAL>
+<NAME>AnacondaBaseStandalone::quit-clicked</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>fa</FLAGS>
+AnacondaBaseStandalone *anacondabasestandalone
+</SIGNAL>
+
+<SIGNAL>
+<NAME>AnacondaBaseWindow::help-button-clicked</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>fa</FLAGS>
+AnacondaBaseWindow *anacondabasewindow
+</SIGNAL>
+
+<SIGNAL>
+<NAME>AnacondaBaseWindow::info-bar-clicked</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>fa</FLAGS>
+AnacondaBaseWindow *anacondabasewindow
+</SIGNAL>
+
+<SIGNAL>
+<NAME>AnacondaMountpointSelector::chosen-changed</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>lrh</FLAGS>
+AnacondaMountpointSelector *anacondamountpointselector
+</SIGNAL>
+
+<SIGNAL>
+<NAME>AnacondaSpokeWindow::button-clicked</NAME>
+<RETURNS>void</RETURNS>
+<FLAGS>fa</FLAGS>
+AnacondaSpokeWindow *anacondaspokewindow
+</SIGNAL>
+

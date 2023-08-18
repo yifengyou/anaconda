@@ -1,0 +1,18 @@
+%dir /usr/lib/debug
+%dir /usr/lib/debug/usr
+%dir /usr/lib/debug/usr/libexec
+%dir /usr/lib/debug/usr/libexec/anaconda
+%dir /usr/lib/debug/usr/lib64
+%dir /usr/lib/debug/usr/lib64/glade
+%dir /usr/lib/debug/usr/lib64/glade/modules
+%dir /usr/lib/debug/usr/lib64/python3.6
+%dir /usr/lib/debug/usr/lib64/python3.6/site-packages
+%dir /usr/lib/debug/usr/lib64/python3.6/site-packages/pyanaconda
+%dir /usr/lib/debug/.dwz
+/usr/lib/debug/usr/libexec/anaconda/auditd-33.16.8.9-1.el8.rocky.0.1.x86_64.debug
+/usr/lib/debug/usr/libexec/anaconda/dd_list-33.16.8.9-1.el8.rocky.0.1.x86_64.debug
+/usr/lib/debug/usr/libexec/anaconda/dd_extract-33.16.8.9-1.el8.rocky.0.1.x86_64.debug
+/usr/lib/debug/usr/lib64/glade/modules/libAnacondaWidgets.so-33.16.8.9-1.el8.rocky.0.1.x86_64.debug
+/usr/lib/debug/usr/lib64/python3.6/site-packages/pyanaconda/_isys.so-33.16.8.9-1.el8.rocky.0.1.x86_64.debug
+/usr/lib/debug/usr/lib64/libAnacondaWidgets.so.4.0.0-33.16.8.9-1.el8.rocky.0.1.x86_64.debug
+/usr/lib/debug/.dwz/anaconda-33.16.8.9-1.el8.rocky.0.1.x86_64

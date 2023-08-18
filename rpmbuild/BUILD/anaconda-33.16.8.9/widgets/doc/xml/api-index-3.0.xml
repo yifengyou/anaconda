@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE indexdiv PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+               "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd" [
+<!ENTITY % local.common.attrib "xmlns:xi  CDATA  #FIXED 'http://www.w3.org/2003/XInclude'">
+]>
+<indexdiv id="api-index-3.0">
+<indexdiv><title>B</title>
+<indexentry><primaryie linkends="AnacondaBaseStandalone-continue-clicked"><link linkend="AnacondaBaseStandalone-continue-clicked">AnacondaBaseStandalone::continue-clicked</link>, object signal in <link linkend="AnacondaBaseStandalone">AnacondaBaseStandalone</link></primaryie></indexentry>
+<indexentry><primaryie linkends="AnacondaBaseStandalone-quit-clicked"><link linkend="AnacondaBaseStandalone-quit-clicked">AnacondaBaseStandalone::quit-clicked</link>, object signal in <link linkend="AnacondaBaseStandalone">AnacondaBaseStandalone</link></primaryie></indexentry>
+<indexentry><primaryie linkends="anaconda-base-standalone-get-continue-button"><link linkend="anaconda-base-standalone-get-continue-button">anaconda_base_standalone_get_continue_button</link>, function in <link linkend="AnacondaBaseStandalone">AnacondaBaseStandalone</link></primaryie></indexentry>
+<indexentry><primaryie linkends="anaconda-base-standalone-get-may-continue"><link linkend="anaconda-base-standalone-get-may-continue">anaconda_base_standalone_get_may_continue</link>, function in <link linkend="AnacondaBaseStandalone">AnacondaBaseStandalone</link></primaryie></indexentry>
+<indexentry><primaryie linkends="anaconda-base-standalone-get-quit-button"><link linkend="anaconda-base-standalone-get-quit-button">anaconda_base_standalone_get_quit_button</link>, function in <link linkend="AnacondaBaseStandalone">AnacondaBaseStandalone</link></primaryie></indexentry>
+<indexentry><primaryie linkends="anaconda-base-standalone-set-may-continue"><link linkend="anaconda-base-standalone-set-may-continue">anaconda_base_standalone_set_may_continue</link>, function in <link linkend="AnacondaBaseStandalone">AnacondaBaseStandalone</link></primaryie></indexentry>
+</indexdiv>
+</indexdiv>

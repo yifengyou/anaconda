@@ -1,0 +1,34 @@
+GObject
+  GInitiallyUnowned
+    GtkWidget
+      GtkContainer
+        GtkBin
+          AnacondaBaseWindow
+            AnacondaBaseStandalone
+              AnacondaHubWindow
+              AnacondaStandaloneWindow
+            AnacondaSpokeWindow
+          GtkEventBox
+            AnacondaDiskOverview
+            AnacondaLayoutIndicator
+            AnacondaMountpointSelector
+            AnacondaSpokeSelector
+          GtkButton
+  AtkObject
+    GtkAccessible
+      GtkWidgetAccessible
+        GtkContainerAccessible
+  GtkStyle
+  GdkWindow
+  GdkDragContext
+  GtkTooltip
+  GdkScreen
+  GdkDisplayManager
+  GdkDisplay
+GInterface
+  GTypePlugin
+  AtkImplementorIface
+  GtkBuildable
+  AtkComponent
+  GtkActionable
+  GtkActivatable

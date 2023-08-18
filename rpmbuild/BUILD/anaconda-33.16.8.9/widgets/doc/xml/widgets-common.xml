@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+               "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd" [
+<!ENTITY % local.common.attrib "xmlns:xi  CDATA  #FIXED 'http://www.w3.org/2003/XInclude'">
+]>
+<refentry id="AnacondaWidgets-widgets-common">
+<refmeta>
+<refentrytitle role="top_of_page" id="AnacondaWidgets-widgets-common.top_of_page">widgets-common</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>ANACONDAWIDGETS Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>widgets-common</refname>
+<refpurpose></refpurpose>
+</refnamediv>
+
+<refsect1 id="AnacondaWidgets-widgets-common.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_return" colwidth="150px"/>
+<colspec colname="functions_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="anaconda-apply-language">anaconda_apply_language</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="AnacondaWidgets-widgets-common.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="name" colwidth="150px"/>
+<colspec colname="description"/>
+<tbody>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="ANACONDA-RESOURCE-PATH:CAPS">ANACONDA_RESOURCE_PATH</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+
+
+<refsect1 id="AnacondaWidgets-widgets-common.description" role="desc">
+<title role="desc.title">Description</title>
+
+</refsect1>
+<refsect1 id="AnacondaWidgets-widgets-common.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="anaconda-apply-language" role="function" condition="since:3.4">
+<title>anaconda_apply_language&#160;()</title>
+<indexterm zone="anaconda-apply-language" role="3.4"><primary>anaconda_apply_language</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+anaconda_apply_language (<parameter><link linkend="GtkLabel"><type>GtkLabel</type></link> *label</parameter>,
+                         <parameter>const <link linkend="gchar"><type>gchar</type></link> *language</parameter>);</programlisting>
+<para>Apply a Pango language attribute to a label.</para>
+<para>For some formatting decisions, in particular the font choice, the language
+of the text being rendered needs to be known. This is especially the case
+for the Chinese, Japanese and Korean translations, since Unicode uses a
+single codepoint for the CJK characters across languages, even when the
+particular language may render the character very differently. For example,
+U+76F4 (直) shows up a good bit in the translations, it is rendered differently
+in Chinese and Japanese, and it is considered unreadable between the two.</para>
+<para>This function applies a <link linkend="PangoAttrLanguage"><type>PangoAttrLanguage</type></link> attribute to the label so that
+the underlying renderer can do the right thing.</para>
+<refsect3 id="anaconda-apply-language.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>label</para></entry>
+<entry role="parameter_description"><para>The widget to which to apply the language. </para></entry>
+<entry role="parameter_annotations"><emphasis role="annotation">[<acronym>transfer none</acronym>]</emphasis></entry></row>
+<row><entry role="parameter_name"><para>language</para></entry>
+<entry role="parameter_description"><para>The language to apply to the widget</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><para role="since">Since: <link linkend="api-index-3.4">3.4</link></para></refsect2>
+
+</refsect1>
+<refsect1 id="AnacondaWidgets-widgets-common.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="ANACONDA-RESOURCE-PATH:CAPS" role="macro">
+<title>ANACONDA_RESOURCE_PATH</title>
+<indexterm zone="ANACONDA-RESOURCE-PATH:CAPS"><primary>ANACONDA_RESOURCE_PATH</primary></indexterm>
+<programlisting language="C">#define ANACONDA_RESOURCE_PATH  "/org/fedoraproject/anaconda/widgets/"
+</programlisting>
+</refsect2>
+
+</refsect1>
+
+</refentry>
